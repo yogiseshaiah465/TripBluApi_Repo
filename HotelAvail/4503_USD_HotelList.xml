@@ -1,0 +1,2801 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>0</BasicPropertyInfo_ID>
+    <AreaID>006S</AreaID>
+    <ChainCode>GI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0050916</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HILTON GARDEN INN DFW ARPT S</HotelName>
+    <Latitude>32.834330</Latitude>
+    <Longitude>-97.022150</Longitude>
+    <Phone>1-972-313-2800</Phone>
+    <Fax>1-972-313-2885</Fax>
+    <Address>2001 VALLEY VIEW LANE IRVING TX 75061 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>194.99</RateRange_Max>
+    <RateRange_Maxrate>194.99</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Garden Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>1</BasicPropertyInfo_ID>
+    <AreaID>006E</AreaID>
+    <ChainCode>XV</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0056836</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>SPRINGHILL STES MARRIOTT IRVING</HotelName>
+    <Latitude>32.891392</Latitude>
+    <Longitude>-96.971491</Longitude>
+    <Phone>972-580-1120</Phone>
+    <Fax>972-580-1122</Fax>
+    <Address>5800 HIGH POINT DRIVE IRVING TX 75038 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>125.00</RateRange_Max>
+    <RateRange_Maxrate>125.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Spring Hill Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>2</BasicPropertyInfo_ID>
+    <AreaID>011E</AreaID>
+    <ChainCode>OM</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0015981</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>OMNI DALLAS HOTEL AT PARKWEST</HotelName>
+    <Latitude>32.904595</Latitude>
+    <Longitude>-96.921353</Longitude>
+    <Phone>1-972-869-4300</Phone>
+    <Fax>1-972-869-3295</Fax>
+    <Address>1590 LBJ FREEWAY DALLAS TX 75234 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max>134.10</RateRange_Max>
+    <RateRange_Maxrate>134.10</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Omni Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>3</BasicPropertyInfo_ID>
+    <AreaID>014E</AreaID>
+    <ChainCode>BU</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0059721</HotelCode>
+    <HotelCityCode>DAL</HotelCityCode>
+    <HotelName>BAYMONT I S DALLAS</HotelName>
+    <Latitude>32.859750</Latitude>
+    <Longitude>-96.885850</Longitude>
+    <Phone>1-214-3505577</Phone>
+    <Fax>1-214-3532967</Fax>
+    <Address>2370 WEST NORTHWEST HWY DALLAS TX 75220 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Baymont Inn &amp; Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>false</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>4</BasicPropertyInfo_ID>
+    <AreaID>012E</AreaID>
+    <ChainCode>HX</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0013808</HotelCode>
+    <HotelCityCode>DAL</HotelCityCode>
+    <HotelName>HAMPTON INN DALLAS WALNUT HILL</HotelName>
+    <Latitude>32.882630</Latitude>
+    <Longitude>-96.895980</Longitude>
+    <Phone>1-972-484-6557</Phone>
+    <Fax>1-972-243-6486</Fax>
+    <Address>11069 COMPOSITE DR DALLAS TX 75229 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>119.00</RateRange_Max>
+    <RateRange_Maxrate>119.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hampton Inns</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>5</BasicPropertyInfo_ID>
+    <AreaID>020E</AreaID>
+    <ChainCode>HH</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0012722</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HILTON DALLAS LINCOLN CENTRE</HotelName>
+    <Latitude>32.925486</Latitude>
+    <Longitude>-96.816453</Longitude>
+    <Phone>1-972-934-8400</Phone>
+    <Fax>1-972-701-5244</Fax>
+    <Address>5410 LBJ FREEWAY DALLAS TX 75240 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max>179.00</RateRange_Max>
+    <RateRange_Maxrate>179.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hilton Hotels</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>6</BasicPropertyInfo_ID>
+    <AreaID>008S</AreaID>
+    <ChainCode>MC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0049572</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>MARRIOTT DFW AIRPORT SOUTH</HotelName>
+    <Latitude>32.823029</Latitude>
+    <Longitude>-97.055954</Longitude>
+    <Phone>817-358-1700</Phone>
+    <Fax>817-358-1800</Fax>
+    <Address>4151 CENTREPORT BLVD FORT WORTH TX 76155 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>189.00</RateRange_Max>
+    <RateRange_Maxrate>189.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Marriott Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>7</BasicPropertyInfo_ID>
+    <AreaID>014E</AreaID>
+    <ChainCode>XV</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0030604</HotelCode>
+    <HotelCityCode>DAL</HotelCityCode>
+    <HotelName>SPRINGHILL STES MARRIOTT NW HWY</HotelName>
+    <Latitude>32.859830</Latitude>
+    <Longitude>-96.889630</Longitude>
+    <Phone>214-350-2300</Phone>
+    <Fax>214-350-5144</Fax>
+    <Address>2363 STEMMONS TRAIL DALLAS TX 75220 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>139.00</RateRange_Max>
+    <RateRange_Maxrate>139.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Spring Hill Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>8</BasicPropertyInfo_ID>
+    <AreaID>022SE</AreaID>
+    <ChainCode>GI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0022275</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HILTON GARDEN INN DALLAS MARKET</HotelName>
+    <Latitude>32.802570</Latitude>
+    <Longitude>-96.832870</Longitude>
+    <Phone>1-214-634-8200</Phone>
+    <Fax>1-214-634-8202</Fax>
+    <Address>2325 NORTH STEMMONS FREEWAY DALLAS TX 75207 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>139.00</RateRange_Max>
+    <RateRange_Maxrate>139.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Garden Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>9</BasicPropertyInfo_ID>
+    <AreaID>012E</AreaID>
+    <ChainCode>EO</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0064143</HotelCode>
+    <HotelCityCode>DAL</HotelCityCode>
+    <HotelName>ECONO LODGE DALLAS AIRPORT NO</HotelName>
+    <Latitude>32.922080</Latitude>
+    <Longitude>-96.903580</Longitude>
+    <Phone>972-243-5500</Phone>
+    <Fax>972-243-8738</Fax>
+    <Address>2275 VALLEY VIEW LANE DALLAS TX 75234 </Address>
+    <Rating>images/1stars.png</Rating>
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Econo Lodge</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>10</BasicPropertyInfo_ID>
+    <AreaID>011SW</AreaID>
+    <ChainCode>TO</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0042173</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>TOWNEPLACE STES MARRIOTT BEDFRD</HotelName>
+    <Latitude>32.839532</Latitude>
+    <Longitude>-97.131856</Longitude>
+    <Phone>817-283-3725</Phone>
+    <Fax>817-283-5821</Fax>
+    <Address>2301 PLAZA PARKWAY BEDFORD TX 76021 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>85.00</RateRange_Max>
+    <RateRange_Maxrate>85.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>TownePlace Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>11</BasicPropertyInfo_ID>
+    <AreaID>006N</AreaID>
+    <ChainCode>ES</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0043744</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>ES DALLAS  DFW AP N OUTDOOR W</HotelName>
+    <Latitude>32.955219</Latitude>
+    <Longitude>-97.045100</Longitude>
+    <Phone>1-972-724-2600</Phone>
+    <Fax>1-972-724-5145</Fax>
+    <Address>2401 BASS PRO DRIVE GRAPEVINE TX 76051 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max>219.00</RateRange_Max>
+    <RateRange_Maxrate>219.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Embassy Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>12</BasicPropertyInfo_ID>
+    <AreaID>019E</AreaID>
+    <ChainCode>FN</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0045519</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>FAIRFIELD INN N STES MARRIOTT N</HotelName>
+    <Latitude>32.938550</Latitude>
+    <Longitude>-96.841189</Longitude>
+    <Phone>972-661-9800</Phone>
+    <Fax>972-661-9800</Fax>
+    <Address>13900 PARKSIDE CENTER BLVD DALLAS TX 75244 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>99.00</RateRange_Max>
+    <RateRange_Maxrate>99.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Fairfield Inn By Marriott</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>13</BasicPropertyInfo_ID>
+    <AreaID>019E</AreaID>
+    <ChainCode>EA</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0017961</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>STUDIOPLUS DFW-FARMERS BRANCH</HotelName>
+    <Latitude>32.938209</Latitude>
+    <Longitude>-96.839948</Longitude>
+    <Phone>972385-6006</Phone>
+    <Fax>972385-6176</Fax>
+    <Address>4022 PARKSIDE CENTER BLVD FARMERS BRANCH TX 75244 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>66.49</RateRange_Max>
+    <RateRange_Maxrate>66.49</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/OutdoorPool.svg'/&gt; Outdoor Pool&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Extended Stay America</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>14</BasicPropertyInfo_ID>
+    <AreaID>014E</AreaID>
+    <ChainCode>DI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0046532</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>DAYS INN   SUITES DALLAS</HotelName>
+    <Latitude>32.860545</Latitude>
+    <Longitude>-96.888198</Longitude>
+    <Phone>1-214-3505800</Phone>
+    <Fax>1-214-3514801</Fax>
+    <Address>2334 WEST NORTHWEST HIGHWAY DALLAS TX 75320 </Address>
+    <Rating />
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/OutdoorPool.svg'/&gt; Outdoor Pool&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Pets.svg'/&gt; Pets&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Days Inns</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>15</BasicPropertyInfo_ID>
+    <AreaID>016S</AreaID>
+    <ChainCode>CY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0017062</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>COURTYARD ARLINGTON BALLPARK</HotelName>
+    <Latitude>32.757800</Latitude>
+    <Longitude>-97.088589</Longitude>
+    <Phone>817-277-2774</Phone>
+    <Fax>817-277-3103</Fax>
+    <Address>1500 NOLAN RYAN EXPRESSWAY ARLINGTON TX 76011 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>142.00</RateRange_Max>
+    <RateRange_Maxrate>142.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Courtyard by Marriott</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>16</BasicPropertyInfo_ID>
+    <AreaID>016S</AreaID>
+    <ChainCode>BU</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0038964</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>BAYMONT I S ARLINGTON</HotelName>
+    <Latitude>32.753410</Latitude>
+    <Longitude>-97.065690</Longitude>
+    <Phone>1-817-6332434</Phone>
+    <Fax>1-817-6333500</Fax>
+    <Address>2401 DIPLOMACY DRIVE ARLINGTON TX 76011 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Baymont Inn &amp; Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>17</BasicPropertyInfo_ID>
+    <AreaID>014NE</AreaID>
+    <ChainCode>HG</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0018770</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HOMEWOOD STE DALLAS LEWISVILLE</HotelName>
+    <Latitude>33.009477</Latitude>
+    <Longitude>-96.969104</Longitude>
+    <Phone>1-972-315-6123</Phone>
+    <Fax>1-972-315-2943</Fax>
+    <Address>700 HEBRON PARKWAY LEWISVILLE TX 75057 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>132.05</RateRange_Max>
+    <RateRange_Maxrate>132.05</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Homewood Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>18</BasicPropertyInfo_ID>
+    <AreaID>008E</AreaID>
+    <ChainCode>GI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0014630</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HILTON GARDEN INN LAS COLINAS</HotelName>
+    <Latitude>32.910440</Latitude>
+    <Longitude>-96.955280</Longitude>
+    <Phone>1-972-444-8434</Phone>
+    <Fax>1-972-910-9246</Fax>
+    <Address>7516 LAS COLINAS BLVD IRVING TX 75063 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>209.00</RateRange_Max>
+    <RateRange_Maxrate>209.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Garden Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>19</BasicPropertyInfo_ID>
+    <AreaID>014S</AreaID>
+    <ChainCode>YO</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0056839</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>CANDLEWOOD SUITES ARLINGTON</HotelName>
+    <Latitude>32.763379</Latitude>
+    <Longitude>-97.070730</Longitude>
+    <Phone>1-817-649-3336</Phone>
+    <Fax>1-817-649-7774</Fax>
+    <Address>2221 BROOKHOLLOW PLAZA DRIVE ARLINGTON TX 76006 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Candlewood Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>20</BasicPropertyInfo_ID>
+    <AreaID>020E</AreaID>
+    <ChainCode>CZ</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0043501</HotelCode>
+    <HotelCityCode>ADS</HotelCityCode>
+    <HotelName>COMFORT SUITES NORTH GALLERIA</HotelName>
+    <Latitude>32.954209</Latitude>
+    <Longitude>-96.833865</Longitude>
+    <Phone>972-503-6500</Phone>
+    <Fax>972-503-6500</Fax>
+    <Address>4555 BELTLINE RD ADDISON TX 75001 </Address>
+    <Rating />
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Comfort Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>21</BasicPropertyInfo_ID>
+    <AreaID>014NE</AreaID>
+    <ChainCode>UB</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0058394</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>SUBURBAN EXTENDED STAY DFW</HotelName>
+    <Latitude>33.015093</Latitude>
+    <Longitude>-96.975637</Longitude>
+    <Phone>972-459-7777</Phone>
+    <Fax>972-459-7400</Fax>
+    <Address>1920 LAKEPOINTE DRIVE LEWISVILLE TX 75057 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName />
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>22</BasicPropertyInfo_ID>
+    <AreaID>017SE</AreaID>
+    <ChainCode>YO</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0056794</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>CANDLEWOOD SUITES</HotelName>
+    <Latitude>32.822401</Latitude>
+    <Longitude>-96.870277</Longitude>
+    <Phone>214-631-3333</Phone>
+    <Fax>214-631-7474</Fax>
+    <Address>7930 N STEMMONS FREEWAY DALLAS TX 75247 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Candlewood Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>23</BasicPropertyInfo_ID>
+    <AreaID>019SE</AreaID>
+    <ChainCode>BH</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0020011</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HAWTHORN SUITES DALLAS/LOVE FL</HotelName>
+    <Latitude>32.819280</Latitude>
+    <Longitude>-96.865519</Longitude>
+    <Phone>214-688-1010</Phone>
+    <Fax>214-638-5215</Fax>
+    <Address>7900 BROOKRIVER DRIVE DALLAS TX 75247 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hawthorn Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>24</BasicPropertyInfo_ID>
+    <AreaID>020E</AreaID>
+    <ChainCode>YO</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0051829</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>CANDLEWOOD SUITES DALLAS</HotelName>
+    <Latitude>32.937440</Latitude>
+    <Longitude>-96.817970</Longitude>
+    <Phone>972-233-6888</Phone>
+    <Fax>972-233-1449</Fax>
+    <Address>13939 NOEL ROAD DALLAS TX 75240 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Candlewood Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>25</BasicPropertyInfo_ID>
+    <AreaID>019E</AreaID>
+    <ChainCode>OZ</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0015084</HotelCode>
+    <HotelCityCode>DAL</HotelCityCode>
+    <HotelName>SUPER 8 BY THE GALLERIA   NORT</HotelName>
+    <Latitude>32.951867</Latitude>
+    <Longitude>-96.840357</Longitude>
+    <Phone>1-972-2332525</Phone>
+    <Fax>1-972-4048066</Fax>
+    <Address>4150 BELTWAY DRIVE ADDISON TX 75001 </Address>
+    <Rating>images/1stars.png</Rating>
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Super 8</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>26</BasicPropertyInfo_ID>
+    <AreaID>014S</AreaID>
+    <ChainCode>BH</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0008171</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HAWTHORN SUITES ARLINGTON</HotelName>
+    <Latitude>32.763497</Latitude>
+    <Longitude>-97.067292</Longitude>
+    <Phone>1-817-6401188</Phone>
+    <Fax>1-817-6494720</Fax>
+    <Address>2401 BROOKHOLLOW PLAZA DRIVE ARLINGTON TX 76006-7507 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hawthorn Suites</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>27</BasicPropertyInfo_ID>
+    <AreaID>016S</AreaID>
+    <ChainCode>HY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0002519</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HYATT PLACE DALLAS ARLINGTON</HotelName>
+    <Latitude>32.752475</Latitude>
+    <Longitude>-97.066054</Longitude>
+    <Phone>1-817-649-7676</Phone>
+    <Fax>1-817-649-7753</Fax>
+    <Address>2380 EAST RD TO SIX FLAGS ST ARLINGTON TX 76011 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>160.55</RateRange_Max>
+    <RateRange_Maxrate>160.55</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/ADA_Accessible.svg'/&gt; Accessible&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/KidsFacilities.svg'/&gt; Kids Facilities&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hyatt Hotels &amp; Resorts</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>true</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>28</BasicPropertyInfo_ID>
+    <AreaID>017S</AreaID>
+    <ChainCode>DI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0085328</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>DAYS INN ARLINGTON</HotelName>
+    <Latitude>32.739821</Latitude>
+    <Longitude>-97.047521</Longitude>
+    <Phone>1-817-6407722</Phone>
+    <Fax>1-817-6409043</Fax>
+    <Address>3501 E DIVISION STREET ARLINGTON TX 76011 </Address>
+    <Rating />
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/KidsFacilities.svg'/&gt; Kids Facilities&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Days Inns</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>29</BasicPropertyInfo_ID>
+    <AreaID>014SE</AreaID>
+    <ChainCode>DI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0011483</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>DAYS INN IRVING</HotelName>
+    <Latitude>32.836397</Latitude>
+    <Longitude>-96.912640</Longitude>
+    <Phone>1-972-4386666</Phone>
+    <Fax>1-972-5794902</Fax>
+    <Address>2200 EAST AIRPORT FREEWAY IRVING TX 75062 </Address>
+    <Rating />
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Days Inns</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>30</BasicPropertyInfo_ID>
+    <AreaID>006E</AreaID>
+    <ChainCode>CZ</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0002238</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>COMFORT SUITES LAS COLINAS</HotelName>
+    <Latitude>32.890227</Latitude>
+    <Longitude>-96.965772</Longitude>
+    <Phone>972-518-0606</Phone>
+    <Fax>972-518-2579</Fax>
+    <Address>1223 GREENWAY CIRCLE IRVING TX 75038 </Address>
+    <Rating />
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Comfort Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>31</BasicPropertyInfo_ID>
+    <AreaID>006E</AreaID>
+    <ChainCode>CY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0017064</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>COURTYARD LAS COLINAS</HotelName>
+    <Latitude>32.885050</Latitude>
+    <Longitude>-96.966310</Longitude>
+    <Phone>972-550-8100</Phone>
+    <Fax>972-550-0764</Fax>
+    <Address>1151 W WALNUT HILL LANE IRVING TX 75038 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>135.00</RateRange_Max>
+    <RateRange_Maxrate>135.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Courtyard by Marriott</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>32</BasicPropertyInfo_ID>
+    <AreaID>003NE</AreaID>
+    <ChainCode>CZ</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0001802</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>COMFORT SUITES DFW AIRPORT</HotelName>
+    <Latitude>32.916415</Latitude>
+    <Longitude>-97.011690</Longitude>
+    <Phone>972-929-9097</Phone>
+    <Fax>972-929-9247</Fax>
+    <Address>4700 W JOHN CARPENTER FWY IRVING TX 75063 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Comfort Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>33</BasicPropertyInfo_ID>
+    <AreaID>019SE</AreaID>
+    <ChainCode>CP</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0003788</HotelCode>
+    <HotelCityCode>DAL</HotelCityCode>
+    <HotelName>CROWNE PLAZA MARKET CENTER</HotelName>
+    <Latitude>32.815640</Latitude>
+    <Longitude>-96.866869</Longitude>
+    <Phone>214-630-8500</Phone>
+    <Fax>214-630-9486</Fax>
+    <Address>7050 STEMMONS FREEWAY DALLAS TX 75247 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Crowne Plaza</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>34</BasicPropertyInfo_ID>
+    <AreaID>019E</AreaID>
+    <ChainCode>DT</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0002401</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>DOUBLETREE DALLAS GALLERIA</HotelName>
+    <Latitude>32.925272</Latitude>
+    <Longitude>-96.842007</Longitude>
+    <Phone>1-972-385-9000</Phone>
+    <Fax>1-972-788-1174</Fax>
+    <Address>4099 VALLEY VIEW LN DALLAS TX 75244 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max>189.00</RateRange_Max>
+    <RateRange_Maxrate>189.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>DoubleTree Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>35</BasicPropertyInfo_ID>
+    <AreaID>008N</AreaID>
+    <ChainCode>HG</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0058590</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HOMEWOOD STES DFW GRAPVINE TX</HotelName>
+    <Latitude>32.961750</Latitude>
+    <Longitude>-97.045270</Longitude>
+    <Phone>1-972-691-2427</Phone>
+    <Fax>1-972-355-5376</Fax>
+    <Address>2214 W GRAPEVINE MILLS CIRCLE GRAPEVINE TX 76051 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>229.00</RateRange_Max>
+    <RateRange_Maxrate>229.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Homewood Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>36</BasicPropertyInfo_ID>
+    <AreaID>012E</AreaID>
+    <ChainCode>DI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0009640</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>DAYS INN NORTH DALLAS</HotelName>
+    <Latitude>32.924747</Latitude>
+    <Longitude>-96.900951</Longitude>
+    <Phone>1-972-4880800</Phone>
+    <Fax>1-972-4880757</Fax>
+    <Address>13313 STEMMONS FWY FARMERS BRANCH TX 75234 </Address>
+    <Rating />
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Days Inns</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>37</BasicPropertyInfo_ID>
+    <AreaID>009E</AreaID>
+    <ChainCode>HI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0041673</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HOLIDAY INN EXP STES LAS COLI</HotelName>
+    <Latitude>32.879379</Latitude>
+    <Longitude>-96.946315</Longitude>
+    <Phone>1-972-910-0302</Phone>
+    <Fax>1-972-910-0299</Fax>
+    <Address>333 W JOHN CARPENTER FREEWAY IRVING TX 75039 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Holiday Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>38</BasicPropertyInfo_ID>
+    <AreaID>006N</AreaID>
+    <ChainCode>HY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0049913</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HYATT PLACE DALLAS GRAPEVINE</HotelName>
+    <Latitude>32.960729</Latitude>
+    <Longitude>-97.047070</Longitude>
+    <Phone>1-972-691-1199</Phone>
+    <Fax>1-972-691-3596</Fax>
+    <Address>2220 GRAPEVINE MILLS CIRCLE WE GRAPEVINE TX 76051 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>198.55</RateRange_Max>
+    <RateRange_Maxrate>198.55</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/ADA_Accessible.svg'/&gt; Accessible&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/KidsFacilities.svg'/&gt; Kids Facilities&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hyatt Hotels &amp; Resorts</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>true</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>39</BasicPropertyInfo_ID>
+    <AreaID>011SW</AreaID>
+    <ChainCode>EA</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0017966</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>EXTENDEDSTAYDELUXE DLS BEDFORD</HotelName>
+    <Latitude>32.838450</Latitude>
+    <Longitude>-97.141870</Longitude>
+    <Phone>817354-5210</Phone>
+    <Fax>817354-5271</Fax>
+    <Address>1908 FOREST RIDGE DRIVE BEDFORD TX 76021 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>80.74</RateRange_Max>
+    <RateRange_Maxrate>80.74</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/OutdoorPool.svg'/&gt; Outdoor Pool&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Extended Stay America</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>40</BasicPropertyInfo_ID>
+    <AreaID>017E</AreaID>
+    <ChainCode>ES</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0001869</HotelCode>
+    <HotelCityCode>DAL</HotelCityCode>
+    <HotelName>EMBASSY SUITES DAL LOVE FIELD</HotelName>
+    <Latitude>32.862260</Latitude>
+    <Longitude>-96.850363</Longitude>
+    <Phone>1-214-357-4500</Phone>
+    <Fax>1-214-357-0683</Fax>
+    <Address>3880 W NORTHWEST HIGHWAY DALLAS TX 75220 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>125.10</RateRange_Max>
+    <RateRange_Maxrate>125.10</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Embassy Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>41</BasicPropertyInfo_ID>
+    <AreaID>014SW</AreaID>
+    <ChainCode>HX</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0065507</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HAMPTON STE DALLAS FT WRTH APT</HotelName>
+    <Latitude>32.841369</Latitude>
+    <Longitude>-97.188609</Longitude>
+    <Phone>1-817-503-7777</Phone>
+    <Fax>1-817-503-7778</Fax>
+    <Address>1600 HURST TOWNE CENTER DR HURST TX 76054 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>133.00</RateRange_Max>
+    <RateRange_Maxrate>133.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hampton Inns</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>42</BasicPropertyInfo_ID>
+    <AreaID>003NE</AreaID>
+    <ChainCode>FN</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0009926</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>FAIRFIELD INN IRVING</HotelName>
+    <Latitude>32.917112</Latitude>
+    <Longitude>-97.013088</Longitude>
+    <Phone>972-929-7257</Phone>
+    <Fax>972-929-7257</Fax>
+    <Address>4800 JOHN CARPENTER FREEWAY IRVING TX 75063 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>119.00</RateRange_Max>
+    <RateRange_Maxrate>119.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/OutdoorPool.svg'/&gt; Outdoor Pool&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Fairfield Inn By Marriott</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>43</BasicPropertyInfo_ID>
+    <AreaID>008E</AreaID>
+    <ChainCode>EA</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0043307</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>EXTENDEDSTAYDELUXE LAS COLINAS</HotelName>
+    <Latitude>32.883969</Latitude>
+    <Longitude>-96.954470</Longitude>
+    <Phone>1-972-751-0808</Phone>
+    <Fax>1-972-751-0808</Fax>
+    <Address>5401 GREEN PARK DRIVE IRVING TX 75038 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>99.99</RateRange_Max>
+    <RateRange_Maxrate>99.99</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/OutdoorPool.svg'/&gt; Outdoor Pool&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Extended Stay America</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>44</BasicPropertyInfo_ID>
+    <AreaID>006SE</AreaID>
+    <ChainCode>HI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0001260</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HOLIDAY INN EXP STES ARPT SOUT</HotelName>
+    <Latitude>32.837900</Latitude>
+    <Longitude>-97.010566</Longitude>
+    <Phone>1-972-659-1272</Phone>
+    <Fax>1-972-570-0676</Fax>
+    <Address>4235 WEST AIRPORT FREEWAY IRVING TX 75062 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Holiday Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>45</BasicPropertyInfo_ID>
+    <AreaID>016S</AreaID>
+    <ChainCode>HI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0006942</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HOLIDAY INN EXP STES ARLINGTON</HotelName>
+    <Latitude>32.748540</Latitude>
+    <Longitude>-97.065820</Longitude>
+    <Phone>817-640-5454</Phone>
+    <Fax>1-817-385-4505</Fax>
+    <Address>2451 E RANDOL MILL ROAD ARLINGTON TX 76011 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Holiday Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>46</BasicPropertyInfo_ID>
+    <AreaID>017SW</AreaID>
+    <ChainCode>TL</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0062848</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>TRAVELODGE NE MALL</HotelName>
+    <Latitude>32.834229</Latitude>
+    <Longitude>-97.209960</Longitude>
+    <Phone>1-817-4852750</Phone>
+    <Fax>1-817-6568977</Fax>
+    <Address>7920 BEDFORD EULESS ROAD NORTH RICHLAND HILLS TX 76180 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Pets.svg'/&gt; Pets&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Travelodge</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>false</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>47</BasicPropertyInfo_ID>
+    <AreaID>004NE</AreaID>
+    <ChainCode>RC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0056072</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>RESIDENCE INN DFW AP N IRVING</HotelName>
+    <Latitude>32.926660</Latitude>
+    <Longitude>-97.009370</Longitude>
+    <Phone>972-871-1331</Phone>
+    <Fax>972-871-1332</Fax>
+    <Address>8600 ESTERS BLVD IRVING TX 75063 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>209.00</RateRange_Max>
+    <RateRange_Maxrate>209.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Residence Inns</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>48</BasicPropertyInfo_ID>
+    <AreaID>003NE</AreaID>
+    <ChainCode>MC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0001208</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>MARRIOTT DFW AIRPORT NORTH</HotelName>
+    <Latitude>32.922829</Latitude>
+    <Longitude>-97.019310</Longitude>
+    <Phone>972-929-8800</Phone>
+    <Fax>972-929-6501</Fax>
+    <Address>8440 FREEPORT PKWY IRVING TX 75063 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max>169.00</RateRange_Max>
+    <RateRange_Maxrate>169.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Marriott Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>49</BasicPropertyInfo_ID>
+    <AreaID>014SW</AreaID>
+    <ChainCode>HI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0085874</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HOLIDAY INN EXP STES HURST</HotelName>
+    <Latitude>32.841410</Latitude>
+    <Longitude>-97.187580</Longitude>
+    <Phone>1-817-427-1818</Phone>
+    <Fax>1-817-427-1820</Fax>
+    <Address>820 THOUSAND OAKS DRIVE HURST TX 76054 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Holiday Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>50</BasicPropertyInfo_ID>
+    <AreaID>008E</AreaID>
+    <ChainCode>HY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0043702</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HYATT PLACE DALLAS LAS COLINAS</HotelName>
+    <Latitude>32.884701</Latitude>
+    <Longitude>-96.954984</Longitude>
+    <Phone>1-972-5507400</Phone>
+    <Fax>1-972-550-7252</Fax>
+    <Address>5455 GREEN PARK DRIVE IRVING TX 75038 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>187.06</RateRange_Max>
+    <RateRange_Maxrate>187.06</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/ADA_Accessible.svg'/&gt; Accessible&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/KidsFacilities.svg'/&gt; Kids Facilities&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hyatt Hotels &amp; Resorts</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>true</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>51</BasicPropertyInfo_ID>
+    <AreaID>014S</AreaID>
+    <ChainCode>WG</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0016395</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>WINGATE BY WYNDHAM ARLINGTON</HotelName>
+    <Latitude>32.762226</Latitude>
+    <Longitude>-97.066376</Longitude>
+    <Phone>1-817-6408686</Phone>
+    <Fax>1-817-6409922</Fax>
+    <Address>1024 BROOKHOLLOW PLAZA DRIVE ARLINGTON TX 76006 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Wingate Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>52</BasicPropertyInfo_ID>
+    <AreaID>008S</AreaID>
+    <ChainCode>YO</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0079425</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>CANDLEWOOD SUITES DFW SOUTH</HotelName>
+    <Latitude>32.824242</Latitude>
+    <Longitude>-97.058877</Longitude>
+    <Phone>817-868-1900</Phone>
+    <Fax>817-868-1903</Fax>
+    <Address>4200 REGGIS DRIVE FT. WORTH TX 76155 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Candlewood Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>53</BasicPropertyInfo_ID>
+    <AreaID>012S</AreaID>
+    <ChainCode>CZ</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0016004</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>COMFORT SUITES ENTERTAINMENT</HotelName>
+    <Latitude>32.783647</Latitude>
+    <Longitude>-97.060319</Longitude>
+    <Phone>817-633-6311</Phone>
+    <Fax>817-633-1082</Fax>
+    <Address>2075 N US HWY 360 GRAND PRAIRIE TX 75050 </Address>
+    <Rating />
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Comfort Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>54</BasicPropertyInfo_ID>
+    <AreaID>020SE</AreaID>
+    <ChainCode>MC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0044255</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>MARRIOTT STE DAL MKT CTR</HotelName>
+    <Latitude>32.805280</Latitude>
+    <Longitude>-96.838450</Longitude>
+    <Phone>214-905-0050</Phone>
+    <Fax>214-905-0060</Fax>
+    <Address>2493 N STEMMONS FREEWAY DALLAS TX 75207 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>127.00</RateRange_Max>
+    <RateRange_Maxrate>127.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Marriott Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>55</BasicPropertyInfo_ID>
+    <AreaID>014S</AreaID>
+    <ChainCode>RC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0019218</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>RESIDENCE INN DFW AP S-ARLINGTN</HotelName>
+    <Latitude>32.763270</Latitude>
+    <Longitude>-97.066410</Longitude>
+    <Phone>817-649-7300</Phone>
+    <Fax>817-649-7600</Fax>
+    <Address>1050 BROOKHOLLOW PLAZA DR ARLINGTON TX 76006 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>154.00</RateRange_Max>
+    <RateRange_Maxrate>154.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Residence Inns</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>56</BasicPropertyInfo_ID>
+    <AreaID>022SE</AreaID>
+    <ChainCode>BW</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0006545</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>BEST WESTERN MARKET CENTER</HotelName>
+    <Latitude>32.798430</Latitude>
+    <Longitude>-96.825380</Longitude>
+    <Phone>1-214-7419000</Phone>
+    <Fax>1-214-7416100</Fax>
+    <Address>2023 MARKET CENTER BLVD DALLAS TX 75207-3318 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Best Western International</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>57</BasicPropertyInfo_ID>
+    <AreaID>006S</AreaID>
+    <ChainCode>CI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0026900</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>COMFORT INN AIRPORT</HotelName>
+    <Latitude>32.836320</Latitude>
+    <Longitude>-97.022910</Longitude>
+    <Phone>972-790-7979</Phone>
+    <Fax>972-790-0031</Fax>
+    <Address>4940 W AIRPORT FREEWAY IRVING TX 75062 </Address>
+    <Rating />
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Comfort Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>58</BasicPropertyInfo_ID>
+    <AreaID>014E</AreaID>
+    <ChainCode>CY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0017065</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>COURTYARD DALLAS LBJ JOSEY</HotelName>
+    <Latitude>32.909439</Latitude>
+    <Longitude>-96.879170</Longitude>
+    <Phone>972-620-8000</Phone>
+    <Fax>972-620-9267</Fax>
+    <Address>2930 FOREST LANE DALLAS TX 75234 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>134.00</RateRange_Max>
+    <RateRange_Maxrate>134.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Courtyard by Marriott</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>59</BasicPropertyInfo_ID>
+    <AreaID>019E</AreaID>
+    <ChainCode>CY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0017061</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>COURTYARD ADDISON MIDWAY</HotelName>
+    <Latitude>32.945900</Latitude>
+    <Longitude>-96.842859</Longitude>
+    <Phone>972-490-7390</Phone>
+    <Fax>972-490-0002</Fax>
+    <Address>4165 PROTON DR ADDISON TX 75001 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>118.15</RateRange_Max>
+    <RateRange_Maxrate>118.15</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Courtyard by Marriott</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>60</BasicPropertyInfo_ID>
+    <AreaID>020E</AreaID>
+    <ChainCode>BH</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0052223</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HAWTHORN SUITES ADDISON</HotelName>
+    <Latitude>32.956971</Latitude>
+    <Longitude>-96.829820</Longitude>
+    <Phone>1-972-3864800</Phone>
+    <Fax>1-972-3862911</Fax>
+    <Address>15200 ADDISON ROAD ADDISON TX 75001 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hawthorn Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>61</BasicPropertyInfo_ID>
+    <AreaID>008N</AreaID>
+    <ChainCode>XV</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0055653</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>SPRINGHILL SUITES DFW NORTH</HotelName>
+    <Latitude>32.962210</Latitude>
+    <Longitude>-97.045600</Longitude>
+    <Phone>972-724-5500</Phone>
+    <Fax>972-355-4915</Fax>
+    <Address>2240 W GRAPEVINE MILLS CIRCLE GRAPEVINE TX 76051 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>129.60</RateRange_Max>
+    <RateRange_Maxrate>129.60</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Spring Hill Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>62</BasicPropertyInfo_ID>
+    <AreaID>008E</AreaID>
+    <ChainCode>EA</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0042911</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>EXTENDEDSTAYDELUXE MEADOW CRK</HotelName>
+    <Latitude>32.882420</Latitude>
+    <Longitude>-96.954830</Longitude>
+    <Phone>972871-0117</Phone>
+    <Fax>972871-0118</Fax>
+    <Address>605 MEADOW CREEK DR IRVING TX 75038 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>56.99</RateRange_Max>
+    <RateRange_Maxrate>56.99</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/OutdoorPool.svg'/&gt; Outdoor Pool&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Extended Stay America</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>63</BasicPropertyInfo_ID>
+    <AreaID>020E</AreaID>
+    <ChainCode>XV</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0048232</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>SPRINGHILL SUITES ADDISON-DAL</HotelName>
+    <Latitude>32.956972</Latitude>
+    <Longitude>-96.826244</Longitude>
+    <Phone>972-774-1010</Phone>
+    <Fax>972-774-1011</Fax>
+    <Address>15255 QUORUM DRIVE ADDISON TX 75001 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>99.00</RateRange_Max>
+    <RateRange_Maxrate>99.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Spring Hill Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>64</BasicPropertyInfo_ID>
+    <AreaID>020E</AreaID>
+    <ChainCode>CI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0020450</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>COMFORT INN BY THE GALLERIA</HotelName>
+    <Latitude>32.952650</Latitude>
+    <Longitude>-96.828500</Longitude>
+    <Phone>972-701-0881</Phone>
+    <Fax>972-701-0815</Fax>
+    <Address>14975 LANDMARK BLVD DALLAS TX 75254-6709 </Address>
+    <Rating />
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Comfort Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>65</BasicPropertyInfo_ID>
+    <AreaID>020E</AreaID>
+    <ChainCode>CY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0049527</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>COURTYARD ADDISON QUORUM</HotelName>
+    <Latitude>32.955267</Latitude>
+    <Longitude>-96.826088</Longitude>
+    <Phone>972-404-1555</Phone>
+    <Fax>972-404-1553</Fax>
+    <Address>15160 QUORUM DRIVE ADDISON TX 75001 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>119.00</RateRange_Max>
+    <RateRange_Maxrate>119.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Courtyard by Marriott</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>66</BasicPropertyInfo_ID>
+    <AreaID>011SW</AreaID>
+    <ChainCode>CY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0017063</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>COURTYARD BEDFORD DFW ARPT WEST</HotelName>
+    <Latitude>32.837320</Latitude>
+    <Longitude>-97.129260</Longitude>
+    <Phone>817-545-2202</Phone>
+    <Fax>817-545-2319</Fax>
+    <Address>2201 AIRPORT FREEWAY BEDFORD TX 76021 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>103.00</RateRange_Max>
+    <RateRange_Maxrate>103.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Courtyard by Marriott</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>67</BasicPropertyInfo_ID>
+    <AreaID>022SE</AreaID>
+    <ChainCode>HH</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0012059</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HILTON ANATOLE</HotelName>
+    <Latitude>32.801313</Latitude>
+    <Longitude>-96.827068</Longitude>
+    <Phone>1-214-748-1200</Phone>
+    <Fax>1-214-761-7520</Fax>
+    <Address>2201 STEMMONS FREEWAY DALLAS TX 75207 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max>239.00</RateRange_Max>
+    <RateRange_Maxrate>239.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hilton Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>68</BasicPropertyInfo_ID>
+    <AreaID>020E</AreaID>
+    <ChainCode>QA</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0182650</HotelCode>
+    <HotelCityCode>FSG</HotelCityCode>
+    <HotelName>QA TEST PROPERTY</HotelName>
+    <Latitude>32.951740</Latitude>
+    <Longitude>-96.823410</Longitude>
+    <Phone>111-555-3333</Phone>
+    <Fax>333-222-1111</Fax>
+    <Address>123 KIRBY DRIVE SOMEWHERE TX 75000 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max>100.00</RateRange_Max>
+    <RateRange_Maxrate>100.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Pets.svg'/&gt; Pets&lt;/sapn&gt;</FetAmenities>
+    <ChainName />
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>false</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>69</BasicPropertyInfo_ID>
+    <AreaID>014SW</AreaID>
+    <ChainCode>HY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0015574</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HYATT PLACE FT WORTH HURST</HotelName>
+    <Latitude>32.841935</Latitude>
+    <Longitude>-97.188611</Longitude>
+    <Phone>1-817-5773003</Phone>
+    <Fax>1-817-5778388</Fax>
+    <Address>1601 HURST TOWN CENTER DRIVE HURST TX 76054 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>94.05</RateRange_Max>
+    <RateRange_Maxrate>94.05</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/ADA_Accessible.svg'/&gt; Accessible&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/KidsFacilities.svg'/&gt; Kids Facilities&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hyatt Hotels &amp; Resorts</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>true</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>70</BasicPropertyInfo_ID>
+    <AreaID>020E</AreaID>
+    <ChainCode>HY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0031881</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HYATT PLACE DALLAS NORTH GALLE</HotelName>
+    <Latitude>32.939560</Latitude>
+    <Longitude>-96.819520</Longitude>
+    <Phone>1-972-716-2001</Phone>
+    <Fax>1-972-716-4054</Fax>
+    <Address>5229 SPRING VALLEY RD DALLAS TX 75254 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>162.89</RateRange_Max>
+    <RateRange_Maxrate>162.89</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/ADA_Accessible.svg'/&gt; Accessible&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hyatt Hotels &amp; Resorts</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>true</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>71</BasicPropertyInfo_ID>
+    <AreaID>022SE</AreaID>
+    <ChainCode>CY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0023962</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>COURTYARD DALLAS MARKET CENTER</HotelName>
+    <Latitude>32.799224</Latitude>
+    <Longitude>-96.825681</Longitude>
+    <Phone>214-653-1166</Phone>
+    <Fax>214-653-1892</Fax>
+    <Address>2150 MARKET CTR BLVD AT STEMMO DALLAS TX 75207 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>124.00</RateRange_Max>
+    <RateRange_Maxrate>124.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Courtyard by Marriott</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>72</BasicPropertyInfo_ID>
+    <AreaID>019E</AreaID>
+    <ChainCode>GI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0044303</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>HILTON GARDEN INN ADDISON</HotelName>
+    <Latitude>32.954313</Latitude>
+    <Longitude>-96.843284</Longitude>
+    <Phone>1-972-233-8000</Phone>
+    <Fax>1-972-239-8777</Fax>
+    <Address>4090 BELTLINE ROAD ADDISON TX 75001 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>159.00</RateRange_Max>
+    <RateRange_Maxrate>159.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Garden Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>73</BasicPropertyInfo_ID>
+    <AreaID>019SE</AreaID>
+    <ChainCode>KG</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0028967</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>KNIGHTS INN DALLAS</HotelName>
+    <Latitude>32.826416</Latitude>
+    <Longitude>-96.861495</Longitude>
+    <Phone>214-638-5151</Phone>
+    <Fax>214-638-3920</Fax>
+    <Address>1550 EMPIRE CENTRAL DALLAS TX 75235 </Address>
+    <Rating>images/1stars.png</Rating>
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Knights Inns</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>74</BasicPropertyInfo_ID>
+    <AreaID>017N</AreaID>
+    <ChainCode>DI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0061370</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>DAYS INN  LEWISVILLE TX</HotelName>
+    <Latitude>33.048112</Latitude>
+    <Longitude>-97.008688</Longitude>
+    <Phone>001-972-4341000</Phone>
+    <Fax>001-972-2211323</Fax>
+    <Address>200 N STEMMONS FREEWAY LEWISVILLE TX 75067 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Days Inns</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>75</BasicPropertyInfo_ID>
+    <AreaID>020E</AreaID>
+    <ChainCode>IC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0008028</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>INTERCONTINENTAL DALLAS</HotelName>
+    <Latitude>32.956302</Latitude>
+    <Longitude>-96.821942</Longitude>
+    <Phone>972-386-6000</Phone>
+    <Fax>972-991-6937</Fax>
+    <Address>15201 DALLAS PARKWAY ADDISON TX 75001 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>InterContinental Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>76</BasicPropertyInfo_ID>
+    <AreaID>016SW</AreaID>
+    <ChainCode>BW</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0020943</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>BEST WESTERN NE MALL INN STES</HotelName>
+    <Latitude>32.836881</Latitude>
+    <Longitude>-97.196515</Longitude>
+    <Phone>1-817-656-8881</Phone>
+    <Fax>1-817-281-0727</Fax>
+    <Address>8709 AIRPORT FREEWAY NORTH RICHLAND HILLS TX 76180 </Address>
+    <Rating />
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Best Western International</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>77</BasicPropertyInfo_ID>
+    <AreaID>019E</AreaID>
+    <ChainCode>CP</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0004511</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>CROWNE PLAZA NEAR THE GALLERIA</HotelName>
+    <Latitude>32.944927</Latitude>
+    <Longitude>-96.838996</Longitude>
+    <Phone>1-972-980-8877</Phone>
+    <Fax>1-972-991-2740</Fax>
+    <Address>14315 MIDWAY ROAD ADDISON TX 75001 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Crowne Plaza</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>78</BasicPropertyInfo_ID>
+    <AreaID>022SE</AreaID>
+    <ChainCode>FN</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0018266</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>FAIRFIELD INN AND STES MKT CNTR</HotelName>
+    <Latitude>32.798560</Latitude>
+    <Longitude>-96.825300</Longitude>
+    <Phone>214-760-8800</Phone>
+    <Fax>214-760-1659</Fax>
+    <Address>2110 MARKET CENTER BLVD DALLAS TX 75207 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>94.00</RateRange_Max>
+    <RateRange_Maxrate>94.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/IndoorPool.svg'/&gt; Indoor Pool&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Fairfield Inn By Marriott</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>79</BasicPropertyInfo_ID>
+    <AreaID>004NE</AreaID>
+    <ChainCode>WG</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0042428</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>WINGATE BY WY DFW NORTH IRVING</HotelName>
+    <Latitude>32.919106</Latitude>
+    <Longitude>-97.007944</Longitude>
+    <Phone>1-972-9294600</Phone>
+    <Fax>1-972-9294602</Fax>
+    <Address>8220 ESTERS BOULEVARD IRVING TX 75038 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Wingate Hotels</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>80</BasicPropertyInfo_ID>
+    <AreaID>008E</AreaID>
+    <ChainCode>WG</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0030960</HotelCode>
+    <HotelCityCode>DFW</HotelCityCode>
+    <HotelName>WINGATE BY WYNDHAM LAS COLINAS</HotelName>
+    <Latitude>32.884876</Latitude>
+    <Longitude>-96.959822</Longitude>
+    <Phone>1-972-7511031</Phone>
+    <Fax>1-866-9108769</Fax>
+    <Address>850 W WALNUT HILL LANE IRVING TX 75038 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='/Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Wingate Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+</NewDataSet>

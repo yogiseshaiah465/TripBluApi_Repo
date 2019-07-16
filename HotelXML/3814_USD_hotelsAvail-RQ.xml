@@ -1,0 +1,1 @@
+<availabilityRQ xmlns="http://www.hotelbeds.com/schemas/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><stay checkIn="2019-06-20" checkOut="2019-06-21" /><occupancies><occupancy rooms="1" adults="1" children="0"></occupancy></occupancies><hotels></hotels></availabilityRQ>

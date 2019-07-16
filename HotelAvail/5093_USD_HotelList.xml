@@ -1,0 +1,1824 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>0</BasicPropertyInfo_ID>
+    <AreaID>014SE</AreaID>
+    <ChainCode>EA</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0036981</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>ESA SAN FRANCISCO-BELMONT</HotelName>
+    <Latitude>37.524690</Latitude>
+    <Longitude>-122.266744</Longitude>
+    <Phone>650-654-0344</Phone>
+    <Fax>650-654-1339</Fax>
+    <Address>120 SEM LANE BELMONT CA 94002 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>119.99</RateRange_Max>
+    <RateRange_Maxrate>119.99</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Pets.svg'/&gt; Pets&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Extended Stay America</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>1</BasicPropertyInfo_ID>
+    <AreaID>001S</AreaID>
+    <ChainCode>WI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0031912</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>THE WESTIN SAN FRANCISCO APO</HotelName>
+    <Latitude>37.604830</Latitude>
+    <Longitude>-122.377122</Longitude>
+    <Phone>1-650-692-3500</Phone>
+    <Fax>1-650-872-8111</Fax>
+    <Address>1 OLD BAYSHORE HIGHWAY MILLBRAE CA 94030 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Westin Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>2</BasicPropertyInfo_ID>
+    <AreaID>020SE</AreaID>
+    <ChainCode>CI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0030825</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>COMFORT INN REDWOOD CITY</HotelName>
+    <Latitude>37.478339</Latitude>
+    <Longitude>-122.224511</Longitude>
+    <Phone>650-599-9636</Phone>
+    <Fax>650-369-6481</Fax>
+    <Address>1818 EL CAMINO REAL REDWOOD CITY CA 94063 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Comfort Inn</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>3</BasicPropertyInfo_ID>
+    <AreaID>004N</AreaID>
+    <ChainCode>RC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0053471</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>RESIDENCE INN SFO APT-OYSTER PT</HotelName>
+    <Latitude>37.665963</Latitude>
+    <Longitude>-122.394933</Longitude>
+    <Phone>650-837-9000</Phone>
+    <Fax>650-837-9088</Fax>
+    <Address>1350 VETERANS BOULEVARD SOUTH SAN FRANCISCO CA 94080 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>189.00</RateRange_Max>
+    <RateRange_Maxrate>189.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Residence Inns</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>4</BasicPropertyInfo_ID>
+    <AreaID>003W</AreaID>
+    <ChainCode>NZ</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0001130</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>VILLA MONTES HOTEL AN ASCEND C</HotelName>
+    <Latitude>37.625672</Latitude>
+    <Longitude>-122.414433</Longitude>
+    <Phone>650-745-0111</Phone>
+    <Fax>650-745-0121</Fax>
+    <Address>620 EL CAMINO REAL SAN BRUNO CA 94066 </Address>
+    <Rating />
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName />
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>5</BasicPropertyInfo_ID>
+    <AreaID>017NE</AreaID>
+    <ChainCode>EA</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0047298</HotelCode>
+    <HotelCityCode>OAK</HotelCityCode>
+    <HotelName>EXTENDEDSTAYDELUXE OAKLAND</HotelName>
+    <Latitude>37.724340</Latitude>
+    <Longitude>-122.234244</Longitude>
+    <Phone>510769-7000</Phone>
+    <Fax>510769-7118</Fax>
+    <Address>1260 SOUTH LOOP ROAD ALAMEDA CA 94502 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>159.99</RateRange_Max>
+    <RateRange_Maxrate>159.99</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Extended Stay America</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>6</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>WI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0000011</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>THE WESTIN ST  FRANCIS</HotelName>
+    <Latitude>37.787710</Latitude>
+    <Longitude>-122.408277</Longitude>
+    <Phone>1-415-397-7000</Phone>
+    <Fax>1-415-774-0124</Fax>
+    <Address>335 POWELL ST SAN FRANCISCO CA 94102 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Westin Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>7</BasicPropertyInfo_ID>
+    <AreaID>019NE</AreaID>
+    <ChainCode>EO</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0040217</HotelCode>
+    <HotelCityCode>OAK</HotelCityCode>
+    <HotelName>ECONO LODGE INN AND SUITES</HotelName>
+    <Latitude>37.727001</Latitude>
+    <Longitude>-122.201444</Longitude>
+    <Phone>510-635-1892</Phone>
+    <Fax>510-635-1292</Fax>
+    <Address>10 HEGENBERGER ROAD OAKLAND CA 94621 </Address>
+    <Rating>images/1stars.png</Rating>
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Econo Lodge</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>8</BasicPropertyInfo_ID>
+    <AreaID>011NW</AreaID>
+    <ChainCode>HX</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0057874</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HAMPTON INN SFO DALY CITY</HotelName>
+    <Latitude>37.691109</Latitude>
+    <Longitude>-122.470977</Longitude>
+    <Phone>1-650-755-7500</Phone>
+    <Fax>1-650-755-9400</Fax>
+    <Address>2700 JUNIPERO SERRA BLVD DALY CITY CA 94015 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>259.00</RateRange_Max>
+    <RateRange_Maxrate>259.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hampton Inns</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>9</BasicPropertyInfo_ID>
+    <AreaID>003SE</AreaID>
+    <ChainCode>GI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0050488</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HILTON GARDEN INN BURLINGAME</HotelName>
+    <Latitude>37.589750</Latitude>
+    <Longitude>-122.348800</Longitude>
+    <Phone>1-650-347-7800</Phone>
+    <Fax>1-650-347-4898</Fax>
+    <Address>765 AIRPORT BOULEVARD BURLINGAME CA 94010 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>209.00</RateRange_Max>
+    <RateRange_Maxrate>209.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Garden Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>10</BasicPropertyInfo_ID>
+    <AreaID>003W</AreaID>
+    <ChainCode>HJ</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0024712</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HOWARD JOHNSON EXPRESS INN SAN</HotelName>
+    <Latitude>37.617539</Latitude>
+    <Longitude>-122.408500</Longitude>
+    <Phone>1-650-5880800</Phone>
+    <Fax>1-650-5885499</Fax>
+    <Address>190 EL CAMINO REAL SAN BRUNO CA 94010 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Howard Johnson</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>11</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>UI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0010890</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HANDLERY UNION SQUARE HOTEL</HotelName>
+    <Latitude>37.787260</Latitude>
+    <Longitude>-122.409099</Longitude>
+    <Phone>415-781-7800</Phone>
+    <Fax>415-781-0269</Fax>
+    <Address>351 GEARY ST SAN FRANCISCO CA 94102 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/KidsFacilities.svg'/&gt; Kids Facilities&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Utell</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>false</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>12</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>KC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0026193</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HARBOR COURT HOTEL - KIMPTON</HotelName>
+    <Latitude>37.792480</Latitude>
+    <Longitude>-122.392222</Longitude>
+    <Phone>415-882-1300</Phone>
+    <Fax>415-882-1313</Fax>
+    <Address>165 STEUART STREET SAN FRANCISCO CA 94105 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Kimpton Group</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>13</BasicPropertyInfo_ID>
+    <AreaID>020NE</AreaID>
+    <ChainCode>BW</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0057964</HotelCode>
+    <HotelCityCode>OAK</HotelCityCode>
+    <HotelName>BEST WESTERN AIRPORT INN SUITE</HotelName>
+    <Latitude>37.735870</Latitude>
+    <Longitude>-122.195355</Longitude>
+    <Phone>1-510-6330500</Phone>
+    <Fax>1-510-6331040</Fax>
+    <Address>170 HEGENBERGER LOOP OAKLAND CA 94621 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Best Western International</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>14</BasicPropertyInfo_ID>
+    <AreaID>004NW</AreaID>
+    <ChainCode>CI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0008820</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>COMFORT INN AND SUITES SFO ARPT</HotelName>
+    <Latitude>37.654440</Latitude>
+    <Longitude>-122.403988</Longitude>
+    <Phone>650-589-7100</Phone>
+    <Fax>650-589-7796</Fax>
+    <Address>121 E GRAND AVE SOUTH SAN FRANCISCO CA 94080 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Comfort Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>15</BasicPropertyInfo_ID>
+    <AreaID>017N</AreaID>
+    <ChainCode>IC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0081285</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>INTERCONTINENTAL SAN FRANCISCO</HotelName>
+    <Latitude>37.781640</Latitude>
+    <Longitude>-122.404766</Longitude>
+    <Phone>1-415-616-6500</Phone>
+    <Fax>1-415-616-6501</Fax>
+    <Address>888 HOWARD STREET SAN FRANCISCO CA 94103 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/IndoorPool.svg'/&gt; Indoor Pool&lt;/sapn&gt;</FetAmenities>
+    <ChainName>InterContinental Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>16</BasicPropertyInfo_ID>
+    <AreaID>004NW</AreaID>
+    <ChainCode>LM</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0035719</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>CITIGARDEN HOTEL</HotelName>
+    <Latitude>37.648250</Latitude>
+    <Longitude>-122.405511</Longitude>
+    <Phone>1-650-589-7200</Phone>
+    <Fax>1-650-589-0191</Fax>
+    <Address>245 S AIRPORT BLVD SOUTH SAN FRANCISCO CA 94080 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>159.00</RateRange_Max>
+    <RateRange_Maxrate>159.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName />
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>17</BasicPropertyInfo_ID>
+    <AreaID>017SE</AreaID>
+    <ChainCode>EA</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0045135</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HOMESTEAD SAN FRANCISCO-SAN CA</HotelName>
+    <Latitude>37.497877</Latitude>
+    <Longitude>-122.240666</Longitude>
+    <Phone>650-368-2600</Phone>
+    <Fax>650-368-5815</Fax>
+    <Address>3 CIRCLE STAR WAY SAN CARLOS CA 94070 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>119.99</RateRange_Max>
+    <RateRange_Maxrate>119.99</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Pets.svg'/&gt; Pets&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Extended Stay America</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>false</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>18</BasicPropertyInfo_ID>
+    <AreaID>004NW</AreaID>
+    <ChainCode>YZ</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0024508</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>STAYBRIDGE SUITES AIRPORT</HotelName>
+    <Latitude>37.641290</Latitude>
+    <Longitude>-122.419700</Longitude>
+    <Phone>650-588-0770</Phone>
+    <Fax>650-588-0892</Fax>
+    <Address>1350 HUNTINGTON AVE SAN BRUNO CA 94066 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Staybridge Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>19</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>HI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0002304</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HOLIDAY INN GOLDEN GATEWAY</HotelName>
+    <Latitude>37.789423</Latitude>
+    <Longitude>-122.422100</Longitude>
+    <Phone>1-415-441-4000</Phone>
+    <Fax>1-415-776-7155</Fax>
+    <Address>1500 VAN NESS AVE SAN FRANCISCO CA 94109 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Holiday Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>20</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>HH</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0042524</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HILTON SAN FRANCISCO FINANCIAL</HotelName>
+    <Latitude>37.795050</Latitude>
+    <Longitude>-122.404911</Longitude>
+    <Phone>1-415-433-6600</Phone>
+    <Fax>1-415-765-7891</Fax>
+    <Address>750 KEARNY STREET SAN FRANCISCO CA 94108 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>229.00</RateRange_Max>
+    <RateRange_Maxrate>229.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hilton Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>21</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>HY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0000959</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>GRAND HYATT SAN FRANCISCO</HotelName>
+    <Latitude>37.789112</Latitude>
+    <Longitude>-122.406900</Longitude>
+    <Phone>1-415-3981234</Phone>
+    <Fax>1-415-3911780</Fax>
+    <Address>345 STOCKTON ST SAN FRANCISCO CA 94108 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max>389.00</RateRange_Max>
+    <RateRange_Maxrate>389.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Pets.svg'/&gt; Pets&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hyatt Hotels &amp; Resorts</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>false</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>22</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>SC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0086276</HotelCode>
+    <HotelCityCode>OAK</HotelCityCode>
+    <HotelName>NATIONAL AT BAYSIDE VILLAGE APA</HotelName>
+    <Latitude>37.785049</Latitude>
+    <Longitude>-122.389699</Longitude>
+    <Phone>1-303-7402267</Phone>
+    <Fax>1-303-8630116</Fax>
+    <Address>THREE BAYSIDE VILLAGE PLACE SAN FRANCISCO CA 94107 </Address>
+    <Rating />
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName />
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>23</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>UZ</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0042621</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>NOB HILL HOTEL</HotelName>
+    <Latitude>37.788680</Latitude>
+    <Longitude>-122.416922</Longitude>
+    <Phone>415-885-2987</Phone>
+    <Fax>415-921-1648</Fax>
+    <Address>835 HYDE STREET SAN FRANCISCO CA 94109 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Unirez</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>24</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>UI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0009885</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>MONARCH HOTEL</HotelName>
+    <Latitude>37.785850</Latitude>
+    <Longitude>-122.420122</Longitude>
+    <Phone>415-673-5232</Phone>
+    <Fax>415-885-2802</Fax>
+    <Address>1015 GEARY STREET SAN FRANCISCO CA 94109 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/KidsFacilities.svg'/&gt; Kids Facilities&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Utell</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>false</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>25</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>KC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0012879</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HOTEL TRITON - A KIMPTON HOTEL</HotelName>
+    <Latitude>37.790212</Latitude>
+    <Longitude>-122.405488</Longitude>
+    <Phone>415-394-0500</Phone>
+    <Fax>415-394-0555</Fax>
+    <Address>342 GRANT AVE SAN FRANCISCO CA 94108 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Kimpton Group</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>26</BasicPropertyInfo_ID>
+    <AreaID>019NE</AreaID>
+    <ChainCode>BH</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0000902</HotelCode>
+    <HotelCityCode>OAK</HotelCityCode>
+    <HotelName>HAWTHORN SUITES OAKLANDALAMEDA</HotelName>
+    <Latitude>37.775497</Latitude>
+    <Longitude>-122.276699</Longitude>
+    <Phone>1-510-5221000</Phone>
+    <Fax>1-510-5221011</Fax>
+    <Address>1628 WEBSTER STREET ALAMEDA CA 94501-3391 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hawthorn Suites</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>27</BasicPropertyInfo_ID>
+    <AreaID>004NW</AreaID>
+    <ChainCode>DI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0033848</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>DAYS INN SAN FRANCISCO SOUTH O</HotelName>
+    <Latitude>37.663412</Latitude>
+    <Longitude>-122.400611</Longitude>
+    <Phone>1-650-8739300</Phone>
+    <Fax>1-650-8736200</Fax>
+    <Address>1113 AIRPORT BLVD SOUTH SAN FRANCISCO CA 94080 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Days Inns</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>28</BasicPropertyInfo_ID>
+    <AreaID>003SW</AreaID>
+    <ChainCode>TL</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0007173</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>TRAVELODGE SAN FRAN APO SOUTH</HotelName>
+    <Latitude>37.597976</Latitude>
+    <Longitude>-122.386599</Longitude>
+    <Phone>1-650-6977373</Phone>
+    <Fax>1-650-6977387</Fax>
+    <Address>110 S EL CAMINO REAL MILLBRAE CA 94030 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Travelodge</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>29</BasicPropertyInfo_ID>
+    <AreaID>017N</AreaID>
+    <ChainCode>TL</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0007044</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>SAN FRANCISCO CENTRAL TRAVELOD</HotelName>
+    <Latitude>37.772456</Latitude>
+    <Longitude>-122.422522</Longitude>
+    <Phone>1-415-6216775</Phone>
+    <Fax>1-415-6214305</Fax>
+    <Address>1707 MARKET STREET SAN FRANCISCO CA 94103 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Travelodge</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>30</BasicPropertyInfo_ID>
+    <AreaID>003NW</AreaID>
+    <ChainCode>CI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0040876</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>COMFORT INN AND SUITES SAN BRUN</HotelName>
+    <Latitude>37.630872</Latitude>
+    <Longitude>-122.407544</Longitude>
+    <Phone>650-589-5089</Phone>
+    <Fax>650-837-9701</Fax>
+    <Address>611 SAN BRUNO AVE. EAST SAN BRUNO CA 94066 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Comfort Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>31</BasicPropertyInfo_ID>
+    <AreaID>001S</AreaID>
+    <ChainCode>CC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0008503</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>CLARION HOTEL SAN FRANCISCO ARP</HotelName>
+    <Latitude>37.604140</Latitude>
+    <Longitude>-122.377744</Longitude>
+    <Phone>650-692-6363</Phone>
+    <Fax>650-777-7719</Fax>
+    <Address>401 E MILLBRAE AVE MILLBRAE CA 94030 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Clarion Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>32</BasicPropertyInfo_ID>
+    <AreaID>017SE</AreaID>
+    <ChainCode>UZ</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0055126</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>GOOD NITE INN REDWOOD CITY   S</HotelName>
+    <Latitude>37.494794</Latitude>
+    <Longitude>-122.234744</Longitude>
+    <Phone>650-365-5500</Phone>
+    <Fax>650-365-1119</Fax>
+    <Address>485 VETERANS BLVD REDWOOD CITY CA 94063 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/OutdoorPool.svg'/&gt; Outdoor Pool&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Unirez</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>33</BasicPropertyInfo_ID>
+    <AreaID>009SE</AreaID>
+    <ChainCode>MC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0042542</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>MARRIOTT SAN MATEO</HotelName>
+    <Latitude>37.556072</Latitude>
+    <Longitude>-122.299666</Longitude>
+    <Phone>650-653-6000</Phone>
+    <Fax>650-653-6088</Fax>
+    <Address>1770 S AMPHLETT BOULEVARD SAN MATEO CA 94402 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>179.00</RateRange_Max>
+    <RateRange_Maxrate>179.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Marriott Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>34</BasicPropertyInfo_ID>
+    <AreaID>003SW</AreaID>
+    <ChainCode>QI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0061414</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>QUALITY SUITES MILLBRAE</HotelName>
+    <Latitude>37.601059</Latitude>
+    <Longitude>-122.390100</Longitude>
+    <Phone>650-259-0400</Phone>
+    <Fax>650-692-5511</Fax>
+    <Address>250 EL CAMINO REAL MILLBRAE CA 94030 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Quality Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>35</BasicPropertyInfo_ID>
+    <AreaID>004W</AreaID>
+    <ChainCode>CY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0017079</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>COURTYARD SAN FRANCISCO AIRPORT</HotelName>
+    <Latitude>37.629870</Latitude>
+    <Longitude>-122.419644</Longitude>
+    <Phone>650-952-3333</Phone>
+    <Fax>650-952-4707</Fax>
+    <Address>1050 BAYHILL DR SAN BRUNO CA 94066 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>169.00</RateRange_Max>
+    <RateRange_Maxrate>169.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Courtyard by Marriott</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>36</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>MC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0019121</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>MARRIOTT SAN FRANCISCO MARQUIS</HotelName>
+    <Latitude>37.785034</Latitude>
+    <Longitude>-122.404888</Longitude>
+    <Phone>415-896-1600</Phone>
+    <Fax>415-486-8101</Fax>
+    <Address>55 FOURTH ST SAN FRANCISCO CA 94103 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max>189.00</RateRange_Max>
+    <RateRange_Maxrate>189.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Marriott Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>37</BasicPropertyInfo_ID>
+    <AreaID>004SE</AreaID>
+    <ChainCode>HH</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0003778</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HILTON SAN FRANCISCO AIRPORT</HotelName>
+    <Latitude>37.589450</Latitude>
+    <Longitude>-122.343455</Longitude>
+    <Phone>1-650-340-8500</Phone>
+    <Fax>1-650-343-1546</Fax>
+    <Address>600 AIRPORT BLVD BURLINGAME CA 94010 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>469.00</RateRange_Max>
+    <RateRange_Maxrate>469.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Hilton Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>38</BasicPropertyInfo_ID>
+    <AreaID>003W</AreaID>
+    <ChainCode>CI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0008173</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>COMFORT INN AIRPORT WEST</HotelName>
+    <Latitude>37.610470</Latitude>
+    <Longitude>-122.401455</Longitude>
+    <Phone>650-952-3200</Phone>
+    <Fax>650-952-0474</Fax>
+    <Address>1390 EL CAMINO REAL MILLBRAE CA 94030 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Comfort Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>39</BasicPropertyInfo_ID>
+    <AreaID>020NE</AreaID>
+    <ChainCode>CY</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0056560</HotelCode>
+    <HotelCityCode>OAK</HotelCityCode>
+    <HotelName>COURTYARD OAKLAND AIRPORT</HotelName>
+    <Latitude>37.735455</Latitude>
+    <Longitude>-122.197255</Longitude>
+    <Phone>510-568-7600</Phone>
+    <Fax>510-568-7695</Fax>
+    <Address>350 HEGENBERGER OAKLAND CA 94621 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>179.00</RateRange_Max>
+    <RateRange_Maxrate>179.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Courtyard by Marriott</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>true</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>40</BasicPropertyInfo_ID>
+    <AreaID>003NW</AreaID>
+    <ChainCode>QI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0005855</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>QUALITY INN N SUITES-SOUTH SAN</HotelName>
+    <Latitude>37.642620</Latitude>
+    <Longitude>-122.403366</Longitude>
+    <Phone>650-875-7878</Phone>
+    <Fax>650-875-0961</Fax>
+    <Address>410 S AIRPORT BLVD SOUTH SAN FRANCISCO CA 94080 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Quality Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>41</BasicPropertyInfo_ID>
+    <AreaID>009SE</AreaID>
+    <ChainCode>GI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0045142</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HILTON GARDEN INN SAN MATEO</HotelName>
+    <Latitude>37.563769</Latitude>
+    <Longitude>-122.283033</Longitude>
+    <Phone>1-650-522-9000</Phone>
+    <Fax>1-650-522-9099</Fax>
+    <Address>2000 BRIDGEPOINT CIRCLE SAN MATEO CA 94404 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>199.00</RateRange_Max>
+    <RateRange_Maxrate>199.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Garden Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>42</BasicPropertyInfo_ID>
+    <AreaID>020SE</AreaID>
+    <ChainCode>HI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0059219</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HOLIDAY INN EXP REDWOOD CENTRL</HotelName>
+    <Latitude>37.478007</Latitude>
+    <Longitude>-122.224055</Longitude>
+    <Phone>1-650-299-0909</Phone>
+    <Fax>1-650-299-0907</Fax>
+    <Address>1836 EL CAMINO REAL REDWOOD CITY CA 94063 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Holiday Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>43</BasicPropertyInfo_ID>
+    <AreaID>014SE</AreaID>
+    <ChainCode>HI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0021714</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>HOLIDAY INN EXP STES BELMONT</HotelName>
+    <Latitude>37.513812</Latitude>
+    <Longitude>-122.268377</Longitude>
+    <Phone>1-650-654-4000</Phone>
+    <Fax>1-650-654-4001</Fax>
+    <Address>1650 EL CAMINO REAL BELMONT CA 94002-3939 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Holiday Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>44</BasicPropertyInfo_ID>
+    <AreaID>019NE</AreaID>
+    <ChainCode>DI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0020657</HotelCode>
+    <HotelCityCode>OAK</HotelCityCode>
+    <HotelName>DAYS INN ALAMEDA OAKLAND</HotelName>
+    <Latitude>37.779060</Latitude>
+    <Longitude>-122.276555</Longitude>
+    <Phone>1-510-5218400</Phone>
+    <Fax>1-510-5218406</Fax>
+    <Address>1925 WEBSTER STREET ALAMEDA CA 94501 </Address>
+    <Rating>images/1stars.png</Rating>
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Days Inns</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>45</BasicPropertyInfo_ID>
+    <AreaID>004NW</AreaID>
+    <ChainCode>ES</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0026588</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>EMBASSY SUITES SFO ARPT SOUTH</HotelName>
+    <Latitude>37.655630</Latitude>
+    <Longitude>-122.401800</Longitude>
+    <Phone>1-650-589-3400</Phone>
+    <Fax>1-650-876-0305</Fax>
+    <Address>250 GATEWAY BLVD SOUTH SAN FRANCISCO CA 94080 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>229.95</RateRange_Max>
+    <RateRange_Maxrate>229.95</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Embassy Suites</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>true</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>46</BasicPropertyInfo_ID>
+    <AreaID>020NE</AreaID>
+    <ChainCode>EA</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0055418</HotelCode>
+    <HotelCityCode>OAK</HotelCityCode>
+    <HotelName>ESA OAKLAND-ALAMEDA</HotelName>
+    <Latitude>37.787581</Latitude>
+    <Longitude>-122.275222</Longitude>
+    <Phone>510864-1333</Phone>
+    <Fax>510864-7477</Fax>
+    <Address>1350 MARINA VILLAGE PARKWAY ALAMEDA CA 94501 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max>119.99</RateRange_Max>
+    <RateRange_Maxrate>119.99</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Extended Stay America</ChainName>
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>false</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>47</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>KH</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0021897</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>THE MOSSER</HotelName>
+    <Latitude>37.785060</Latitude>
+    <Longitude>-122.404922</Longitude>
+    <Phone>1-415-986-4400</Phone>
+    <Fax>1-415-495-4337</Fax>
+    <Address>54 FOURTH STREET SAN FRANCISCO CA 94103 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max>90.30</RateRange_Max>
+    <RateRange_Maxrate>90.30</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/NonSmoking.svg'/&gt; Non Smoking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Kerry Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>48</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>FA</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0012950</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>FAIRMONT SAN FRANCISCO</HotelName>
+    <Latitude>37.792307</Latitude>
+    <Longitude>-122.410899</Longitude>
+    <Phone>1-415-772-5000</Phone>
+    <Fax>1-415-772-5042</Fax>
+    <Address>950 MASON STREET SAN FRANCISCO CA 94108 </Address>
+    <Rating>images/5stars.png</Rating>
+    <RatingValue>5</RatingValue>
+    <RateRange_Max>255.00</RateRange_Max>
+    <RateRange_Maxrate>255.00</RateRange_Maxrate>
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/ADA_Accessible.svg'/&gt; Accessible&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Fairmont Hotels</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>true</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>49</BasicPropertyInfo_ID>
+    <AreaID>009N</AreaID>
+    <ChainCode>MS</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0071151</HotelCode>
+    <HotelCityCode>JCC</HotelCityCode>
+    <HotelName>BRIDGEPOINT INN DALY CITY</HotelName>
+    <Latitude>37.704967</Latitude>
+    <Longitude>-122.407988</Longitude>
+    <Phone>415-467-5600</Phone>
+    <Fax>415-467-0491</Fax>
+    <Address>3255 GENEVA AVENUE DALY CITY CA 94014 </Address>
+    <Rating>images/1stars.png</Rating>
+    <RatingValue>1</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName />
+    <Fitness>false</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>50</BasicPropertyInfo_ID>
+    <AreaID>003W</AreaID>
+    <ChainCode>UI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0004485</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>MILLWOOD INN AND SUITES</HotelName>
+    <Latitude>37.610073</Latitude>
+    <Longitude>-122.401311</Longitude>
+    <Phone>650-583-3935</Phone>
+    <Fax>650-875-4354</Fax>
+    <Address>1375 EL CAMINO REAL MILLBRAE CA 94030 </Address>
+    <Rating>images/2stars.png</Rating>
+    <RatingValue>2</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/Breakfast.svg'/&gt; Breakfast&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Utell</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>false</Internet>
+    <Breakfast>true</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>51</BasicPropertyInfo_ID>
+    <AreaID>019N</AreaID>
+    <ChainCode>KC</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0016518</HotelCode>
+    <HotelCityCode>SFO</HotelCityCode>
+    <HotelName>PRESCOTT HOTEL - A KIMPTON HTL</HotelName>
+    <Latitude>37.787970</Latitude>
+    <Longitude>-122.410755</Longitude>
+    <Phone>415-563-0303</Phone>
+    <Fax>415-563-6831</Fax>
+    <Address>545 POST ST SAN FRANCISCO CA 94102 </Address>
+    <Rating>images/4stars.png</Rating>
+    <RatingValue>4</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/HighSpeedInternet.svg'/&gt; High Speed Internet&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Kimpton Group</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>false</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>true</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>false</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+  <Table1>
+    <MainImage>images/No Image found.png</MainImage>
+    <Logo>images/No Image found.png</Logo>
+    <BasicPropertyInfo_ID>52</BasicPropertyInfo_ID>
+    <AreaID>019NE</AreaID>
+    <ChainCode>HI</ChainCode>
+    <GEO_ConfidenceLevel />
+    <HotelCode>0085482</HotelCode>
+    <HotelCityCode>OAK</HotelCityCode>
+    <HotelName>HOLIDAY INN HTL STES AIRPORT</HotelName>
+    <Latitude>37.729347</Latitude>
+    <Longitude>-122.200460</Longitude>
+    <Phone>1-510-638-7777</Phone>
+    <Fax>1-510-638-7700</Fax>
+    <Address>77 HEGENBERGER ROAD OAKLAND CA 94621 </Address>
+    <Rating>images/3stars.png</Rating>
+    <RatingValue>3</RatingValue>
+    <RateRange_Max />
+    <FetAmenities>&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/BusinessCenter.svg'/&gt; Business Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FitnessCenter.svg'/&gt; Fitness Center&lt;/sapn&gt;&lt;sapn class='eminites-blcksr'&gt;&lt;img  src='../Images/amenities/FreeParking.svg'/&gt; FreeParking&lt;/sapn&gt;</FetAmenities>
+    <ChainName>Holiday Inn</ChainName>
+    <Fitness>true</Fitness>
+    <Hottub>false</Hottub>
+    <Indpool>false</Indpool>
+    <Internet>true</Internet>
+    <Breakfast>false</Breakfast>
+    <Freeparking>true</Freeparking>
+    <Nonsmoking>true</Nonsmoking>
+    <accessible>false</accessible>
+    <pets>false</pets>
+    <airport />
+    <Business>true</Business>
+    <Outpool>true</Outpool>
+    <Kids>false</Kids>
+  </Table1>
+</NewDataSet>

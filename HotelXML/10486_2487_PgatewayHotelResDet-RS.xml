@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<txn><errorCode>6042</errorCode><errorName>Invalid Request Format</errorName><errorMessage>XML request is not well-formed or request is incomplete.</errorMessage></txn>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<availabilityRS xmlns="http://www.hotelbeds.com/schemas/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://www.hotelbeds.com/schemas/messages">
+  <auditData processTime="37" timestamp="2018-11-20 17:22:08.568" requestHost="183.82.118.156" serverId="sa3RKSJACHXE79K.env" environment="[int]" release="4e21884df45756e39e474aab3fe4fbc6adfcbcb0" token="f86ec79a-ba20-45cd-94d9-946c689a30cd" internal="0|544A959B90394F0F967D4B4C657BBFDB1722|UK|05|1|2||||||||||||4||1~1~1~0|0|0||0|ywj295pwmk98egeuvs2taztm|||" />
+  <hotels checkIn="2019-01-02" total="1" checkOut="2019-01-03">
+    <hotel code="163281" name="Comfort Inn &amp; Suites Convention Center" categoryCode="H3_5" categoryName="3 STARS AND A HALF" destinationCode="MCO" destinationName="Orlando Area - Florida - FL" zoneCode="8" zoneName="International Drive Area" latitude="28.453246" longitude="-81.46757000000002" minRate="95.05" maxRate="95.05" currency="USD">
+      <reviews>
+        <review rate="4.4" reviewCount="16" type="HOTELBEDS" />
+      </reviews>
+      <rooms>
+        <room code="DBL.2Q" name="DOUBLE TWO QUEEN BEDS">
+          <rates>
+            <rate rateKey="20190102|20190103|W|235|163281|DBL.2Q|GC-PPAT2|AB||1~1~0||N@544A959B90394F0F967D4B4C657BBFDB1722" rateClass="NOR" rateType="BOOKABLE" net="95.05" allotment="8" paymentType="AT_WEB" packaging="false" boardCode="AB" boardName="AMERICAN BREAKFAST" rooms="1" adults="1" children="0">
+              <cancellationPolicies>
+                <cancellationPolicy amount="95.05" from="2018-12-30T23:59:00-05:00" />
+              </cancellationPolicies>
+            </rate>
+          </rates>
+        </room>
+        <room code="TWN.2Q" name="TWIN TWO QUEEN BEDS">
+          <rates>
+            <rate rateKey="20190102|20190103|W|235|163281|TWN.2Q|GC-PPAT2|AB||1~1~0||N@544A959B90394F0F967D4B4C657BBFDB1722" rateClass="NOR" rateType="BOOKABLE" net="95.05" allotment="8" paymentType="AT_WEB" packaging="false" boardCode="AB" boardName="AMERICAN BREAKFAST" rooms="1" adults="1" children="0">
+              <cancellationPolicies>
+                <cancellationPolicy amount="95.05" from="2018-12-30T23:59:00-05:00" />
+              </cancellationPolicies>
+            </rate>
+          </rates>
+        </room>
+      </rooms>
+    </hotel>
+  </hotels>
+</availabilityRS>

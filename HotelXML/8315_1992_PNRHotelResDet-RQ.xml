@@ -1,0 +1,20 @@
+<bookingRQ xmlns='http://www.hotelbeds.com/schemas/messages' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+  <holder name='praveen' surname='kotha'/>
+  <clientReference>IntegrationAgency</clientReference>
+  <rooms>
+    <room rateKey='20190220|20190221|W|235|16927|DBL.ST|GC-ALL3NIGHTS|RO||1~2~2|5~8|N@1A21E9E0BDD14B81546949848326AAUK000002900140002091531'>
+      <paxes>
+        <pax roomId='1' type='AD' name='prav' surname='kotha'/>
+        <pax roomId='1' type='CH' age='5'/>
+        <pax roomId='1' type='CH' age='8'/>
+      </paxes>
+    </room>
+    <room rateKey='20190220|20190221|W|235|16927|DBL.ST|GC-ALL3NIGHTS|RO||1~2~1|3|N@1A21E9E0BDD14B81546949848326AAUK000002900140002091531'>
+      <paxes>
+        <pax roomId='1' type='AD' name='vinay' surname='kotha'/>
+        <pax roomId='1' type='CH' age='3'/>
+      </paxes>
+    </room>
+  </rooms>
+  <remark>Booking remarks are to be written here.</remark>
+</bookingRQ>

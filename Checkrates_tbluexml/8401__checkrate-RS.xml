@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<checkRateRS xmlns="http://www.hotelbeds.com/schemas/messages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://www.hotelbeds.com/schemas/messages">
+  <auditData processTime="273" timestamp="2019-01-18 20:43:53.301" requestHost="183.82.118.156, 176.34.239.206" serverId="ip-10-185-89-116.eu-west-1.compute.internal.node.int-hbg-aws-eu-west-1.discovery" environment="[awseuwest1, awseuwest1a, ip_10_185_89_116]" release="2038592e2d8920190c97b24497c79205a5cfef11" token="45e0dc44-1420-4241-8f77-fb66756768f7" internal="0|2F61D36569544B61547832986426AAUS0000027001000010922681|US|09|27|8|||||||||||R|1|1|~1~1~1|0|10||1|ywj295pwmk98egeuvs2taztm|||" />
+  <hotel checkOut="2019-02-21" checkIn="2019-02-20" code="106913" name="Tuscana Resort" categoryCode="H3_5" categoryName="3 STARS AND A HALF" destinationCode="MCO" destinationName="Orlando Area - Florida - FL" zoneCode="9" zoneName="Kissimmee Area" latitude="28.268333" longitude="-81.609583" totalNet="129.38" currency="USD" paymentDataRequired="true">
+    <rooms>
+      <room code="APT.B3" name="APARTMENT THREE BEDROOMS">
+        <rates>
+          <rate rateKey="20190220|20190221|W|235|106913|APT.B3|ID_B2B_55|RO|NOR|1~1~1|6|N@2F61D36569544B61547832986426AAUS0000027001000010922681" rateClass="NOR" rateType="BOOKABLE" net="129.38" rateComments="Check-in hour 16:00-22:00.Minimum check-in age 21.Deposit on arrival.Car park NO." paymentType="AT_WEB" packaging="false" boardCode="RO" boardName="ROOM ONLY" rooms="1" adults="1" children="1" childrenAges="6">
+            <cancellationPolicies>
+              <cancellationPolicy amount="64.69" from="2019-02-12T23:59:00-05:00" />
+              <cancellationPolicy amount="129.38" from="2019-02-17T23:59:00-05:00" />
+            </cancellationPolicies>
+          </rate>
+        </rates>
+      </room>
+    </rooms>
+    <upselling>
+      <rooms>
+        <room code="APT.B3" name="APARTMENT THREE BEDROOMS">
+          <rates>
+            <rate rateKey="20190220|20190221|W|235|106913|APT.B3|ID_B2B_55|BB|NOR|1~1~1|6|N@E5DB0CB0E2214A31547840633230AAUS0000001000100010524c102" rateClass="NOR" rateType="RECHECK" net="258.76" allotment="3" paymentType="AT_WEB" packaging="false" boardCode="BB" boardName="BED AND BREAKFAST" rooms="1" adults="1" children="1" childrenAges="6" rateup="129.38">
+              <cancellationPolicies>
+                <cancellationPolicy amount="129.38" from="2019-02-12T23:59:00-05:00" />
+                <cancellationPolicy amount="258.76" from="2019-02-17T23:59:00-05:00" />
+              </cancellationPolicies>
+            </rate>
+            <rate rateKey="20190220|20190221|W|235|106913|APT.B3|ID_B2B_55|FB|NOR|1~1~1|6|N@E5DB0CB0E2214A31547840633230AAUS000000100010001051e184" rateClass="NOR" rateType="RECHECK" net="388.14" allotment="3" paymentType="AT_WEB" packaging="false" boardCode="FB" boardName="FULL BOARD" rooms="1" adults="1" children="1" childrenAges="6" rateup="258.76">
+              <cancellationPolicies>
+                <cancellationPolicy amount="194.07" from="2019-02-12T23:59:00-05:00" />
+                <cancellationPolicy amount="388.14" from="2019-02-17T23:59:00-05:00" />
+              </cancellationPolicies>
+            </rate>
+            <rate rateKey="20190220|20190221|W|235|106913|APT.B3|ID_B2B_55|HB|NOR|1~1~1|6|N@E5DB0CB0E2214A31547840633230AAUS0000001000100010522c143" rateClass="NOR" rateType="RECHECK" net="323.44" allotment="3" paymentType="AT_WEB" packaging="false" boardCode="HB" boardName="HALF BOARD" rooms="1" adults="1" children="1" childrenAges="6" rateup="194.06">
+              <cancellationPolicies>
+                <cancellationPolicy amount="161.73" from="2019-02-12T23:59:00-05:00" />
+                <cancellationPolicy amount="323.44" from="2019-02-17T23:59:00-05:00" />
+              </cancellationPolicies>
+            </rate>
+          </rates>
+        </room>
+        <room code="APT.B2" name="APARTMENT TWO BEDROOMS">
+          <rates>
+            <rate rateKey="20190220|20190221|W|235|106913|APT.B2|ID_B2B_55|BB|NOR|1~1~1|6|N@E5DB0CB0E2214A31547840633230AAUS0000001000100010522c143" rateClass="NOR" rateType="RECHECK" net="323.44" allotment="3" paymentType="AT_WEB" packaging="false" boardCode="BB" boardName="BED AND BREAKFAST" rooms="1" adults="1" children="1" childrenAges="6" rateup="194.06">
+              <cancellationPolicies>
+                <cancellationPolicy amount="161.73" from="2019-02-12T23:59:00-05:00" />
+                <cancellationPolicy amount="323.44" from="2019-02-17T23:59:00-05:00" />
+              </cancellationPolicies>
+            </rate>
+            <rate rateKey="20190220|20190221|W|235|106913|APT.B2|ID_B2B_55|FB|NOR|1~1~1|6|N@E5DB0CB0E2214A31547840633230AAUS000000100010001052531c4" rateClass="NOR" rateType="RECHECK" net="452.83" allotment="3" paymentType="AT_WEB" packaging="false" boardCode="FB" boardName="FULL BOARD" rooms="1" adults="1" children="1" childrenAges="6" rateup="323.45">
+              <cancellationPolicies>
+                <cancellationPolicy amount="226.41" from="2019-02-12T23:59:00-05:00" />
+                <cancellationPolicy amount="452.83" from="2019-02-17T23:59:00-05:00" />
+              </cancellationPolicies>
+            </rate>
+            <rate rateKey="20190220|20190221|W|235|106913|APT.B2|ID_B2B_55|RO|NOR|1~1~1|6|N@E5DB0CB0E2214A31547840633230AAUS0000001000100010517c2" rateClass="NOR" rateType="RECHECK" net="194.07" allotment="3" paymentType="AT_WEB" packaging="false" boardCode="RO" boardName="ROOM ONLY" rooms="1" adults="1" children="1" childrenAges="6" rateup="64.69">
+              <cancellationPolicies>
+                <cancellationPolicy amount="97.03" from="2019-02-12T23:59:00-05:00" />
+                <cancellationPolicy amount="194.07" from="2019-02-17T23:59:00-05:00" />
+              </cancellationPolicies>
+            </rate>
+            <rate rateKey="20190220|20190221|W|235|106913|APT.B2|ID_B2B_55|HB|NOR|1~1~1|6|N@E5DB0CB0E2214A31547840633230AAUS000000100010001051e184" rateClass="NOR" rateType="RECHECK" net="388.14" allotment="3" paymentType="AT_WEB" packaging="false" boardCode="HB" boardName="HALF BOARD" rooms="1" adults="1" children="1" childrenAges="6" rateup="258.76">
+              <cancellationPolicies>
+                <cancellationPolicy amount="194.07" from="2019-02-12T23:59:00-05:00" />
+                <cancellationPolicy amount="388.14" from="2019-02-17T23:59:00-05:00" />
+              </cancellationPolicies>
+            </rate>
+          </rates>
+        </room>
+      </rooms>
+    </upselling>
+  </hotel>
+</checkRateRS>
