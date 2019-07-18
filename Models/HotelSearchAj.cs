@@ -142,8 +142,6 @@ public class HotelSearchAj
             {
 
 
-
-
                 //_obj.Hotels.Hotel = _obj.Hotels.Hotel.Where(k => Convert.ToDouble(Convert.ToDouble(k.MinRate)/(dc)) >= Convert.ToDouble(vlprice)
                 //       && Convert.ToDouble(Convert.ToDouble(k.MinRate)/dc) <= Convert.ToDouble(vhprice)).ToList();
 
@@ -166,10 +164,10 @@ public class HotelSearchAj
             {
                 xml += "<hotels checkIn='" + objAvailabilityRS2.Hotels.CheckIn + "' total='300' checkOut='" + objAvailabilityRS2.Hotels.CheckOut + "'>";
 
-
+                int j = 0;
                 foreach (var item in objAvailabilityRS2.Hotels.Hotel)
                 {
-                    for (int i = 0; i <= 300; i++)
+                    try
                     {
                         xml += "<hotel code='" + item.Code + "' name='" + item.Name.Replace("&", "").Replace("'", "") + "' categoryCode='" + item.CategoryCode.Replace("'", "") + "' categoryName='" + item.CategoryName.Replace("'", "") + "' destinationCode='" + item.DestinationCode.Replace("'", "") + "' destinationName='" + item.DestinationName.Replace("'", "") + "' zoneCode='" + item.ZoneCode + "' zoneName='" + item.ZoneName.Replace("'", "") + "' latitude='" + item.Latitude + "' longitude='" + item.Longitude + "' minRate='" + item.MinRate + "' maxRate='" + item.MaxRate + "' currency='" + item.Currency + "'>";
                         foreach (var itemrev in objAvailabilityRS1.Hotels.Hotel)
@@ -188,20 +186,38 @@ public class HotelSearchAj
                             xml += "<rates>";
                             foreach (var itemrates in itemrooms.Rates.Rate)
                             {
+
                                 xml += "<rate rateKey='" + itemrates.RateKey + "' rateClass='" + itemrates.RateClass + "' rateType='" + itemrates.RateType + "' net='" + itemrates.Net + "' allotment='" + itemrates.Allotment + "' paymentType='" + itemrates.PaymentType + "' packaging='" + itemrates.Packaging + "' boardCode='" + itemrates.BoardCode + "' boardName='" + itemrates.BoardName + "' rooms='" + itemrates.Rooms + "' adults='" + itemrates.Adults + "' children='" + itemrates.Children + "'>";
-                                xml += "<taxes allIncluded='" + itemrates.Taxes.AllIncluded + "'>";
-                                xml += "<tax included='" + itemrates.Taxes.Tax.Included + "' amount='" + itemrates.Taxes.Tax.Amount + "' currency='" + itemrates.Taxes.Tax.Currency + "' type='" + itemrates.Taxes.Tax.type + "' />";
-                                xml += "</taxes>";
+                                if (itemrates.CancellationPolicies != null)
+                                {
+                                    xml += "<cancellationPolicies>";
+                                    xml += "<cancellationPolicy amount='" + itemrates.CancellationPolicies.CancellationPolicy.Amount + "' from='" + itemrates.CancellationPolicies.CancellationPolicy.From + "' />";
+                                    xml += "</cancellationPolicies>";
+                                }
+                                if (itemrates.Taxes != null)
+                                {
+                                    xml += "<taxes allIncluded='" + itemrates.Taxes.AllIncluded + "'>";
+                                    xml += "<tax included='" + itemrates.Taxes.Tax.Included + "' amount='" + itemrates.Taxes.Tax.Amount + "' currency='" + itemrates.Taxes.Tax.Currency + "' type='" + itemrates.Taxes.Tax.type + "' />";
+                                    xml += "</taxes>";
+                                }
                                 xml += "</rate>";
+
                             }
                             xml += "</rates>";
                             xml += "</room> ";
                         }
                         xml += "</rooms>";
                         xml += "</hotel>";
+                        j++;
+                        if (j == 300)
+                            break;
                     }
+                    catch (Exception ex)
+                    {
 
+                    }
                 }
+
 
                 xml += "</hotels>";
             }
