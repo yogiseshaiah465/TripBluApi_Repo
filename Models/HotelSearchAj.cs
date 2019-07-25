@@ -187,7 +187,15 @@ public class HotelSearchAj
                             foreach (var itemrates in itemrooms.Rates.Rate)
                             {
 
-                                xml += "<rate rateKey='" + itemrates.RateKey + "' rateClass='" + itemrates.RateClass + "' rateType='" + itemrates.RateType + "' net='" + itemrates.Net + "' allotment='" + itemrates.Allotment + "' paymentType='" + itemrates.PaymentType + "' packaging='" + itemrates.Packaging + "' boardCode='" + itemrates.BoardCode + "' boardName='" + itemrates.BoardName + "' rooms='" + itemrates.Rooms + "' adults='" + itemrates.Adults + "' children='" + itemrates.Children + "'>";
+                                if (itemrates.ChildrenAges != null)
+                                {
+
+                                    xml += "<rate rateKey='" + itemrates.RateKey + "' rateClass='" + itemrates.RateClass + "' rateType='" + itemrates.RateType + "' net='" + itemrates.Net + "' allotment='" + itemrates.Allotment + "' paymentType='" + itemrates.PaymentType + "' packaging='" + itemrates.Packaging + "' boardCode='" + itemrates.BoardCode + "' boardName='" + itemrates.BoardName + "' rooms='" + itemrates.Rooms + "' adults='" + itemrates.Adults + "' children='" + itemrates.Children + "' childrenAges='" + itemrates.ChildrenAges + "'>";
+                                }
+                                else
+                                {
+                                    xml += "<rate rateKey='" + itemrates.RateKey + "' rateClass='" + itemrates.RateClass + "' rateType='" + itemrates.RateType + "' net='" + itemrates.Net + "' allotment='" + itemrates.Allotment + "' paymentType='" + itemrates.PaymentType + "' packaging='" + itemrates.Packaging + "' boardCode='" + itemrates.BoardCode + "' boardName='" + itemrates.BoardName + "' rooms='" + itemrates.Rooms + "' adults='" + itemrates.Adults + "' children='" + itemrates.Children + "'>";
+                                }
                                 if (itemrates.CancellationPolicies != null)
                                 {
                                     xml += "<cancellationPolicies>";
@@ -243,10 +251,27 @@ public class HotelSearchAj
                         xml += "<rates>";
                         foreach (var itemrates in itemrooms.Rates.Rate)
                         {
-                            xml += "<rate rateKey='" + itemrates.RateKey + "' rateClass='" + itemrates.RateClass + "' rateType='" + itemrates.RateType + "' net='" + itemrates.Net + "' allotment='" + itemrates.Allotment + "' paymentType='" + itemrates.PaymentType + "' packaging='" + itemrates.Packaging + "' boardCode='" + itemrates.BoardCode + "' boardName='" + itemrates.BoardName + "' rooms='" + itemrates.Rooms + "' adults='" + itemrates.Adults + "' children='" + itemrates.Children + "'>";
-                            xml += "<taxes allIncluded='" + itemrates.Taxes.AllIncluded + "'>";
-                            xml += "<tax included='" + itemrates.Taxes.Tax.Included + "' amount='" + itemrates.Taxes.Tax.Amount + "' currency='" + itemrates.Taxes.Tax.Currency + "' type='" + itemrates.Taxes.Tax.type + "' />";
-                            xml += "</taxes>";
+                            if (itemrates.ChildrenAges != null)
+                            {
+
+                                xml += "<rate rateKey='" + itemrates.RateKey + "' rateClass='" + itemrates.RateClass + "' rateType='" + itemrates.RateType + "' net='" + itemrates.Net + "' allotment='" + itemrates.Allotment + "' paymentType='" + itemrates.PaymentType + "' packaging='" + itemrates.Packaging + "' boardCode='" + itemrates.BoardCode + "' boardName='" + itemrates.BoardName + "' rooms='" + itemrates.Rooms + "' adults='" + itemrates.Adults + "' children='" + itemrates.Children + "' childrenAges='" + itemrates.ChildrenAges + "'>";
+                            }
+                            else
+                            {
+                                xml += "<rate rateKey='" + itemrates.RateKey + "' rateClass='" + itemrates.RateClass + "' rateType='" + itemrates.RateType + "' net='" + itemrates.Net + "' allotment='" + itemrates.Allotment + "' paymentType='" + itemrates.PaymentType + "' packaging='" + itemrates.Packaging + "' boardCode='" + itemrates.BoardCode + "' boardName='" + itemrates.BoardName + "' rooms='" + itemrates.Rooms + "' adults='" + itemrates.Adults + "' children='" + itemrates.Children + "'>";
+                            }
+                            if (itemrates.CancellationPolicies != null)
+                            {
+                                xml += "<cancellationPolicies>";
+                                xml += "<cancellationPolicy amount='" + itemrates.CancellationPolicies.CancellationPolicy.Amount + "' from='" + itemrates.CancellationPolicies.CancellationPolicy.From + "' />";
+                                xml += "</cancellationPolicies>";
+                            }
+                            if (itemrates.Taxes != null)
+                            {
+                                xml += "<taxes allIncluded='" + itemrates.Taxes.AllIncluded + "'>";
+                                xml += "<tax included='" + itemrates.Taxes.Tax.Included + "' amount='" + itemrates.Taxes.Tax.Amount + "' currency='" + itemrates.Taxes.Tax.Currency + "' type='" + itemrates.Taxes.Tax.type + "' />";
+                                xml += "</taxes>";
+                            }
                             xml += "</rate>";
                         }
                         xml += "</rates>";
