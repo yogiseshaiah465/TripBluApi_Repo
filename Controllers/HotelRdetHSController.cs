@@ -237,7 +237,7 @@ namespace TripxolHotelsWebapi.Controllers
                                 }
 
                             }
-                            catch
+                            catch(Exception ex)
                             {
 
 
