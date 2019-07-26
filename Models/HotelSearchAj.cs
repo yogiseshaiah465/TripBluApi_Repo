@@ -304,21 +304,6 @@ public class HotelSearchAj
     #endregion end create Hotelbeds XML
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public DataTable dtOTA_HotelAvail = new DataTable();
     public DataTable dtCityList = new DataTable();
     public DataTable dtBasicPropInfo = new DataTable();
