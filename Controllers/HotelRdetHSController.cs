@@ -69,7 +69,7 @@ namespace TripxolHotelsWebapi.Controllers
             stravroomdet = "<div class='availble-rm-blk' id='" + lessid + "'>";
             stravroomdet += "<div class='row avail-rm-inn'>";
             stravroomdet += "<div class='avail-rm-header'> <h3 class='avail-rm-hd'>available rooms</h3><a  style='cursor:pointer' onclick=\"CloseAvlRoom('" + lessid + "','" + lbav + "')\"><i class='fas fa-times-circle'></i>close</a></div>";
-            stravroomdet += GetRoomdet(hpr, hcode, 3, searchid, curcode, award,b2c_idn);
+            stravroomdet += GetRoomdet(hpr, hcode, 3, searchid, curcode, award, b2c_idn);
             stravroomdet += "</div>";
 
 
@@ -81,7 +81,7 @@ namespace TripxolHotelsWebapi.Controllers
             stravroomdetmore = "<div class='availble-rm-blk' style='display:none' id='" + moreid + "'>";
             stravroomdetmore += "<div class='row avail-rm-inn'>";
             stravroomdetmore += "<div class='avail-rm-header'> <h3 class='avail-rm-hd'>available rooms</h3><a  style='cursor:pointer' onclick=\"CloseAvlRoom('" + moreid + "','" + lbav + "')\"><i class='fas fa-times-circle'></i>close</a></div>";
-            stravroomdetmore += GetRoomdet(hpr, hcode, 3, searchid, curcode, award,b2c_idn);
+            stravroomdetmore += GetRoomdet(hpr, hcode, 3, searchid, curcode, award, b2c_idn);
             stravroomdetmore += "</div>";
             stravroomdetmore += " <div class='view-mre'><a style='cursor:pointer' onclick='showavroomsLess(\"" + lessid + "\",\"" + moreid + "\")'>view less rooms</a></div>";
             stravroomdetmore += "</div>";
@@ -103,7 +103,7 @@ namespace TripxolHotelsWebapi.Controllers
         }
         #region supporing functions
         // private string GetRoomdet(DataTable dtrows, HotelProperty hpr, string hcode, string hdVARsessionHPR,int count,string searchid)
-        private string GetRoomdet(AvailabilityRS hpr, string hcode, int count, string searchid, string curcode, string award,string b2c_idn)
+        private string GetRoomdet(AvailabilityRS hpr, string hcode, int count, string searchid, string curcode, string award, string b2c_idn)
         {
 
             double admarkup = 0.00;
@@ -153,6 +153,7 @@ namespace TripxolHotelsWebapi.Controllers
             int adults = Convert.ToInt32(dssearch.Rows[0]["Adults"]);
             int children = Convert.ToInt32(dssearch.Rows[0]["Children"]);
             var childAges1 = dssearch.Rows[0]["HB_ChildAge"].ToString().Split(',');
+            int norooms = Convert.ToInt32(dssearch.Rows[0]["Rooms"].ToString());
             string childAges = string.Empty;
             foreach (var item in childAges1)
             {
@@ -166,7 +167,7 @@ namespace TripxolHotelsWebapi.Controllers
                 }
 
             }
-           
+
             guestcount = Convert.ToInt16(dssearch.Rows[0]["Adults"].ToString()) + Convert.ToInt16(dssearch.Rows[0]["Children"].ToString());
             string stravroomdet = "";
             string hotelName = string.Empty;
@@ -213,216 +214,220 @@ namespace TripxolHotelsWebapi.Controllers
                     int chkcount = 1;
                     foreach (Room dr in lstRoom)
                     {
-                        string roomname = dr.Name.ToString();
-                        string rph = lstRooms.Select(k => k.Room.Select(m => m.Code).FirstOrDefault()).ToString();
-                        List<Rate> lstRate = new List<Rate>();
-
-                        if (!string.IsNullOrEmpty(dssearch.Rows[0]["Children"].ToString()) && !string.IsNullOrEmpty(childAges))
+                        int ratecount = dr.Rates.Rate.Count();
+                        if (ratecount == norooms)
                         {
-                            try
+                            string roomname = dr.Name.ToString();
+                            string rph = lstRooms.Select(k => k.Room.Select(m => m.Code).FirstOrDefault()).ToString();
+                            List<Rate> lstRate = new List<Rate>();
+
+                            if (!string.IsNullOrEmpty(dssearch.Rows[0]["Children"].ToString()) && !string.IsNullOrEmpty(childAges))
+                            {
+                                try
+                                {
+                                    string boardCodes = string.Join(",", dr.Rates.Rate.Select(k => k.BoardCode).Distinct());
+                                    foreach (string boardCode in boardCodes.Split(','))
+                                    {
+                                        string ch = dr.Rates.Rate[0].Children.ToString();
+                                        if (!string.IsNullOrEmpty(ch) && ch != "0")
+                                        {
+                                            lstRate.Add(dr.Rates.Rate.Where(n => n.BoardCode == boardCode && (n.ChildrenAges.Contains(',') ? n.ChildrenAges.Split(',')[0].ToString() : n.ChildrenAges) == (childAges.Contains(',') ? childAges.Split(',')[0].ToString() : childAges)).FirstOrDefault());
+                                        }
+                                        else
+                                        {
+                                            childAges = null; ;
+                                            lstRate.Add(dr.Rates.Rate.Where(n => n.BoardCode == boardCode && (n.ChildrenAges) == childAges).FirstOrDefault());
+                                        }
+                                    }
+
+                                }
+                                catch (Exception ex)
+                                {
+
+
+                                }
+                            }
+                            else
                             {
                                 string boardCodes = string.Join(",", dr.Rates.Rate.Select(k => k.BoardCode).Distinct());
+
+                                //lstRate = dr.Rates.Rate.ToList();
+
                                 foreach (string boardCode in boardCodes.Split(','))
                                 {
-                                    string ch = dr.Rates.Rate[0].Children.ToString();
-                                    if (!string.IsNullOrEmpty(ch) && ch != "0")
+
+
+                                    lstRate.Add(dr.Rates.Rate.Where(n => n.BoardCode == boardCode).FirstOrDefault());
+
+                                }
+
+                            }
+                            foreach (Rate drrt in lstRate)
+                            {
+                                //var roomamt = rooms[i].Room[i].Rates.Rate[n].Net;
+                                string ratetype = drrt.RateType;
+                                string boardcode = drrt.BoardCode.ToString();
+                                string ratekey = drrt.RateKey.ToString();
+                                string ratecommentid = string.Empty;
+                                try
+                                {
+                                    ratecommentid = drrt.RateCommentsId;
+                                }
+                                catch
+                                {
+                                }
+
+                                rph = dr.Code;
+                                rrate = Convert.ToDouble(Convert.ToDouble(Convert.ToDouble(drrt.Net) / dc).ToString("0.00"));
+
+                                string avgpnignt = Convert.ToDouble(rrate).ToString();
+
+                                //string avgroompernight = (Convert.ToDouble(avgpnignt) / dc).ToString("0.00");
+
+                                roombaseamount = Convert.ToDouble(avgpnignt);
+
+                                DataTable dtwt = new DataTable();
+                                SqlConnection sqlconwt = new SqlConnection(con);
+                                try
+                                {
+                                    SqlCommand cmd = new SqlCommand();
+                                    cmd.Connection = sqlconwt;
+                                    cmd.CommandType = CommandType.StoredProcedure;
+                                    cmd.CommandText = "p_SreTS_HDR";
+                                    cmd.Parameters.AddWithValue("@B2C_IDN", b2c_idn);
+                                    cmd.Parameters.AddWithValue("@Hotelcode", hcode);
+                                    cmd.Parameters.AddWithValue("@GDS", "HB");
+                                    cmd.Parameters.AddWithValue("@IsLoginCust", "Y");
+                                    SqlDataAdapter sa = new SqlDataAdapter(cmd);
+                                    sa.Fill(dtwt);
+                                }
+                                catch
+                                {
+                                }
+
+                                if (dtwt.Rows.Count > 0)
+                                {
+                                    string Ts_mode = string.Empty;
+                                    Ts_mode = dtwt.Rows[0]["TS_Mode"].ToString();
+                                    if (Ts_mode == "Fixed")
                                     {
-                                        lstRate.Add(dr.Rates.Rate.Where(n => n.BoardCode == boardCode && (n.ChildrenAges.Contains(',') ? n.ChildrenAges.Split(',')[0].ToString() : n.ChildrenAges) == (childAges.Contains(',') ? childAges.Split(',')[0].ToString() : childAges)).FirstOrDefault());
+                                        adroommarkup = Convert.ToDouble(dtwt.Rows[0]["TS_Markup"].ToString());
+                                        adroomdiscount = Convert.ToDouble(dtwt.Rows[0]["TS_Discount"].ToString());
+
+                                    }
+                                    else if (Ts_mode == "Percentage")
+                                    {
+                                        adroompercmarkup = Convert.ToDouble(dtwt.Rows[0]["TS_Markup"].ToString());
+                                        adroommarkup = ((roombaseamount / 100.00) * adroompercmarkup);
+
+                                        adroomperdiscount = Convert.ToDouble(dtwt.Rows[0]["TS_Discount"].ToString());
+                                        adroomdiscount = (((roombaseamount) / 100.00) * adroomperdiscount);
                                     }
                                     else
                                     {
-                                        childAges = null; ;
-                                        lstRate.Add(dr.Rates.Rate.Where(n => n.BoardCode == boardCode && (n.ChildrenAges) == childAges).FirstOrDefault());
+                                        adroommarkup = 0.00;
+                                        adroomdiscount = 0.00;
+
                                     }
+
+
+                                    string Cl_Mode = string.Empty;
+                                    Cl_Mode = dtwt.Rows[0]["Cl_Mode"].ToString();
+                                    if (Cl_Mode == "Fixed")
+                                    {
+                                        clmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                                        cldiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
+
+                                    }
+                                    else if (Cl_Mode == "Percentage")
+                                    {
+                                        clroompercmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                                        clroommarkup = (((roombaseamount) / (100)) * clroompercmarkup);
+
+                                        clroomperdiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
+                                        clroomdiscount = ((roombaseamount / 100.00) * clroomperdiscount);
+                                    }
+                                    else
+                                    {
+                                        clmarkup = 0.00;
+
+                                    }
+
+                                    finalroommarkup = adroommarkup + clroommarkup;
+                                    finalroomdiscount = adroomdiscount + clroomdiscount;
+                                    roombaseamount = roombaseamount + (finalroommarkup - finalroomdiscount);
+                                    roomamountwithouttax = (Convert.ToDouble(roombaseamount));
+                                    // roombaseamount = (Convert.ToDouble(roomamountwithouttax) + Convert.ToDouble(tax));
+
                                 }
 
-                            }
-                            catch(Exception ex)
-                            {
-
-
-                            }
-                        }
-                        else
-                        {
-                            string boardCodes = string.Join(",", dr.Rates.Rate.Select(k => k.BoardCode).Distinct());
-
-                            //lstRate = dr.Rates.Rate.ToList();
-
-                            foreach (string boardCode in boardCodes.Split(','))
-                            {
-
-
-                                lstRate.Add(dr.Rates.Rate.Where(n => n.BoardCode == boardCode).FirstOrDefault());
-
-                            }
-
-                        }
-                        foreach (Rate drrt in lstRate)
-                        {
-                            //var roomamt = rooms[i].Room[i].Rates.Rate[n].Net;
-                            string ratetype = drrt.RateType;
-                            string boardcode = drrt.BoardCode.ToString();
-                            string ratekey = drrt.RateKey.ToString();
-                            string ratecommentid = string.Empty;
-                            try
-                            {
-                                ratecommentid = drrt.RateCommentsId;
-                            }
-                            catch
-                            {
-                            }
-
-                            rph = dr.Code;
-                            rrate = Convert.ToDouble(Convert.ToDouble(Convert.ToDouble(drrt.Net) / dc).ToString("0.00"));
-
-                            string avgpnignt = Convert.ToDouble(rrate).ToString();
-
-                            //string avgroompernight = (Convert.ToDouble(avgpnignt) / dc).ToString("0.00");
-
-                            roombaseamount = Convert.ToDouble(avgpnignt);
-                           
-                            DataTable dtwt = new DataTable();
-                            SqlConnection sqlconwt = new SqlConnection(con);
-                            try
-                            {
-                                SqlCommand cmd = new SqlCommand();
-                                cmd.Connection = sqlconwt;
-                                cmd.CommandType = CommandType.StoredProcedure;
-                                cmd.CommandText = "p_SreTS_HDR";
-                                cmd.Parameters.AddWithValue("@B2C_IDN", b2c_idn);
-                                cmd.Parameters.AddWithValue("@Hotelcode", hcode);
-                                cmd.Parameters.AddWithValue("@GDS", "HB");
-                                cmd.Parameters.AddWithValue("@IsLoginCust", "Y");
-                                SqlDataAdapter sa = new SqlDataAdapter(cmd);
-                                sa.Fill(dtwt);
-                            }
-                            catch
-                            {
-                            }
-
-                            if (dtwt.Rows.Count > 0)
-                            {
-                                string Ts_mode = string.Empty;
-                                Ts_mode = dtwt.Rows[0]["TS_Mode"].ToString();
-                                if (Ts_mode == "Fixed")
+                                string cancleplFrom = "";
+                                string cancleplamount = "";
+                                try
                                 {
-                                    adroommarkup = Convert.ToDouble(dtwt.Rows[0]["TS_Markup"].ToString());
-                                    adroomdiscount = Convert.ToDouble(dtwt.Rows[0]["TS_Discount"].ToString());
-                                  
+                                    cancleplFrom = drrt.CancellationPolicies.CancellationPolicy.From.ToString();
                                 }
-                                else if (Ts_mode == "Percentage")
+                                catch
                                 {
-                                    adroompercmarkup = Convert.ToDouble(dtwt.Rows[0]["TS_Markup"].ToString());
-                                    adroommarkup = ((roombaseamount / 100.00) * adroompercmarkup);
-                                   
-                                    adroomperdiscount = Convert.ToDouble(dtwt.Rows[0]["TS_Discount"].ToString());
-                                    adroomdiscount = (((roombaseamount) / 100.00) * adroomperdiscount);
+
+                                }
+                                try
+                                {
+                                    cancleplamount = drrt.CancellationPolicies.CancellationPolicy.Amount.ToString();
+                                }
+                                catch
+                                {
+                                    //cancleplamount = "NO Cancellation amount";
+                                }
+
+                                //roomdesc = getrooms.Rooms.Room[0].Name.ToString();
+                                // roomdesc = objRoom.Name;
+                                stravroomdet += "<div class='available-rooms avl-wht' id='roommblock_" + dr.Code + "_" + boardcode + "'>";
+                                string roomdesc1 = "";
+                                //try
+                                //{
+                                //    roomdesc1 = roomdesc.Substring(0, roomdesc.IndexOf(','));
+                                //}
+                                //catch
+                                //{
+                                //    roomdesc1 = roomdesc;
+                                //}
+                                string test = "<h4 class='modal-title'><span>Room Type:</span>" + roomname + " " + drrt.BoardName.ToString() + "</h4>";
+                                string roomdetpopup = HttpUtility.HtmlEncode(test);
+                                string RDroominfopopup = HttpUtility.HtmlEncode(Getrdroominfopopup(Convert.ToInt32(hcode), dr.Code, drrt.BoardCode, drrt.BoardName.ToString(), searchid, cancleplFrom, cancleplamount, ratecommentid));
+                                string ratetable = HttpUtility.HtmlEncode(GetRateTable(dr.Code, hpr, hcode, searchid, curcode, adroommarkup, clroommarkup, adroomdiscount, clroomdiscount));
+                                //string ratetable = "";
+
+                                //stravroomdet += "<div class='avl-room-dtls'><p>" + drrt.BoardName.ToString() + "</p><a href='#' data-toggle='modal' data-target='#room-details-pop' onclick='showroomdet(\"" + roomdetpopup + "\",\"" + RDroominfopopup + "\")'>room details</a></div>";
+                                stravroomdet += "<div class='avl-room-dtls'><p>" + test + "</p><a href='#' data-toggle='modal' data-target='#room-details-pop' onclick='showroomdet(\"" + roomdetpopup + "\",\"" + ratetable + "\",\"" + RDroominfopopup + "\")'>room details</a></div>";
+
+
+                                //stravroomdet += "<div class='avl-room-dtls'><p>" + roomdesc1 + "</p><a href='#' data-toggle='modal' data-target='#room-details-pop' onclick='showroomdet(\"" + roomdetpopup + "\",\"" + RDroominfopopup + "\")'>room details</a></div></div>";
+                                stravroomdet += "<div class='avl-price-dtls'>";
+                                stravroomdet += "<div class='avl-price-inn'><h2>" + Utilities.GetRatewithSymbol(curcode) + roombaseamount.ToString("0.00") + "</h2> <p>per night</p></div>";
+                                if (ratetype == "RECHECK")
+                                {
+                                    stravroomdet += "<div class='avl-bknw-btn' id='divbooking_" + chkcount + "_" + hcode + "'>";
+                                    stravroomdet += "<a style='cursor:pointer;' id='idRecheck_" + chkcount + "_" + hcode + "'  class='rmrates-booknw'   onclick='checkrate(\"" + searchid + "\",\"" + hcode + "\",\"" + ratekey + "\",\"" + b2c_idn + "\",\"" + rph + "\",\"" + boardcode + "\",\"" + chkcount + "\")'>Check Rate</a>";//dr["HPTotalAmount"]
+
+                                    stravroomdet += "</div>";
+                                    chkcount++;
                                 }
                                 else
                                 {
-                                    adroommarkup = 0.00;
-                                    adroomdiscount = 0.00;
-                                   
+                                    stravroomdet += "<div class='avl-bknw-btn'>";
+                                    //stravroomdet += "<a target='_blank' href='HotelPayment.aspx?Searchid=" + searchid + "&HotelCode=" + hcode + "&RPH=" + dr.Code + "&Boardcode=" + drrt.BoardCode + "&Currency=" + curcode + "&award=" + award + "&checkin=" + checkind + "&checkout=" + checkoutd + "&gc=" + adults +"&children="+children+"'>Book now</a>";
+
+                                    //stravroomdet += "<a target='_blank' href='#' onclick='selroom(" + dr.Code + "," + rrate + "," + rrate.ToString().Trim('$') + ")'>Book now</a>";
+                                    stravroomdet += "<a href='#'   data-toggle='modal'  onclick='selroom(\"" + rph + "\",\"" + boardcode + "\",\"" + roombaseamount + "\",\"" + roombaseamount.ToString().Trim('$') + "\",\"" + hcode.ToString() + "\",\"" + curcode.ToString() + "\")'>Book Now</a>";
+                                    // stravroomdet += "<div class='rr-pc-rht'><a href='#'  class='rmrates-booknw' data-toggle='modal' data-target='#myContactModal' onclick='selroom(" + dr.Code + "," + rrate + "," + rrate.ToString().Trim('$') + ")'>Book Now</a>";//dr["HPTotalAmount"]
+
+                                    stravroomdet += "</div>";
                                 }
 
-
-                                string Cl_Mode = string.Empty;
-                                Cl_Mode = dtwt.Rows[0]["Cl_Mode"].ToString();
-                                if (Cl_Mode == "Fixed")
-                                {
-                                    clmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
-                                    cldiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
-                                    
-                                }
-                                else if (Cl_Mode == "Percentage")
-                                {
-                                    clroompercmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
-                                    clroommarkup = (((roombaseamount) / (100)) * clroompercmarkup);
-                                  
-                                    clroomperdiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
-                                    clroomdiscount = ((roombaseamount / 100.00) * clroomperdiscount);
-                                }
-                                else
-                                {
-                                    clmarkup = 0.00;
-                                   
-                                }
-
-                                finalroommarkup = adroommarkup + clroommarkup;
-                                finalroomdiscount = adroomdiscount + clroomdiscount;
-                                roombaseamount = roombaseamount + (finalroommarkup - finalroomdiscount);
-                                roomamountwithouttax = (Convert.ToDouble(roombaseamount));
-                                // roombaseamount = (Convert.ToDouble(roomamountwithouttax) + Convert.ToDouble(tax));
-
-                            }
-
-                            string cancleplFrom="";
-                            string cancleplamount = "";
-                            try
-                            {
-                                cancleplFrom = drrt.CancellationPolicies.CancellationPolicy.From.ToString();
-                            }
-                            catch 
-                            { 
-                            
-                            }
-                            try
-                            {
-                                cancleplamount = drrt.CancellationPolicies.CancellationPolicy.Amount.ToString();
-                            }
-                            catch
-                            {
-                                //cancleplamount = "NO Cancellation amount";
-                            }
-                             
-                            //roomdesc = getrooms.Rooms.Room[0].Name.ToString();
-                            // roomdesc = objRoom.Name;
-                            stravroomdet += "<div class='available-rooms avl-wht' id='roommblock_" + dr.Code + "_" + boardcode + "'>";
-                            string roomdesc1 = "";
-                            //try
-                            //{
-                            //    roomdesc1 = roomdesc.Substring(0, roomdesc.IndexOf(','));
-                            //}
-                            //catch
-                            //{
-                            //    roomdesc1 = roomdesc;
-                            //}
-                            string test = "<h4 class='modal-title'><span>Room Type:</span>" + roomname + " " + drrt.BoardName.ToString() + "</h4>";
-                            string roomdetpopup = HttpUtility.HtmlEncode(test);
-                            string RDroominfopopup = HttpUtility.HtmlEncode(Getrdroominfopopup(Convert.ToInt32(hcode), dr.Code, drrt.BoardCode, drrt.BoardName.ToString(), searchid, cancleplFrom, cancleplamount,ratecommentid));
-                            string ratetable = HttpUtility.HtmlEncode(GetRateTable(dr.Code, hpr, hcode, searchid, curcode, adroommarkup, clroommarkup, adroomdiscount, clroomdiscount));
-                            //string ratetable = "";
-
-                            //stravroomdet += "<div class='avl-room-dtls'><p>" + drrt.BoardName.ToString() + "</p><a href='#' data-toggle='modal' data-target='#room-details-pop' onclick='showroomdet(\"" + roomdetpopup + "\",\"" + RDroominfopopup + "\")'>room details</a></div>";
-                            stravroomdet += "<div class='avl-room-dtls'><p>" + test + "</p><a href='#' data-toggle='modal' data-target='#room-details-pop' onclick='showroomdet(\"" + roomdetpopup + "\",\"" + ratetable + "\",\"" + RDroominfopopup + "\")'>room details</a></div>";
-
-
-                            //stravroomdet += "<div class='avl-room-dtls'><p>" + roomdesc1 + "</p><a href='#' data-toggle='modal' data-target='#room-details-pop' onclick='showroomdet(\"" + roomdetpopup + "\",\"" + RDroominfopopup + "\")'>room details</a></div></div>";
-                            stravroomdet += "<div class='avl-price-dtls'>";
-                            stravroomdet += "<div class='avl-price-inn'><h2>" + Utilities.GetRatewithSymbol(curcode) + roombaseamount.ToString("0.00") + "</h2> <p>per night</p></div>";
-                            if (ratetype == "RECHECK")
-                            {
-                                stravroomdet += "<div class='avl-bknw-btn' id='divbooking_" + chkcount +"_"+hcode+ "'>";
-                                stravroomdet += "<a style='cursor:pointer;' id='idRecheck_" + chkcount +"_"+hcode+ "'  class='rmrates-booknw'   onclick='checkrate(\"" + searchid + "\",\"" + hcode + "\",\"" + ratekey + "\",\"" + b2c_idn + "\",\"" + rph + "\",\"" + boardcode + "\",\"" + chkcount + "\")'>Check Rate</a>";//dr["HPTotalAmount"]
-                              
-                                stravroomdet += "</div>";
-                                chkcount++;
-                            }
-                            else 
-                            {
-                                stravroomdet += "<div class='avl-bknw-btn'>";
-                                //stravroomdet += "<a target='_blank' href='HotelPayment.aspx?Searchid=" + searchid + "&HotelCode=" + hcode + "&RPH=" + dr.Code + "&Boardcode=" + drrt.BoardCode + "&Currency=" + curcode + "&award=" + award + "&checkin=" + checkind + "&checkout=" + checkoutd + "&gc=" + adults +"&children="+children+"'>Book now</a>";
-
-                                //stravroomdet += "<a target='_blank' href='#' onclick='selroom(" + dr.Code + "," + rrate + "," + rrate.ToString().Trim('$') + ")'>Book now</a>";
-                                stravroomdet += "<a href='#'   data-toggle='modal'  onclick='selroom(\"" + rph + "\",\"" + boardcode + "\",\"" + roombaseamount + "\",\"" + roombaseamount.ToString().Trim('$') + "\",\"" + hcode.ToString() + "\",\"" + curcode.ToString() + "\")'>Book Now</a>";
-                                // stravroomdet += "<div class='rr-pc-rht'><a href='#'  class='rmrates-booknw' data-toggle='modal' data-target='#myContactModal' onclick='selroom(" + dr.Code + "," + rrate + "," + rrate.ToString().Trim('$') + ")'>Book Now</a>";//dr["HPTotalAmount"]
-
+                                stravroomdet += "</div> ";
                                 stravroomdet += "</div>";
                             }
-                        
-                            stravroomdet += "</div> ";
-                            stravroomdet += "</div>";
                         }
                     }
                 }
@@ -446,7 +451,7 @@ namespace TripxolHotelsWebapi.Controllers
         {
             string rvalue = "";
             //string canpolicy = "Please note you are within cancellation penalty of 1 night/s fee No-show is subjected to 1 night/s fee";//GetVendorMessage("Cancellation", hpr);
-           //string canpolicy = GetVendorMessage(cancleplFrom, cancleplamount);
+            //string canpolicy = GetVendorMessage(cancleplFrom, cancleplamount);
 
             string canpolicy = string.Empty;
             if (!string.IsNullOrEmpty(cancleplFrom))
@@ -458,13 +463,13 @@ namespace TripxolHotelsWebapi.Controllers
                 canpolicy = "No cancellation";
             }
 
-            string facilities = GetAllAmenitiestop(hotelCode.ToString(),"", roomCode); //GetVendorMessage("Facilities", hpr).TrimEnd(',');//"break fast";
+            string facilities = GetAllAmenitiestop(hotelCode.ToString(), "", roomCode); //GetVendorMessage("Facilities", hpr).TrimEnd(',');//"break fast";
             string Ratecomments = string.Empty;
             string coment = string.Empty;
             string ratecommentmessage = string.Empty;
             if (!string.IsNullOrEmpty(ratecommentid))
             {
-                Ratecomments = Getratecomments(searchid,ratecommentid);
+                Ratecomments = Getratecomments(searchid, ratecommentid);
                 coment = Ratecomments.Replace(@"\", string.Empty).Replace(@"\", string.Empty);
                 ratecommentmessage = coment.Replace("\"", string.Empty).Trim();
             }
@@ -521,7 +526,7 @@ namespace TripxolHotelsWebapi.Controllers
 
         }
 
-        private string Getratecomments(string searchid,string ratecommentid)//string MsgType, AvailabilityRS hpr in side
+        private string Getratecomments(string searchid, string ratecommentid)//string MsgType, AvailabilityRS hpr in side
         {
             string rvalue = "";
             CultureInfo cultureInfo = Thread.CurrentThread.CurrentCulture;
@@ -639,10 +644,16 @@ namespace TripxolHotelsWebapi.Controllers
             }
             else
             {
+                //List<Tax> lsttax = new List<Tax>();
                 double tax = 0.00;
-                if (objRoom.Rates.Rate[0].Taxes != null && objRoom.Rates.Rate[0].Taxes.Tax.Amount != null)
+                if (objRoom.Rates.Rate[0].Taxes != null)
                 {
+                    //foreach (var lttax in objRoom.Rates.Rate[0].Taxes.Tax)
+                    //{
+                    //tax = Convert.ToDouble(lttax.Amount.ToString());
                     tax = Convert.ToDouble(objRoom.Rates.Rate[0].Taxes.Tax.Amount.ToString());
+                    //}
+
                 }
                 string pernightamount = Convert.ToDouble(Convert.ToDouble(objRoom.Rates.Rate[0].Net.ToString()) / dc).ToString("0.00");
                 double pernightamtwithmarkup = (Convert.ToDouble(pernightamount) + ((admarkup + clmarkup) - (addiscount + cldiscount)));
@@ -669,7 +680,7 @@ namespace TripxolHotelsWebapi.Controllers
                     }
                     else
                     {
-                        strtable += "<td>"+"$" + GetDayRate(dtr, chkdate.ToString("MM-dd-yyyy")) + "</td>";
+                        strtable += "<td>" + "$" + GetDayRate(dtr, chkdate.ToString("MM-dd-yyyy")) + "</td>";
                     }
                 }
                 strtable += "</tr>";
@@ -680,7 +691,7 @@ namespace TripxolHotelsWebapi.Controllers
             return strtable;
         }
 
-       
+
 
 
         private string GetAllAmenitiestop(string hotelcode, string type = "", string roomCode = "")
@@ -791,7 +802,7 @@ namespace TripxolHotelsWebapi.Controllers
                     taxes = Convert.ToDecimal(dr[0]["taxes"].ToString());
                 }
                 Decimal rate = amount + taxes;
-                rvalue =  Convert.ToDouble(rate.ToString()).ToString("0.00");
+                rvalue = Convert.ToDouble(rate.ToString()).ToString("0.00");
             }
             return rvalue;
         }

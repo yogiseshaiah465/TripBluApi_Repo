@@ -95,14 +95,21 @@ namespace HotelDevMTWebapi.Controllers
                         objchkres.amount = Convert.ToDouble(Convert.ToDouble(objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Net) / dc).ToString("0.00");
                         try
                         {
-                            if (objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Taxes.Tax.Amount != null)
-                            {
-                                objchkres.Tax = Convert.ToDouble(Convert.ToDouble(objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Taxes.Tax.Amount)).ToString("0.00");
-                            }
-                            else
-                            {
-                                objchkres.Tax = "0.00";
-                            }
+                            //List<Tax> lsttax = new List<Tax>();
+                            //foreach (var lttax in objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Taxes.Tax)
+                            //{
+                                if (objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Taxes.Tax.Amount != null)
+                                {
+                                    
+                                    objchkres.Tax = Convert.ToDouble(Convert.ToDouble(objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Taxes.Tax.Amount)).ToString("0.00");
+                                }
+                                else
+                                {
+                                    objchkres.Tax = "0.00";
+                                }
+                            //}
+
+                           
                         }
                         catch
                         {
