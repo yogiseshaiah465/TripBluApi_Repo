@@ -446,7 +446,7 @@ namespace HotelDevMTWebapi.Controllers
                     int chds = Convert.ToInt32(childbyroom_split[i].Split('-')[1]);
                     if (i == 0)
                     {
-                        rq += "<room rateKey='" + ratekey + "'>";
+                        rq += "<room rateKey='" + ratekey + "'/>";
                         chagc = chds;
                     }
                     else
@@ -477,7 +477,7 @@ namespace HotelDevMTWebapi.Controllers
                                 ratekey_new += ratekey_split[r] + "|";
                             }
 
-                            rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'>";
+                            rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'/>";
                         }
                         else
                         {
@@ -488,7 +488,7 @@ namespace HotelDevMTWebapi.Controllers
                                 ratekey_new += ratekey_split[r] + "|";
                             }
 
-                            rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'>";
+                            rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'/>";
                         }
                     }
 

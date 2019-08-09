@@ -923,6 +923,7 @@ namespace TripxolHotelsWebapi.Controllers
 
         private string GetDayRate(DataTable dt, int z, string rdate)
         {
+            int rm = z - 1;
             string rvalue = "&nbsp";
             DataRow[] dr = dt.Select("expdate >=#" + rdate + "# and  effedate <=#" + rdate + "#");
             if (dr.Count() > 0)
@@ -930,13 +931,13 @@ namespace TripxolHotelsWebapi.Controllers
                 decimal amount = 0.0M;
                 decimal taxes = 0.0M;
 
-                if (dr[0]["amount"].ToString() != "")
+                if (dr[rm]["amount"].ToString() != "")
                 {
-                    amount = Convert.ToDecimal(dr[0]["amount"].ToString());
+                    amount = Convert.ToDecimal(dr[rm]["amount"].ToString());
                 }
-                if (dr[0]["taxes"].ToString() != "")
+                if (dr[rm]["taxes"].ToString() != "")
                 {
-                    taxes = Convert.ToDecimal(dr[0]["taxes"].ToString());
+                    taxes = Convert.ToDecimal(dr[rm]["taxes"].ToString());
                 }
                 Decimal rate = amount + taxes;
                 rvalue = Convert.ToDouble(rate.ToString()).ToString("0.00");
