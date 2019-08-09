@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-
+using System.Linq;
 
 namespace HotelDevMTWebapi.Controllers
 {
@@ -23,8 +23,10 @@ namespace HotelDevMTWebapi.Controllers
     {
         public string amount { get; set; }
         public string Tax { get; set; }
+        public string allroomstamount { get; set; }
         public string cancellationamt { get; set; }
         public string cancellationfrom { get; set; }
+        public string roomdetailstable { get; set; }
         public string Message { get; set; }
 
     }
@@ -37,26 +39,53 @@ namespace HotelDevMTWebapi.Controllers
         public checkresult Get(string searchid, string hcode, string ratekey, string b2c_idn)
         {
             double admarkup = 0.00;
+            double adroommarkup = 0.00;
+
             double adpercmarkup = 0.00;
             double clpercmarkup = 0.00;
+            double adperdiscount = 0.00;
+            double clperdiscount = 0.00;
             double clmarkup = 0.00;
             double finalmarkup = 0.00;
             double finaldiscount = 0.00;
-            double adperdiscount = 0.00;
-            double clperdiscount = 0.00;
             double addiscount = 0.00;
             double cldiscount = 0.00;
             double baseamount = 0.00;
 
+            double roombaseamount = 0.00;
+            double roomamountwithouttax = 0.00;
+            double roomamountwithtax = 0.00;
 
+            double adroompercmarkup = 0.00;
+            double clroompercmarkup = 0.00;
+            double adroomperdiscount = 0.00;
+            double clroomperdiscount = 0.00;
+            double clroommarkup = 0.00;
+            double finalroommarkup = 0.00;
+            double finalroomdiscount = 0.00;
+            double adroomdiscount = 0.00;
+            double clroomdiscount = 0.00;
+            double rrate;
+            double roomtaxprice = 0.00;
+            double eachroomavgtaxprice = 0.00;
+            double roomcancellationprice = 0.00;
+            double troomspricepernightwithmarkup = 0.00;
+            double eachroomspernihgtpricewmrk = 0.00;
+            string ratetable = string.Empty;
+            double allroomsprice = 0.00;
             string filePathRQ = string.Empty;
             ManageHDetAj mhd = new ManageHDetAj();
             string Result = string.Empty;
             AvailabilityRS objAvailabilityRS = new AvailabilityRS();
             CheckRateRS objCheckRateRS = new CheckRateRS();
             List<upselling> lstupselling = new List<upselling>();
+            Rooms objRooms = new Rooms();
             Room objupsellingRoom = new Room();
             checkresult objchkres = new checkresult();
+
+            DataTable dssearch = HotelDBLayer.GetSearch(searchid);
+            int rooms = Convert.ToInt32(dssearch.Rows[0]["Rooms"]);
+
             checkrates(searchid, hcode, ratekey, b2c_idn);
 
 
@@ -70,7 +99,7 @@ namespace HotelDevMTWebapi.Controllers
                 CultureInfo cultureInfo = Thread.CurrentThread.CurrentCulture;
                 // TextInfo = cultureInfo.TextInfo;
                 //string filePathRQ = Path.Combine(HttpRuntime.AppDomainAppPath, "HotelXML/" + searchid + "_propertydesc_" + hotelcode + "_" + CurrencyCode + "-RS.xml");
-                filePathRQ = Path.Combine(HttpRuntime.AppDomainAppPath, "Checkrates_tbluexml/" + searchid + "_"+ratekey_split+ "_checkrate-RS.xml");
+                filePathRQ = Path.Combine(HttpRuntime.AppDomainAppPath, "Checkrates_tbluexml/" + searchid + "_" + ratekey_split + "_checkrate-RS.xml");
 
                 if (File.Exists(filePathRQ))
                 {
@@ -83,118 +112,210 @@ namespace HotelDevMTWebapi.Controllers
                     StreamReader reader = new StreamReader(filePathRQ);
                     objCheckRateRS = (CheckRateRS)deserializer.Deserialize(reader);
 
-                    if (objCheckRateRS.Error== null)
+                    if (objCheckRateRS.Error == null)
                     {
-
-                        string checkin = objCheckRateRS.Hotel.CheckIn;
-                        string CheckOut = objCheckRateRS.Hotel.CheckOut;
                         double dc = 0.0;
                         try
-                        { dc = (Convert.ToDateTime(CheckOut.ToString()) - Convert.ToDateTime(checkin.ToString())).TotalDays; }
+                        { dc = (Convert.ToDateTime(objCheckRateRS.Hotel.CheckOut.ToString()) - Convert.ToDateTime(objCheckRateRS.Hotel.CheckIn.ToString())).TotalDays; }
                         catch { }
-                        objchkres.amount = Convert.ToDouble(Convert.ToDouble(objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Net) / dc).ToString("0.00");
+
+                        foreach (Room objrooms in objCheckRateRS.Hotel.Rooms.Room)
+                        {
+                            Rates objrates = new Rates();
+                            objrates = objrooms.Rates;
+                            List<Rate> lstRate = objrates.Rate;
+
+                            if (lstRate != null && lstRate.Count > 0)
+                            {
+                                for (int r = 0; r < lstRate.Count; r++)
+                                {
+                                    // eachroomsprice = Convert.ToDouble(troomsprice / norooms);
+                                    rrate = Convert.ToDouble(Convert.ToDouble(Convert.ToDouble(lstRate[r].Net) / dc).ToString("0.00"));
+
+                                    string avgpnignt = Convert.ToDouble(rrate).ToString();
+
+                                    //string avgroompernight = (Convert.ToDouble(avgpnignt) / dc).ToString("0.00");
+
+                                    roombaseamount = Convert.ToDouble(avgpnignt);
+
+                                    DataTable dtwt = new DataTable();
+                                    SqlConnection sqlconwt = new SqlConnection(con);
+                                    try
+                                    {
+                                        SqlCommand cmd = new SqlCommand();
+                                        cmd.Connection = sqlconwt;
+                                        cmd.CommandType = CommandType.StoredProcedure;
+                                        cmd.CommandText = "p_SreTS_HDR";
+                                        cmd.Parameters.AddWithValue("@B2C_IDN", b2c_idn);
+                                        cmd.Parameters.AddWithValue("@Hotelcode", hcode);
+                                        cmd.Parameters.AddWithValue("@GDS", "HB");
+                                        cmd.Parameters.AddWithValue("@IsLoginCust", "Y");
+                                        SqlDataAdapter sa = new SqlDataAdapter(cmd);
+                                        sa.Fill(dtwt);
+                                    }
+                                    catch
+                                    {
+                                    }
+
+                                    if (dtwt.Rows.Count > 0)
+                                    {
+                                        string Ts_mode = string.Empty;
+                                        Ts_mode = dtwt.Rows[0]["TS_Mode"].ToString();
+                                        if (Ts_mode == "Fixed")
+                                        {
+                                            adroommarkup = Convert.ToDouble(dtwt.Rows[0]["TS_Markup"].ToString());
+                                            adroomdiscount = Convert.ToDouble(dtwt.Rows[0]["TS_Discount"].ToString());
+
+                                        }
+                                        else if (Ts_mode == "Percentage")
+                                        {
+                                            adroompercmarkup = Convert.ToDouble(dtwt.Rows[0]["TS_Markup"].ToString());
+                                            adroommarkup = ((roombaseamount / 100.00) * adroompercmarkup);
+
+                                            adroomperdiscount = Convert.ToDouble(dtwt.Rows[0]["TS_Discount"].ToString());
+                                            adroomdiscount = (((roombaseamount) / 100.00) * adroomperdiscount);
+                                        }
+                                        else
+                                        {
+                                            adroommarkup = 0.00;
+                                            adroomdiscount = 0.00;
+
+                                        }
+
+
+                                        string Cl_Mode = string.Empty;
+                                        Cl_Mode = dtwt.Rows[0]["Cl_Mode"].ToString();
+                                        if (Cl_Mode == "Fixed")
+                                        {
+                                            clmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                                            cldiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
+
+                                        }
+                                        else if (Cl_Mode == "Percentage")
+                                        {
+                                            clroompercmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                                            clroommarkup = (((roombaseamount) / (100)) * clroompercmarkup);
+
+                                            clroomperdiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
+                                            clroomdiscount = ((roombaseamount / 100.00) * clroomperdiscount);
+                                        }
+                                        else
+                                        {
+                                            clmarkup = 0.00;
+
+                                        }
+
+                                        finalroommarkup = adroommarkup + clroommarkup;
+                                        finalroomdiscount = adroomdiscount + clroomdiscount;
+                                        roombaseamount = roombaseamount + (finalroommarkup - finalroomdiscount);
+                                        roomamountwithouttax = (Convert.ToDouble(roombaseamount));
+                                        // roombaseamount = (Convert.ToDouble(roomamountwithouttax) + Convert.ToDouble(tax));
+                                        troomspricepernightwithmarkup = troomspricepernightwithmarkup + (Convert.ToDouble(roomamountwithouttax));
+                                        allroomsprice = allroomsprice + Convert.ToDouble(lstRate[r].Net);
+                                    }
+
+
+
+                                    if (lstRate[r].Taxes != null && lstRate[r].Taxes.Tax.Amount!=null)
+                                    {
+
+                                        roomtaxprice = roomtaxprice + Convert.ToDouble(lstRate[r].Taxes.Tax.Amount.ToString());
+
+                                    }
+
+                                    try
+                                    {
+                                        if (lstRate[r].CancellationPolicies != null && lstRate[r].CancellationPolicies.CancellationPolicy.Amount != null)
+                                        {
+                                            roomcancellationprice = roomcancellationprice + Convert.ToDouble(lstRate[r].CancellationPolicies.CancellationPolicy.Amount.ToString());
+                                        }
+                                    }
+                                    catch
+                                    {
+                                        //cancleplamount = "NO Cancellation amount";
+                                    }
+
+
+                                }
+                                eachroomspernihgtpricewmrk = (troomspricepernightwithmarkup / rooms);
+                                eachroomavgtaxprice = Convert.ToDouble(roomtaxprice / rooms);
+                                //lstRate.Add(dr.Rates.Rate.Where(n => n.BoardCode == boardCode && (n.ChildrenAges.Contains(',') ? n.ChildrenAges.Split(',')[0].ToString() : n.ChildrenAges) == (childAges.Contains(',') ? childAges.Split(',')[0].ToString() : childAges)).FirstOrDefault());
+
+
+                                //foreach (Rate drrt in lstRate)
+                                //{
+                                //var roomamt = rooms[i].Room[i].Rates.Rate[n].Net;
+
+                                string ratetype = lstRate[0].RateType;
+
+
+                                string ratecommentid = string.Empty;
+                                try
+                                {
+                                    ratecommentid = lstRate[0].RateCommentsId;
+                                }
+                                catch
+                                {
+                                }
+
+                                string cancleplFrom = "";
+                                string cancleplamount = "";
+                                try
+                                {
+                                    cancleplFrom = lstRate[0].CancellationPolicies.CancellationPolicy.From.ToString();
+                                }
+                                catch
+                                {
+
+                                }
+                                try
+                                {
+                                    cancleplamount = roomcancellationprice.ToString();//roomcancellationprice.ToString();
+                                }
+                                catch
+                                {
+                                    //cancleplamount = "NO Cancellation amount";
+                                }
+                                 ratetable = HttpUtility.HtmlEncode(GetRateTable(hcode, objCheckRateRS, lstRate, hcode, searchid, "USD", adroommarkup, clroommarkup, adroomdiscount, clroomdiscount, roomtaxprice, b2c_idn, rooms));
+
+
+                            }
+
+                        }
+
+                        //objchkres.amount = Convert.ToDouble(Convert.ToDouble(objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Net) / dc).ToString("0.00");
+
+                        objchkres.amount = eachroomspernihgtpricewmrk.ToString("0.00");
+                        objchkres.allroomstamount = allroomsprice.ToString("0.00");
+                        objchkres.roomdetailstable = ratetable;
+
+
+
+
                         try
                         {
                             //List<Tax> lsttax = new List<Tax>();
                             //foreach (var lttax in objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Taxes.Tax)
                             //{
-                                if (objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Taxes.Tax.Amount != null)
-                                {
-                                    
-                                    objchkres.Tax = Convert.ToDouble(Convert.ToDouble(objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Taxes.Tax.Amount)).ToString("0.00");
-                                }
-                                else
-                                {
-                                    objchkres.Tax = "0.00";
-                                }
+                            if (objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Taxes.Tax.Amount != null)
+                            {
+
+                                objchkres.Tax = eachroomavgtaxprice.ToString();//Convert.ToDouble(Convert.ToDouble(objCheckRateRS.Hotel.Rooms.Room[0].Rates.Rate[0].Taxes.Tax.Amount)).ToString("0.00");
+                            }
+                            else
+                            {
+                                objchkres.Tax = "0.00";
+                            }
                             //}
 
-                           
+
                         }
                         catch
                         {
                             objchkres.Tax = "0.00";
                         }
 
-                        baseamount = Convert.ToDouble(objchkres.amount);
-
-
-                        DataTable dt = new DataTable();
-                        SqlConnection sqlcon = new SqlConnection(con);
-                        try
-                        {
-                            SqlCommand cmd = new SqlCommand();
-                            cmd.Connection = sqlcon;
-                            cmd.CommandType = CommandType.StoredProcedure;
-                            cmd.CommandText = "p_SreTS_HDR";
-                            cmd.Parameters.AddWithValue("@B2C_IDN", b2c_idn);
-                            cmd.Parameters.AddWithValue("@Hotelcode", hcode.ToString());
-                            cmd.Parameters.AddWithValue("@GDS", "HB");
-                            cmd.Parameters.AddWithValue("@IsLoginCust", "Y");
-                            SqlDataAdapter sa = new SqlDataAdapter(cmd);
-                            sa.Fill(dt);
-                        }
-                        catch
-                        {
-                        }
-
-
-                        if (dt.Rows.Count > 0)
-                        {
-                            string Ts_mode = string.Empty;
-                            Ts_mode = dt.Rows[0]["TS_Mode"].ToString();
-                            if (Ts_mode == "Fixed")
-                            {
-                                admarkup = Convert.ToDouble(dt.Rows[0]["TS_Markup"].ToString());
-                                addiscount = Convert.ToDouble(dt.Rows[0]["TS_Discount"].ToString());
-                            }
-                            else if (Ts_mode == "Percentage")
-                            {
-                                adpercmarkup = Convert.ToDouble(dt.Rows[0]["TS_Markup"].ToString());
-                                adperdiscount = Convert.ToDouble(dt.Rows[0]["TS_Discount"].ToString());
-                                admarkup = (((baseamount) / 100.00) * adpercmarkup);
-                                addiscount = (((baseamount) / 100.00) * adperdiscount);
-
-                            }
-                            else
-                            {
-                                admarkup = 0.00;
-                                addiscount = 0.00;
-                            }
-
-
-                            string Cl_Mode = string.Empty;
-                            Cl_Mode = dt.Rows[0]["Cl_Mode"].ToString();
-                            if (Cl_Mode == "Fixed")
-                            {
-                                clmarkup = Convert.ToDouble(dt.Rows[0]["Cl_Markup"].ToString());
-                                cldiscount = Convert.ToDouble(dt.Rows[0]["Cl_Discount"].ToString());
-                            }
-                            else if (Cl_Mode == "Percentage")
-                            {
-                                clpercmarkup = Convert.ToDouble(dt.Rows[0]["Cl_Markup"].ToString());
-                                clperdiscount = Convert.ToDouble(dt.Rows[0]["Cl_Discount"].ToString());
-                                clmarkup = ((baseamount / 100.00) * clpercmarkup);
-                                cldiscount = ((baseamount / 100.00) * clperdiscount);
-
-                            }
-                            else
-                            {
-                                clmarkup = 0.00;
-                                cldiscount = 0.00;
-                            }
-
-                            finalmarkup = admarkup + clmarkup;
-                            finaldiscount = addiscount + cldiscount;
-                            baseamount = baseamount + (finalmarkup - finaldiscount);
-
-
-                        }
-
-
-                        objchkres.amount = (baseamount).ToString("0.00");
-
-
+                       
                         //HotelListGenerate.CreateTables(dtBPIadd);
                         //HotelListGenerate.FillHStable(xnod, dtBPIadd);//yogi
                     }
@@ -202,7 +323,7 @@ namespace HotelDevMTWebapi.Controllers
                     {
                         objchkres.Message = "Fare Not Available";
 
-                        
+
                     }
                 }
 
@@ -214,6 +335,7 @@ namespace HotelDevMTWebapi.Controllers
             return objchkres;
 
         }
+
 
 
 
@@ -277,6 +399,29 @@ namespace HotelDevMTWebapi.Controllers
             try
             {
                 string searchid = SearchID;
+                int adults = 0;
+                string adultsbyroom = string.Empty;
+                string ChildrenByRoom = string.Empty;
+                int childs = 0;
+                int Roomsdb = 0;
+                string childages = string.Empty;
+
+                string cmdtxtrkey = "select * from HotelSearch where Searchidn=" + searchid + "";
+                DataTable dtsres = manage_data.GetDataTable(cmdtxtrkey, manage_data.con);
+                if (dtsres.Rows.Count > 0)
+                {
+                    Roomsdb = Convert.ToInt32(dtsres.Rows[0]["Rooms"].ToString());
+                    adults = Convert.ToInt32(dtsres.Rows[0]["Adults"].ToString());
+                    adultsbyroom = dtsres.Rows[0]["HB_AdultsByRoom"].ToString();
+                    childs = Convert.ToInt32(dtsres.Rows[0]["Children"].ToString());
+                    ChildrenByRoom = dtsres.Rows[0]["HB_ChildrenByRoom"].ToString();
+                    childages = dtsres.Rows[0]["HB_ChildAge"].ToString();
+                    //room1-child1-childAge1_4,room1-child2-childAge2_6,room2-child1-childAge1_7
+
+                    //ratekey = "20190322|20190323|W|235|425919|DBL.ST|FIT1|RO||1~1~2|4~6|N@440CE2A9A5234A11546798860704AAUK0000031001500020924da2";
+                    //20190222|20190223|W|235|168947|DBL.2Q-NM|ID_B2B_26|RO|SF2|1~2~1|5~8|N@665957DF25404AE1546686230830AAUK000000100010001052601b6
+                }
+
                 ClsFevicons objfavicons;
                 objfavicons = new ClsFevicons();
                 CultureInfo cultureInfo = Thread.CurrentThread.CurrentCulture;
@@ -284,8 +429,71 @@ namespace HotelDevMTWebapi.Controllers
 
                 rq += "<checkRateRQ xmlns='http://www.hotelbeds.com/schemas/messages' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' upselling='False' language='ENG'>";
 
-                rq += "<rooms><room rateKey='" + ratekey + "'/></rooms>";
+                int rc = 0;
+                int cco = 0;
+                int adco = 0;
+                string[] ratekey_split = ratekey.Split('|');
+                string[] chags_split = childages.Split(',');
+                string[] childbyroom_split = ChildrenByRoom.Split('_');
+                string[] adtbyroom_split = adultsbyroom.Split('_');
+                int chagc = 0;
 
+               
+                    rq += "<rooms>";
+                for (int i = 0; i < Roomsdb; i++)
+                {
+                    int adts = Convert.ToInt32(adtbyroom_split[i].Split('-')[1]);
+                    int chds = Convert.ToInt32(childbyroom_split[i].Split('-')[1]);
+                    if (i == 0)
+                    {
+                        rq += "<room rateKey='" + ratekey + "'>";
+                        chagc = chds;
+                    }
+                    else
+                    {
+                        string ratekey_new = "";
+                        //string[] roominfo = null;
+
+                        //if (chds > 0)
+                        //{
+
+                        //    roominfo = chags_split[i].Split('_');
+                        //}
+
+                        string roomcont = "1~" + adts + "~" + chds;
+                        string agscont = "";
+                        for (int a = 0; a < chds; a++)
+                        {
+
+                            agscont += chags_split[chagc].Split('_')[1] + "~";
+                            chagc++;
+                        }
+                        if (chds > 0)
+                        {
+                            ratekey_split[10] = agscont.Remove(agscont.Length - 1);
+                            ratekey_split[9] = roomcont;
+                            for (int r = 0; r <= 11; r++)
+                            {
+                                ratekey_new += ratekey_split[r] + "|";
+                            }
+
+                            rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'>";
+                        }
+                        else
+                        {
+                            ratekey_split[10] = "";
+                            ratekey_split[9] = roomcont;
+                            for (int r = 0; r <= 11; r++)
+                            {
+                                ratekey_new += ratekey_split[r] + "|";
+                            }
+
+                            rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'>";
+                        }
+                    }
+
+                }
+                rq += "</rooms>";
                 rq += "</checkRateRQ>";
 
             }
@@ -297,5 +505,238 @@ namespace HotelDevMTWebapi.Controllers
             return rq;
 
         }
+        private string GetDayRate(DataTable dt,int room, string rdate)
+        {
+            int rm = room - 1;
+            string rvalue = "&nbsp";
+            DataRow[] dr = dt.Select("expdate >=#" + rdate + "# and  effedate <=#" + rdate + "#");
+            int i = 0;
+            if (dr.Count() > 1)
+            {
+                i = dr.Count() - 1;
+            }
+            if (dr.Count() > 0)
+            {
+                decimal amount = 0.0M;
+                decimal taxes = 0.0M;
+
+                if (dr[0]["amount"].ToString() != "")
+                {
+                    amount = Convert.ToDecimal(dr[rm]["amount"].ToString());
+                }
+                if (dr[0]["taxes"].ToString() != "")
+                {
+                    taxes = Convert.ToDecimal(dr[rm]["taxes"].ToString());
+                }
+                //Decimal rate = amount + taxes;
+                Decimal rate = amount;
+                rvalue = Convert.ToDouble(rate.ToString()).ToString("0.00");
+            }
+            return rvalue;
+        }
+
+
+        private string GetRateTable(string RPH, CheckRateRS hpr, List<Rate> lstRate, string hcode, string searchid, string curcode, double admarkup, double clmarkup, double addiscount, double cldiscount, double roomtaxprice, string b2c_idn, int norooms)// DataRow dr,
+        {
+
+            string rvalue = "";
+            List<Rooms> lstRooms = new List<Rooms>();
+            Room objRoom = new Room();
+            double rrate = 0.00;
+            double adroommarkup = 0.00;
+            double roombaseamount = 0.00;
+            double roomamountwithouttax = 0.00;
+            double adroompercmarkup = 0.00;
+            double clroompercmarkup = 0.00;
+            double adroomperdiscount = 0.00;
+            double clroomperdiscount = 0.00;
+            double clroommarkup = 0.00;
+            double finalroommarkup = 0.00;
+            double finalroomdiscount = 0.00;
+            double adroomdiscount = 0.00;
+            double clroomdiscount = 0.00;
+
+
+            DataTable dts = HotelDBLayer.GetSearch(searchid);
+            DateTime checkindt = Convert.ToDateTime(hpr.Hotel.CheckIn);
+            DateTime checkoutdt = Convert.ToDateTime(hpr.Hotel.CheckOut);
+            norooms = Convert.ToInt32(dts.Rows[0]["Rooms"].ToString());
+
+            double dc = 0.0;
+            try
+            { dc = (Convert.ToDateTime(checkoutdt.ToString()) - Convert.ToDateTime(checkindt.ToString())).TotalDays; }
+            catch { }
+
+            DateTime startweekdate = checkindt.AddDays(-(int)checkindt.DayOfWeek);
+            DateTime endweekdate = checkoutdt.AddDays(-(int)checkoutdt.DayOfWeek).AddDays(6);
+
+            double noofdays = (endweekdate - startweekdate).TotalDays;
+            decimal noofweeks = Decimal.Ceiling(Convert.ToDecimal(noofdays) / 7);
+
+            string strtable = "<table width='100%' border='0' cellspacing='0' cellpadding='0' class='week-table-main'>";
+            strtable += "<tbody><tr><td>";
+            strtable += "<table width='100%' border='0' cellspacing='0' cellpadding='0' class='week-days'>";
+            strtable += "<tbody><tr><td>&nbsp;</td><td>Sun</td><td>mon</td><td>tue</td><td>wed</td><td>thu</td><td>fri</td> <td>sat</td> </tr></tbody></table>";
+            strtable += "</td></tr><tr><td> <table width='100%' border='0' cellspacing='0' cellpadding='0' class='price-details'><tbody>";
+
+            DataRow[] hpraterangerow = null;
+            try
+            {
+
+                // hpraterangerow = hpr.HP_RateRange.Select("HotelPricingID='" + hotelpricingrow[0]["HotelPricingID"].ToString() + "'");
+            }
+            catch
+            {
+
+            }
+
+            DataTable dtr = new DataTable();
+            dtr.Columns.Add("id");
+            dtr.Columns.Add("amount");
+            dtr.Columns.Add("taxes");
+            dtr.Columns.Add("surcharges");
+            dtr.Columns.Add("expdate", typeof(DateTime));
+            dtr.Columns.Add("effedate", typeof(DateTime));
+            dtr.Columns.Add("hid");
+
+            
+            int r = 1;
+            foreach (var rate in lstRate)
+            {
+                double troomspricepernightwithmarkup = 0.00;
+
+               
+
+                // eachroomsprice = Convert.ToDouble(troomsprice / norooms);
+                rrate = Convert.ToDouble(Convert.ToDouble(Convert.ToDouble(lstRate[r-1].Net) / dc).ToString("0.00"));
+
+                string avgpnignt = Convert.ToDouble(rrate).ToString();
+
+                //string avgroompernight = (Convert.ToDouble(avgpnignt) / dc).ToString("0.00");
+
+                roombaseamount = Convert.ToDouble(avgpnignt);
+
+                DataTable dtwt = new DataTable();
+                SqlConnection sqlconwt = new SqlConnection(con);
+                try
+                {
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = sqlconwt;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "p_SreTS_HDR";
+                    cmd.Parameters.AddWithValue("@B2C_IDN", b2c_idn);
+                    cmd.Parameters.AddWithValue("@Hotelcode", hcode);
+                    cmd.Parameters.AddWithValue("@GDS", "HB");
+                    cmd.Parameters.AddWithValue("@IsLoginCust", "Y");
+                    SqlDataAdapter sa = new SqlDataAdapter(cmd);
+                    sa.Fill(dtwt);
+                }
+                catch
+                {
+                }
+
+                if (dtwt.Rows.Count > 0)
+                {
+
+                    string Ts_mode = string.Empty;
+                    Ts_mode = dtwt.Rows[0]["TS_Mode"].ToString();
+                    if (Ts_mode == "Fixed")
+                    {
+                        adroommarkup = Convert.ToDouble(dtwt.Rows[0]["TS_Markup"].ToString());
+                        adroomdiscount = Convert.ToDouble(dtwt.Rows[0]["TS_Discount"].ToString());
+
+                    }
+                    else if (Ts_mode == "Percentage")
+                    {
+                        adroompercmarkup = Convert.ToDouble(dtwt.Rows[0]["TS_Markup"].ToString());
+                        adroommarkup = ((roombaseamount / 100.00) * adroompercmarkup);
+
+                        adroomperdiscount = Convert.ToDouble(dtwt.Rows[0]["TS_Discount"].ToString());
+                        adroomdiscount = (((roombaseamount) / 100.00) * adroomperdiscount);
+                    }
+                    else
+                    {
+                        adroommarkup = 0.00;
+                        adroomdiscount = 0.00;
+
+                    }
+
+                    string Cl_Mode = string.Empty;
+                    Cl_Mode = dtwt.Rows[0]["Cl_Mode"].ToString();
+                    if (Cl_Mode == "Fixed")
+                    {
+                        clmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                        cldiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
+
+                    }
+                    else if (Cl_Mode == "Percentage")
+                    {
+                        clroompercmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                        clroommarkup = (((roombaseamount) / (100)) * clroompercmarkup);
+
+                        clroomperdiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
+                        clroomdiscount = ((roombaseamount / 100.00) * clroomperdiscount);
+                    }
+                    else
+                    {
+                        clmarkup = 0.00;
+
+                    }
+
+                    finalroommarkup = adroommarkup + clroommarkup;
+                    finalroomdiscount = adroomdiscount + clroomdiscount;
+                    roombaseamount = roombaseamount + (finalroommarkup - finalroomdiscount);
+                    roomamountwithouttax = (Convert.ToDouble(roombaseamount));
+                    // roombaseamount = (Convert.ToDouble(roomamountwithouttax) + Convert.ToDouble(tax));
+                    troomspricepernightwithmarkup = troomspricepernightwithmarkup + (Convert.ToDouble(roomamountwithouttax));
+                    
+                }
+                DataRow drp = dtr.NewRow();
+                drp[0] = 0;
+                drp[1] = troomspricepernightwithmarkup.ToString("0.00"); //roomdescrow[0]["RatePernight"];
+                drp[2] = 0;
+                drp[3] = 0;
+                drp[4] = "2019-" + checkoutdt.ToString("MM-dd");
+                drp[5] = "2019-" + checkindt.ToString("MM-dd");
+                drp[6] = 1;
+                dtr.Rows.Add(drp);
+                strtable += "<tr><td>Room" + (r) + "</td>";
+                for (int i = 0; i < noofweeks; i++)
+                {
+
+                    strtable += "<tr><td>Week" + (i + 1) + "</td>";
+                    for (int j = 0; j < 7; j++)
+                    {
+
+                        DateTime chkdate = startweekdate.AddDays((7 * i) + j);
+                        if (checkoutdt == chkdate)
+                        {
+                            strtable += "<td>&nbsp;</td>";
+                        }
+                        else
+                        {
+                            var perDays = rate.Net.ToString();
+                            var perDay = Convert.ToDouble(perDays) / dc;
+
+
+                            strtable += "<td>" + "$" + GetDayRate(dtr, r,chkdate.ToString("MM-dd-yyyy")) + "</td>";
+
+                        }
+
+
+                    }
+                    strtable += "</tr>";
+
+                }
+                r++;
+            }
+            strtable += "</tbody> </table> </td> </tr> </tbody></table>";
+
+            return strtable;
+        }
     }
+
 }
+
+
+
