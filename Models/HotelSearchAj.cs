@@ -204,8 +204,13 @@ public class HotelSearchAj
                                 }
                                 if (itemrates.Taxes != null)
                                 {
+                                    //List<Tax> lsttax = new List<Tax>();
                                     xml += "<taxes allIncluded='" + itemrates.Taxes.AllIncluded + "'>";
-                                    xml += "<tax included='" + itemrates.Taxes.Tax.Included + "' amount='" + itemrates.Taxes.Tax.Amount + "' currency='" + itemrates.Taxes.Tax.Currency + "' type='" + itemrates.Taxes.Tax.type + "' />";
+                                    //foreach (var lttax in itemrates.Taxes.Tax)
+                                    //{
+
+                                        xml += "<tax included='" + itemrates.Taxes.Tax.Included + "' amount='" + itemrates.Taxes.Tax.Amount + "' currency='" + itemrates.Taxes.Tax.Currency + "' type='" + itemrates.Taxes.Tax.type + "' />";
+                                    //}
                                     xml += "</taxes>";
                                 }
                                 xml += "</rate>";
@@ -253,7 +258,7 @@ public class HotelSearchAj
                         {
                             if (itemrates.ChildrenAges != null)
                             {
-
+                               
                                 xml += "<rate rateKey='" + itemrates.RateKey + "' rateClass='" + itemrates.RateClass + "' rateType='" + itemrates.RateType + "' net='" + itemrates.Net + "' allotment='" + itemrates.Allotment + "' paymentType='" + itemrates.PaymentType + "' packaging='" + itemrates.Packaging + "' boardCode='" + itemrates.BoardCode + "' boardName='" + itemrates.BoardName + "' rooms='" + itemrates.Rooms + "' adults='" + itemrates.Adults + "' children='" + itemrates.Children + "' childrenAges='" + itemrates.ChildrenAges + "'>";
                             }
                             else
@@ -268,9 +273,18 @@ public class HotelSearchAj
                             }
                             if (itemrates.Taxes != null)
                             {
-                                xml += "<taxes allIncluded='" + itemrates.Taxes.AllIncluded + "'>";
-                                xml += "<tax included='" + itemrates.Taxes.Tax.Included + "' amount='" + itemrates.Taxes.Tax.Amount + "' currency='" + itemrates.Taxes.Tax.Currency + "' type='" + itemrates.Taxes.Tax.type + "' />";
+
+                                //List<Tax> lsttax = new List<Tax>();
+                                //itemrates.Taxes.Tax= itemrates.Taxes.Tax.Where(t => t.Included == "true").ToList();
+                                xml += "<taxes allIncluded='" + itemrates.Taxes.AllIncluded + "'>";                               
+                                //foreach (var lttax in itemrates.Taxes.Tax)
+                                //{
+                                    
+                                        xml += "<tax included='" + itemrates.Taxes.Tax.Included + "' amount='" + itemrates.Taxes.Tax.Amount + "' currency='" + itemrates.Taxes.Tax.Currency + "' type='" + itemrates.Taxes.Tax.type + "' />";
+                                   
+                                //}
                                 xml += "</taxes>";
+
                             }
                             xml += "</rate>";
                         }
