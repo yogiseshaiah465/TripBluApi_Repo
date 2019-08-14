@@ -35,7 +35,7 @@ namespace TripxolHotelsWebapi.Controllers
 
         public static string checkimg(string slnk)
         {
-            HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create("http://photos.hotelbeds.com/giata/" + slnk);
+            HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create("http://photos.hotelbeds.com/giata/bigger/" + slnk);
             HttpWebResponse httpRes = null;
             string result = "";
             try
@@ -90,7 +90,7 @@ namespace TripxolHotelsWebapi.Controllers
                     if (res == "found")
                     {
 
-                        images += "<div class='gallery__img-block'><img height= '557px' src='http://photos.hotelbeds.com/giata/" + drh["Path"].ToString() + "' thumb-url='http://photos.hotelbeds.com/giata/" + drh["Path"].ToString() + "' class=''></div>";
+                        images += "<div class='gallery__img-block'><img height= '557px' src='http://photos.hotelbeds.com/giata/bigger/" + drh["Path"].ToString() + "' thumb-url='http://photos.hotelbeds.com/giata/" + drh["Path"].ToString() + "' class=''></div>";
                     }
                 }
                
@@ -154,7 +154,7 @@ namespace TripxolHotelsWebapi.Controllers
                  foreach (DataRow drh in dr)
                  {
                      i++;
-                     images += "<div class='mySlides fade'> <div class='numbertext'>" + i + "/" + timg + "</div>  <img  src='http://photos.hotelbeds.com/giata/" + drh["Path"].ToString() + "' width= '600px' height= '225px'>  <div class='text'>Caption Text</div></div>";
+                     images += "<div class='mySlides fade'> <div class='numbertext'>" + i + "/" + timg + "</div>  <img  src='http://photos.hotelbeds.com/giata/bigger/" + drh["Path"].ToString() + "' width= '600px' height= '225px'>  <div class='text'>Caption Text</div></div>";
                  }
                  
                
