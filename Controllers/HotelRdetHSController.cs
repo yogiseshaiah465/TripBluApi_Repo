@@ -460,7 +460,10 @@ namespace TripxolHotelsWebapi.Controllers
                                                 //stravroomdet += "<a target='_blank' href='HotelPayment.aspx?Searchid=" + searchid + "&HotelCode=" + hcode + "&RPH=" + dr.Code + "&Boardcode=" + drrt.BoardCode + "&Currency=" + curcode + "&award=" + award + "&checkin=" + checkind + "&checkout=" + checkoutd + "&gc=" + adults +"&children="+children+"'>Book now</a>";
 
                                                 //stravroomdet += "<a target='_blank' href='#' onclick='selroom(" + dr.Code + "," + rrate + "," + rrate.ToString().Trim('$') + ")'>Book now</a>";
-                                                stravroomdet += "<a href='#'   data-toggle='modal'  onclick='selroom(\"" + rph + "\",\"" + boardCode + "\",\"" + eachroomspernihgtpricewmrk + "\",\"" + eachroomspernihgtpricewmrk.ToString().Trim('$') + "\",\"" + hcode.ToString() + "\",\"" + curcode.ToString() + "\",\"" + eachroomtaxprice + "\",\"" + allroomsprice + "\")'>Book Now</a>";
+                                                stravroomdet += "<a href='#'  data-toggle='modal'  onclick='selroom(\"" + rph + "\",\"" + boardCode + "\",\"" + eachroomspernihgtpricewmrk + "\",\"" + eachroomspernihgtpricewmrk.ToString().Trim('$') + "\",\"" + hcode.ToString() + "\",\"" + curcode.ToString() + "\",\"" + eachroomtaxprice + "\",\"" + allroomsprice + "\")'>Book Now</a>";
+
+                                                
+
                                                 // stravroomdet += "<div class='rr-pc-rht'><a href='#'  class='rmrates-booknw' data-toggle='modal' data-target='#myContactModal' onclick='selroom(" + dr.Code + "," + rrate + "," + rrate.ToString().Trim('$') + ")'>Book Now</a>";//dr["HPTotalAmount"]
 
                                                 stravroomdet += "</div>";

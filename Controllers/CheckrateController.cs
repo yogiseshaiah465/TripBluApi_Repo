@@ -16,6 +16,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Collections;
 
 namespace HotelDevMTWebapi.Controllers
 {
@@ -30,12 +31,14 @@ namespace HotelDevMTWebapi.Controllers
         public string Message { get; set; }
 
     }
+    
 
     public class CheckrateController : ApiController
     {
         public static string con = ConfigurationManager.ConnectionStrings["SqlConn"].ToString();
 
         [HttpGet]
+        [AllowAnonymous]
         public checkresult Get(string searchid, string hcode, string ratekey, string b2c_idn)
         {
             double admarkup = 0.00;
@@ -86,12 +89,9 @@ namespace HotelDevMTWebapi.Controllers
             DataTable dssearch = HotelDBLayer.GetSearch(searchid);
             int rooms = Convert.ToInt32(dssearch.Rows[0]["Rooms"]);
 
-            checkrates(searchid, hcode, ratekey, b2c_idn);
-
-
-            string ratekey_split = ratekey.Substring(ratekey.Length - 4);
-
-
+            checkrates(searchid, hcode, ratekey, b2c_idn);         
+            string[] ratekeys = ratekey.Split(',');           
+            string ratekey_split = ratekeys[0].Substring(ratekeys[0].Length - 4);
             try
             {
                 ClsFevicons objfavicons;
@@ -352,7 +352,10 @@ namespace HotelDevMTWebapi.Controllers
         public string Getrates(string sc, string SearchID, string ratekey, string b2c_idn)
         {
             string result = "";
-            string ratekey_split = ratekey.Substring(ratekey.Length - 4);
+            
+            string[] ratekeys = ratekey.Split(',');
+            //string ratekey_split = ratekey.Substring(ratekey.Length - 4);
+            string ratekey_split = ratekeys[0].Substring(ratekeys[0].Length - 4);
             //   ManageHDetAj mhd = new ManageHDetAj();
             // HotelPropertyAj hpr = mhd.GetData(searchid, hcode,"USD");
             string htlchkuri = ConfigurationManager.AppSettings["HotelPortalBookingUri"] != null ? ConfigurationManager.AppSettings["HotelPortalCheckRateUri"].ToString() : string.Empty;
@@ -429,70 +432,74 @@ namespace HotelDevMTWebapi.Controllers
 
                 rq += "<checkRateRQ xmlns='http://www.hotelbeds.com/schemas/messages' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' upselling='False' language='ENG'>";
 
-                int rc = 0;
-                int cco = 0;
-                int adco = 0;
-                string[] ratekey_split = ratekey.Split('|');
-                string[] chags_split = childages.Split(',');
-                string[] childbyroom_split = ChildrenByRoom.Split('_');
-                string[] adtbyroom_split = adultsbyroom.Split('_');
-                int chagc = 0;
+                //int rc = 0;
+                //int cco = 0;
+                //int adco = 0;
+                //string[] ratekey_split = ratekeys.Split('|');
+                //string[] chags_split = childages.Split(',');
+                //string[] childbyroom_split = ChildrenByRoom.Split('_');
+                //string[] adtbyroom_split = adultsbyroom.Split('_');
+                //int chagc = 0;
 
                
                     rq += "<rooms>";
                 for (int i = 0; i < Roomsdb; i++)
                 {
-                    int adts = Convert.ToInt32(adtbyroom_split[i].Split('-')[1]);
-                    int chds = Convert.ToInt32(childbyroom_split[i].Split('-')[1]);
-                    if (i == 0)
+                    //int adts = Convert.ToInt32(adtbyroom_split[i+1].Split('-')[1]);
+                    //int chds = Convert.ToInt32(childbyroom_split[i + 1].Split('-')[1]);
+                    //if (i == 0)
+                    //{
+                    //    rq += "<room rateKey='" + ratekey + "'/>";
+                    //    chagc = chds;
+                    //}
+                    //else
+                    //{
+                    //    string ratekey_new = "";
+                    //    //string[] roominfo = null;
+
+                    //    //if (chds > 0)
+                    //    //{
+
+                    //    //    roominfo = chags_split[i].Split('_');
+                    //    //}
+
+                    //    string roomcont = "1~" + adts + "~" + chds;
+                    //    string agscont = "";
+                    //    for (int a = 0; a < chds; a++)
+                    //    {
+
+                    //        agscont += chags_split[chagc].Split('_')[1] + "~";
+                    //        chagc++;
+                    //    }
+                    //    if (chds > 0)
+                    //    {
+                    //        ratekey_split[10] = agscont.Remove(agscont.Length - 1);
+                    //        ratekey_split[9] = roomcont;
+                    //        for (int r = 0; r <= 11; r++)
+                    //        {
+                    //            ratekey_new += ratekey_split[r] + "|";
+                    //        }
+
+                    //        rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'/>";
+                    //    }
+                    //    else
+                    //    {
+                    //        ratekey_split[10] = "";
+                    //        ratekey_split[9] = roomcont;
+                    //        for (int r = 0; r <= 11; r++)
+                    //        {
+                    //            ratekey_new += ratekey_split[r] + "|";
+                    //        }
+
+                    //        rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'/>";
+                    //    }
+                    //}
+                    foreach (string ratek in ratekey.Split(','))
                     {
-                        rq += "<room rateKey='" + ratekey + "'/>";
-                        chagc = chds;
-                    }
-                    else
-                    {
-                        string ratekey_new = "";
-                        //string[] roominfo = null;
-
-                        //if (chds > 0)
-                        //{
-
-                        //    roominfo = chags_split[i].Split('_');
-                        //}
-
-                        string roomcont = "1~" + adts + "~" + chds;
-                        string agscont = "";
-                        for (int a = 0; a < chds; a++)
-                        {
-
-                            agscont += chags_split[chagc].Split('_')[1] + "~";
-                            chagc++;
-                        }
-                        if (chds > 0)
-                        {
-                            ratekey_split[10] = agscont.Remove(agscont.Length - 1);
-                            ratekey_split[9] = roomcont;
-                            for (int r = 0; r <= 11; r++)
-                            {
-                                ratekey_new += ratekey_split[r] + "|";
-                            }
-
-                            rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'/>";
-                        }
-                        else
-                        {
-                            ratekey_split[10] = "";
-                            ratekey_split[9] = roomcont;
-                            for (int r = 0; r <= 11; r++)
-                            {
-                                ratekey_new += ratekey_split[r] + "|";
-                            }
-
-                            rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'/>";
-                        }
+                        rq += "<room rateKey='" + ratek + "'/>";
                     }
 
-                }
+                    }
                 rq += "</rooms>";
                 rq += "</checkRateRQ>";
 

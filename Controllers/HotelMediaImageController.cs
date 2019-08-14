@@ -35,7 +35,7 @@ namespace TripxolHotelsWebapi.Controllers
 
         public static string checkimg(string slnk)
         {
-            HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create("http://photos.hotelbeds.com/giata/" + slnk);
+            HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create("http://photos.hotelbeds.com/giata/bigger/" + slnk);
             HttpWebResponse httpRes = null;
             string result = "";
             try
