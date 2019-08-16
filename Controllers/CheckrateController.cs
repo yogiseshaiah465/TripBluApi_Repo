@@ -31,7 +31,7 @@ namespace HotelDevMTWebapi.Controllers
         public string Message { get; set; }
 
     }
-    
+
 
     public class CheckrateController : ApiController
     {
@@ -89,8 +89,8 @@ namespace HotelDevMTWebapi.Controllers
             DataTable dssearch = HotelDBLayer.GetSearch(searchid);
             int rooms = Convert.ToInt32(dssearch.Rows[0]["Rooms"]);
 
-            checkrates(searchid, hcode, ratekey, b2c_idn);         
-            string[] ratekeys = ratekey.Split(',');           
+            checkrates(searchid, hcode, ratekey, b2c_idn);
+            string[] ratekeys = ratekey.Split(',');
             string ratekey_split = ratekeys[0].Substring(ratekeys[0].Length - 4);
             try
             {
@@ -216,7 +216,7 @@ namespace HotelDevMTWebapi.Controllers
 
 
 
-                                    if (lstRate[r].Taxes != null && lstRate[r].Taxes.Tax.Amount!=null)
+                                    if (lstRate[r].Taxes != null && lstRate[r].Taxes.Tax.Amount != null)
                                     {
 
                                         roomtaxprice = roomtaxprice + Convert.ToDouble(lstRate[r].Taxes.Tax.Amount.ToString());
@@ -276,7 +276,7 @@ namespace HotelDevMTWebapi.Controllers
                                 {
                                     //cancleplamount = "NO Cancellation amount";
                                 }
-                                 ratetable = HttpUtility.HtmlEncode(GetRateTable(hcode, objCheckRateRS, lstRate, hcode, searchid, "USD", adroommarkup, clroommarkup, adroomdiscount, clroomdiscount, roomtaxprice, b2c_idn, rooms));
+                                ratetable = GetRateTable(hcode, objCheckRateRS, lstRate, hcode, searchid, "USD", adroommarkup, clroommarkup, adroomdiscount, clroomdiscount, roomtaxprice, b2c_idn, rooms);//HttpUtility.HtmlEncode(
 
 
                             }
@@ -315,7 +315,7 @@ namespace HotelDevMTWebapi.Controllers
                             objchkres.Tax = "0.00";
                         }
 
-                       
+
                         //HotelListGenerate.CreateTables(dtBPIadd);
                         //HotelListGenerate.FillHStable(xnod, dtBPIadd);//yogi
                     }
@@ -352,7 +352,7 @@ namespace HotelDevMTWebapi.Controllers
         public string Getrates(string sc, string SearchID, string ratekey, string b2c_idn)
         {
             string result = "";
-            
+
             string[] ratekeys = ratekey.Split(',');
             //string ratekey_split = ratekey.Substring(ratekey.Length - 4);
             string ratekey_split = ratekeys[0].Substring(ratekeys[0].Length - 4);
@@ -441,10 +441,10 @@ namespace HotelDevMTWebapi.Controllers
                 //string[] adtbyroom_split = adultsbyroom.Split('_');
                 //int chagc = 0;
 
-               
-                    rq += "<rooms>";
-                for (int i = 0; i < Roomsdb; i++)
-                {
+
+                rq += "<rooms>";
+                //for (int i = 0; i < Roomsdb; i++)
+                //{
                     //int adts = Convert.ToInt32(adtbyroom_split[i+1].Split('-')[1]);
                     //int chds = Convert.ToInt32(childbyroom_split[i + 1].Split('-')[1]);
                     //if (i == 0)
@@ -496,10 +496,13 @@ namespace HotelDevMTWebapi.Controllers
                     //}
                     foreach (string ratek in ratekey.Split(','))
                     {
-                        rq += "<room rateKey='" + ratek + "'/>";
+                        if(ratek!=null && ratek!="")
+                        { 
+                            rq += "<room rateKey='" + ratek + "'/>";
+                        }
                     }
 
-                    }
+               // }
                 rq += "</rooms>";
                 rq += "</checkRateRQ>";
 
@@ -512,7 +515,7 @@ namespace HotelDevMTWebapi.Controllers
             return rq;
 
         }
-        private string GetDayRate(DataTable dt,int room, string rdate)
+        private string GetDayRate(DataTable dt, int room, string rdate)
         {
             int rm = room - 1;
             string rvalue = "&nbsp";
@@ -606,16 +609,16 @@ namespace HotelDevMTWebapi.Controllers
             dtr.Columns.Add("effedate", typeof(DateTime));
             dtr.Columns.Add("hid");
 
-            
+
             int r = 1;
             foreach (var rate in lstRate)
             {
                 double troomspricepernightwithmarkup = 0.00;
 
-               
+
 
                 // eachroomsprice = Convert.ToDouble(troomsprice / norooms);
-                rrate = Convert.ToDouble(Convert.ToDouble(Convert.ToDouble(lstRate[r-1].Net) / dc).ToString("0.00"));
+                rrate = Convert.ToDouble(Convert.ToDouble(Convert.ToDouble(lstRate[r - 1].Net) / dc).ToString("0.00"));
 
                 string avgpnignt = Convert.ToDouble(rrate).ToString();
 
@@ -696,7 +699,7 @@ namespace HotelDevMTWebapi.Controllers
                     roomamountwithouttax = (Convert.ToDouble(roombaseamount));
                     // roombaseamount = (Convert.ToDouble(roomamountwithouttax) + Convert.ToDouble(tax));
                     troomspricepernightwithmarkup = troomspricepernightwithmarkup + (Convert.ToDouble(roomamountwithouttax));
-                    
+
                 }
                 DataRow drp = dtr.NewRow();
                 drp[0] = 0;
@@ -726,7 +729,7 @@ namespace HotelDevMTWebapi.Controllers
                             var perDay = Convert.ToDouble(perDays) / dc;
 
 
-                            strtable += "<td>" + "$" + GetDayRate(dtr, r,chkdate.ToString("MM-dd-yyyy")) + "</td>";
+                            strtable += "<td>" + "$" + GetDayRate(dtr, r, chkdate.ToString("MM-dd-yyyy")) + "</td>";
 
                         }
 
