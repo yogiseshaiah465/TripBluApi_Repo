@@ -1371,9 +1371,14 @@ public class HotelListGenerate
                 //_obj.Hotels.Hotel = _obj.Hotels.Hotel.Where(k => Convert.ToDouble(Convert.ToDouble(k.MinRate)/(dc)) >= Convert.ToDouble(vlprice)
                 //       && Convert.ToDouble(Convert.ToDouble(k.MinRate)/dc) <= Convert.ToDouble(vhprice)).ToList();
 
+                //for sorting by hotel name missing some hotel 08-16-19
+                //_obj.Hotels.Hotel = _obj.Hotels.Hotel.Where(k => Convert.ToDouble(k.MinRate) >= Convert.ToDouble(vlprice)
+                //       && Convert.ToDouble(k.MaxRate) <= Convert.ToDouble(vhprice)).ToList();
 
+
+                double maxrate = Convert.ToDouble(_obj.Hotels.Hotel.Max(k => Convert.ToDouble(k.MinRate)).ToString());
                 _obj.Hotels.Hotel = _obj.Hotels.Hotel.Where(k => Convert.ToDouble(k.MinRate) >= Convert.ToDouble(vlprice)
-                        && Convert.ToDouble(k.MaxRate) <= Convert.ToDouble(vhprice)).ToList();
+                        && Convert.ToDouble(Convert.ToDouble(maxrate) /dc) <= Convert.ToDouble(vhprice)).ToList();
             }
             else
             {
