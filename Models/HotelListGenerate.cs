@@ -1430,11 +1430,11 @@ public class HotelListGenerate
         string add = string.Empty;
         try
         {
-            cmdtxt = "select  DestinationCode, Address, City, PostalCode, Longitude, Latitude, ZoneCode, CountryCode, Email, IsActive, CreatedDt, LastUpdDt, CreatedUser, LastUpdUser from HotelAddress where HotelCode='" + hotelcode + "' ";
+            cmdtxt = "select  DestinationCode, Address, City, PostalCode, Longitude, Latitude, ZoneCode, CountryCode, Email, IsActive, CreatedDt, LastUpdDt, CreatedUser, LastUpdUser from HotelAddress where HotelCode='" + hotelcode + "'";
             result = manage_data.GetDataTable(cmdtxt, manage_data.flip_conhb);
             if (result.Rows.Count > 0)
             {
-                add = result.Rows[0]["Address"].ToString() + "," + result.Rows[0]["DestinationCode"].ToString() + "," + result.Rows[0]["City"].ToString() + "," + result.Rows[0]["PostalCode"].ToString() + "," + result.Rows[0]["CountryCode"].ToString() + ",";
+                add = result.Rows[0]["Address"].ToString().Trim(',') + "," + result.Rows[0]["DestinationCode"].ToString().Trim(',') + "," + result.Rows[0]["City"].ToString() + "," + result.Rows[0]["PostalCode"].ToString() + "," + result.Rows[0]["CountryCode"].ToString() + ",";
             }
 
         }
@@ -1443,7 +1443,7 @@ public class HotelListGenerate
         }
 
 
-        return add;
+        return add.Trim(',');
     }
     public static string getimpagePath(string imagetcode, string hotelcode)
     {
