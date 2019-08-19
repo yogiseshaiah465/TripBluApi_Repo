@@ -340,7 +340,7 @@ public class HotelListGenerate
             DataRow[] drimgpath = null;
             if (System.Web.HttpContext.Current.Cache["dtffbookingfb" + searchid] == null)
             {
-                string cmdflbkfb = "select HotelCode,Path,ImageTypeCode from HotelImage where HotelCode in (" + dthbhotelcds.Rows[0]["HB_HotelCodes"].ToString() + ")";
+                string cmdflbkfb = "select HotelCode,Path,ImageTypeCode from HotelImage where HotelCode in (" + dthbhotelcds.Rows[0]["HB_HotelCodes"].ToString() + ") order by HotelCode,Path asc";
                 dtffbookingfb = manage_data.GetDataTable(cmdflbkfb, manage_data.flip_conhb);
                 System.Web.HttpContext.Current.Cache["dtffbookingfb" + searchid] = dtffbookingfb;
             }
@@ -1457,7 +1457,7 @@ public class HotelListGenerate
         try
         {
 
-            string cmdflbkfb = "select Path from HotelImage where HotelCode='" + hotelcode + "' and ImageTypeCode='" + imagetcode + "'";
+            string cmdflbkfb = "select Path from HotelImage where HotelCode='" + hotelcode + "' and ImageTypeCode='" + imagetcode + "' order by HotelCode,Path asc";
             DataTable dtffbookingfb = manage_data.GetDataTable(cmdflbkfb, manage_data.flip_conhb);
             if (dtffbookingfb.Rows.Count > 0)
             {

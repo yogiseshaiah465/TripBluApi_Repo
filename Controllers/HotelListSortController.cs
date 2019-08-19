@@ -281,7 +281,7 @@ namespace TripxolHotelsWebapi.Controllers
             DataRow[] drimgpath = null;
             if (System.Web.HttpContext.Current.Cache["dtffbookingfb"+searchid] == null)
             {
-                string cmdflbkfb = "select HotelCode,Path,ImageTypeCode from HotelImage where HotelCode in (" + dthbhotelcds.Rows[0]["HB_HotelCodes"].ToString() + ")";
+                string cmdflbkfb = "select HotelCode,Path,ImageTypeCode from HotelImage where HotelCode in (" + dthbhotelcds.Rows[0]["HB_HotelCodes"].ToString() + ") order by HotelCode,Path asc";
                 dtffbookingfb = manage_data.GetDataTable(cmdflbkfb, manage_data.flip_conhb);
                 System.Web.HttpContext.Current.Cache["dtffbookingfb" + searchid] = dtffbookingfb;
             }
