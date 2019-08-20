@@ -422,6 +422,7 @@ public class HotelListGenerate
                     #endregion
 
                     string imagecode = "GEN";
+                    string imagecode1 = "HAB";
                     int order = 2;
                     //<img src='http://photos.hotelbeds.com/giata/'" + impagePath + "' 
                     // str += objAvailabilityRS.Hotels.Hotel[i];
@@ -454,15 +455,50 @@ public class HotelListGenerate
                     }
 
                     drimgpath = dtffbookingfb.Select("HotelCode='" + objAvailabilityRS.Hotels.Hotel[i].Code + "' and ImageTypeCode='" + imagecode + "'");
+                    //try
+                    //{
+                    //    if (drimgpath[0]["Path"].ToString().Length == 0)
+                    //    {
+                    //        drimgpath = dtffbookingfb.Select("HotelCode='" + objAvailabilityRS.Hotels.Hotel[i].Code + "' and ImageTypeCode='" + imagecode1 + "'");
+                    //    }
+                    //}
+                    //catch
+                    //{
 
+                    //}
+                    
+                    string imgresult = "not found";
                     try
                     {
-                        rvalue += " <div class='htl-img-blk col-md-4'> <img src='http://photos.hotelbeds.com/giata/" + drimgpath[0]["Path"].ToString() + "' onerror='this.src=&quot;../images/No%20Image%20found.png&quot;' class='img-responsive' id='HotelImage_" + objAvailabilityRS.Hotels.Hotel[i].Code + "'/></div>";
+                        imgresult = checkimg(drimgpath[0]["Path"].ToString());
                     }
                     catch
                     {
-                        rvalue += " <div class='htl-img-blk col-md-4'> <img src='../images/No Image found.png' onerror='this.src=&quot;../images/No%20Image%20found.png&quot;' class='img-responsive' id='HotelImage_" + objAvailabilityRS.Hotels.Hotel[i].Code + "'/></div>";
+                        imgresult = "not found";
+                    }
+                    if (imgresult == "found")
+                    {
+                        try
+                        {
+                            rvalue += " <div class='htl-img-blk col-md-4'> <img src='http://photos.hotelbeds.com/giata/" + drimgpath[0]["Path"].ToString() + "' onerror='this.src=&quot;../images/No%20Image%20found.png&quot;' class='img-responsive' id='HotelImage_" + objAvailabilityRS.Hotels.Hotel[i].Code + "'/></div>";
+                        }
+                        catch
+                        {
+                            rvalue += " <div class='htl-img-blk col-md-4'> <img src='../images/No Image found.png' onerror='this.src=&quot;../images/No%20Image%20found.png&quot;' class='img-responsive' id='HotelImage_" + objAvailabilityRS.Hotels.Hotel[i].Code + "'/></div>";
 
+                        }
+                    }
+                    else
+                    {
+                        try
+                        {
+                            rvalue += " <div class='htl-img-blk col-md-4'> <img src='http://photos.hotelbeds.com/giata/" + drimgpath[1]["Path"].ToString() + "' onerror='this.src=&quot;../images/No%20Image%20found.png&quot;' class='img-responsive' id='HotelImage_" + objAvailabilityRS.Hotels.Hotel[i].Code + "'/></div>";
+                        }
+                        catch
+                        {
+                            rvalue += " <div class='htl-img-blk col-md-4'> <img src='../images/No Image found.png' onerror='this.src=&quot;../images/No%20Image%20found.png&quot;' class='img-responsive' id='HotelImage_" + objAvailabilityRS.Hotels.Hotel[i].Code + "'/></div>";
+
+                        }
                     }
                     rvalue += "<div class='col-md-8 col-sm-8 col-xs-8 htl-content'> <div class='col-md-8 col-sm-8 col-xs-8 htl-cont-left'>";
                     rvalue += "<div class='htl-header'> <div class='htl-name'>";
@@ -1776,5 +1812,37 @@ public class HotelListGenerate
     //    }
     //    return result;
     //}
+
+    public static string checkimg(string slnk)
+    {
+        HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create("http://photos.hotelbeds.com/giata/" + slnk);
+        HttpWebResponse httpRes = null;
+        string result = "";
+        try
+        {
+            httpRes = (HttpWebResponse)httpReq.GetResponse(); // Error 404 right here,
+            if (httpRes.StatusCode == HttpStatusCode.NotFound)
+            {
+
+            }
+            else
+            {
+
+                result = "found";
+            }
+        }
+
+        catch
+        {
+            result = "not found";
+        }
+        //finally
+        //{
+        //    // Close the response.
+        //    httpRes.Close();
+        //}
+
+        return result;
+    }
 }
 
