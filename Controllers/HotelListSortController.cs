@@ -304,6 +304,8 @@ namespace TripxolHotelsWebapi.Controllers
                 objhtl = HotelListGenerate.GetHotelContent(vpageno, drh.Code);
                 if (objhtl.Name != null)
                 {
+                   
+
                     lstHdbfacilities = HotelListGenerate.Gethotelfacilities(drh.Code);
                     //string lengt = objfacility.FacilityCode;
                     string facilitydescr = string.Empty;
