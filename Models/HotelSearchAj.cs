@@ -144,10 +144,10 @@ public class HotelSearchAj
 
                 //_obj.Hotels.Hotel = _obj.Hotels.Hotel.Where(k => Convert.ToDouble(Convert.ToDouble(k.MinRate)/(dc)) >= Convert.ToDouble(vlprice)
                 //       && Convert.ToDouble(Convert.ToDouble(k.MinRate)/dc) <= Convert.ToDouble(vhprice)).ToList();
-
+                double mxrate = Convert.ToDouble(objAvailabilityRS2.Hotels.Hotel.Max(k => Convert.ToDouble(k.MinRate)).ToString());
 
                 objAvailabilityRS2.Hotels.Hotel = objAvailabilityRS2.Hotels.Hotel.Where(k => Convert.ToDouble(k.MinRate) >= Convert.ToDouble(vlprice)
-                        && Convert.ToDouble(k.MaxRate) <= Convert.ToDouble(vhprice)).ToList();
+                        && Convert.ToDouble(mxrate) <= Convert.ToDouble(vhprice)).ToList();
             }
         }
 
