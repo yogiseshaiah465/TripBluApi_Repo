@@ -163,7 +163,7 @@ public class HotelListGenerate
         {
             //string condition = cond + "='true'";
             //DataRow[] dta = maintable.Select(condition);
-            string[] arr = new string[] { "Fitness", "Indpool", "Internet", "Wi-fi", "Breakfast", "Park", "Non Smoking", "Smoking Room", "Accessible", "Pets", "Airport", "Outdoor", "Wired Internet", "Car park", "Bathroom", "Bar", "DryClean", "supermarket", "alarm clock", "snacks", "pub", "auditorium", "BeachFront", "dining", "EcoCertified", "ExecutiveFloors", "FamilyPlan", "FreeLocalCalls", "FreeShuttle", "Restaurant", "Room service", "table tennis", "Tennis", "vacation resort", "volleyball" };
+            string[] arr = new string[] { "Restaurant", "Breakfast", "Fitness", "Car park", "Pets", "Smoking Room", "Smoking rooms", "Wi-fi", "Gym", "Outdoor swimming pool", "Indoor swimming pool", "Wired Internet", "Bathroom", "Bar", "DryClean", "supermarket", "alarm clock", "snacks", "pub", "auditorium", "BeachFront", "dining", "EcoCertified", "ExecutiveFloors", "FamilyPlan", "FreeLocalCalls", "FreeShuttle", "Room service", "table tennis", "Tennis", "vacation resort", "volleyball" };
 
             HotelMaincintent objhtl = new HotelMaincintent();
             List<Hdbfacilities> lstfacility = new List<Hdbfacilities>();
@@ -340,7 +340,7 @@ public class HotelListGenerate
             DataRow[] drimgpath = null;
             if (System.Web.HttpContext.Current.Cache["dtffbookingfb" + searchid] == null)
             {
-                string cmdflbkfb = "select HotelCode,Path,ImageTypeCode from HotelImage where HotelCode in (" + dthbhotelcds.Rows[0]["HB_HotelCodes"].ToString() + ")";
+                string cmdflbkfb = "select HotelCode,Path,ImageTypeCode from HotelImage where HotelCode in (" + dthbhotelcds.Rows[0]["HB_HotelCodes"].ToString() + ") order by HotelCode,Path asc";
                 dtffbookingfb = manage_data.GetDataTable(cmdflbkfb, manage_data.flip_conhb);
                 System.Web.HttpContext.Current.Cache["dtffbookingfb" + searchid] = dtffbookingfb;
             }
@@ -383,6 +383,11 @@ public class HotelListGenerate
                 objhtl = GetHotelContent(vpageno, objAvailabilityRS.Hotels.Hotel[i].Code);
                 if (objhtl.Name != null)
                 {
+                    if (objAvailabilityRS.Hotels.Hotel[i].Code == "364262")
+                    {
+                        string hcd = objAvailabilityRS.Hotels.Hotel[i].Code;
+                    }
+
                     lstfacility = Gethotelfacilities(objAvailabilityRS.Hotels.Hotel[i].Code);
                     //string lengt = objfacility.FacilityCode;
                     facilitydescr = GetFacilityList(lstfacility);
@@ -1457,7 +1462,7 @@ public class HotelListGenerate
         try
         {
 
-            string cmdflbkfb = "select Path from HotelImage where HotelCode='" + hotelcode + "' and ImageTypeCode='" + imagetcode + "'";
+            string cmdflbkfb = "select Path from HotelImage where HotelCode='" + hotelcode + "' and ImageTypeCode='" + imagetcode + "' order by HotelCode,Path asc";
             DataTable dtffbookingfb = manage_data.GetDataTable(cmdflbkfb, manage_data.flip_conhb);
             if (dtffbookingfb.Rows.Count > 0)
             {
@@ -1575,6 +1580,10 @@ public class HotelListGenerate
                 SqlConnection sqlcon = new SqlConnection(manage_data.flip_conhb);
                 try
                 {
+                    if (facility == "Restaurant")
+                    {
+                        string f=facility;
+                    }
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = sqlcon;
                     cmd.CommandType = CommandType.StoredProcedure;
@@ -1674,10 +1683,13 @@ public class HotelListGenerate
     public static string GetFacilityList(List<Hdbfacilities> lstHdbfacilities)
     {
         string facilitiesList = string.Empty;
-        string[] arrFacilities = new string[] { "Breakfast", "Fitness", "Parking", "Pets", "Smoking Room", "Smoking rooms", "Wi-fi", "Gym", "Outdoor swimming pool", "Indoor swimming pool", "Wired Internet", "Car park", "Bathroom", "Bar", "DryClean", "supermarket", "alarm clock", "snacks", "pub", "auditorium", "BeachFront", "dining", "EcoCertified", "ExecutiveFloors", "FamilyPlan", "FreeLocalCalls", "FreeShuttle", "Restaurant", "Room service", "table tennis", "Tennis", "vacation resort", "volleyball" };
+        string[] arrFacilities = new string[] { "Restaurant", "Breakfast", "Fitness", "Car park", "Pets", "Smoking Room", "Smoking rooms", "Wi-fi", "Gym", "Outdoor swimming pool", "Indoor swimming pool", "Wired Internet", "Bathroom", "Bar", "DryClean", "supermarket", "alarm clock", "snacks", "pub", "auditorium", "BeachFront", "dining", "EcoCertified", "ExecutiveFloors", "FamilyPlan", "FreeLocalCalls", "FreeShuttle","Room service", "table tennis", "Tennis", "vacation resort", "volleyball" };
+                                                
         int i = 1;
         foreach (var item in arrFacilities)
         {
+           
+
             string facilityDesc = lstHdbfacilities.Where(k => k.FacilityDesc.Contains(item)).Count() > 0 ?
                 lstHdbfacilities.Where(k => k.FacilityDesc.Contains(item)).Select(J => J.FacilityDesc).FirstOrDefault().ToString() : string.Empty;
 
