@@ -1473,13 +1473,14 @@ public class HotelListGenerate
         {
             //cmdtxt = "select  DestinationCode, Address, City, PostalCode, Longitude, Latitude, ZoneCode, CountryCode, Email, IsActive, CreatedDt, LastUpdDt, CreatedUser, LastUpdUser from HotelAddress where HotelCode='" + hotelcode + "'";
 
-            cmdtxt = "select DestinationCode,case when right(rtrim(ltrim(Address)),1) = ',' then substring(rtrim(Address),1,len(rtrim(Address)) - 1)else rtrim(ltrim(Address)) END as Address, City, PostalCode, Longitude, Latitude, ZoneCode, CountryCode, Email, IsActive, CreatedDt, LastUpdDt, CreatedUser, LastUpdUser from HotelAddress where HotelCode ='" + hotelcode + "'";
+            cmdtxt = "select DestinationCode,case when right(rtrim(ltrim(Address)),1) = ',' then substring(rtrim(Address),1,len(rtrim(Address)) - 1)else rtrim(ltrim(Address)) END as Address, City,StateCode, PostalCode, Longitude, Latitude, ZoneCode, CountryCode, Email, IsActive, CreatedDt, LastUpdDt, CreatedUser, LastUpdUser from HotelAddress where HotelCode ='" + hotelcode + "'";
             result = manage_data.GetDataTable(cmdtxt, manage_data.flip_conhb);
             if (result.Rows.Count > 0)
             {
-                add = result.Rows[0]["Address"].ToString().Trim(',') + "," + result.Rows[0]["DestinationCode"].ToString().Trim(',') + "," + result.Rows[0]["City"].ToString() + "," + result.Rows[0]["PostalCode"].ToString() + "," + result.Rows[0]["CountryCode"].ToString() + ",";
+                string[] arr = result.Rows[0]["Address"].ToString().Split(',');
+                add = arr[0].ToString() + "," + result.Rows[0]["DestinationCode"].ToString().Trim(',') + "," + result.Rows[0]["City"].ToString() + "," + result.Rows[0]["StateCode"].ToString() + "," + result.Rows[0]["PostalCode"].ToString() + "," + result.Rows[0]["CountryCode"].ToString() + ",";
 
-                
+
             }
 
         }
