@@ -30,6 +30,7 @@ namespace TripxolHotelsWebapi.Controllers
         public string HotelCode { get; set; }
         public string Searchid { get; set; }
     }
+
     public class HotelRdetHSController : ApiController
     {
         public static string pcc = "";
@@ -39,7 +40,10 @@ namespace TripxolHotelsWebapi.Controllers
         public static string result = "";
         public string ContextResult = "";
         TextInfo TextInfo;
-
+        public static string ToFormat24h(DateTime date)
+        {
+            return date.ToString("yyyy/MM/dd, HH:mm:ss");
+        }
 
         public static string conhb = ConfigurationManager.ConnectionStrings["SqlConnhb"].ToString();
         public static string con = ConfigurationManager.ConnectionStrings["SqlConn"].ToString();
@@ -218,7 +222,7 @@ namespace TripxolHotelsWebapi.Controllers
                                 foreach (string boardCode in boardCodes.Split(','))
                                 {
                                     int M = 0;
-                                   
+
                                     int rateclasstype = 0;
                                     int NRFCount = dr.Rates.Rate.Where(k => k.RateClass == "NRF" && k.BoardCode == boardCode).Count();
                                     int NORCount = dr.Rates.Rate.Where(k => k.RateClass == "NOR" && k.BoardCode == boardCode).Count();
@@ -363,7 +367,7 @@ namespace TripxolHotelsWebapi.Controllers
                                                 {
 
                                                     roomtaxprice = roomtaxprice + Convert.ToDouble(lstRate[r].Taxes.Tax.Amount.ToString());
-                                                    
+
 
                                                 }
 
@@ -434,7 +438,7 @@ namespace TripxolHotelsWebapi.Controllers
                                             //}
                                             string test = "<h4 class='modal-title'><span>Room Type:</span>" + roomname + " " + lstRate[0].BoardName.ToString() + "</h4>";
                                             string roomdetpopup = HttpUtility.HtmlEncode(test);
-                                            string RDroominfopopup = HttpUtility.HtmlEncode(Getrdroominfopopup(Convert.ToInt32(hcode), dr.Code, lstRate[0].BoardCode, lstRate[0].BoardName.ToString(), searchid, cancleplFrom, cancleplamount, ratecommentid));
+                                            string RDroominfopopup = HttpUtility.HtmlEncode(Getrdroominfopopup(Convert.ToInt32(hcode), dr.Code, lstRate[0].BoardCode, lstRate[0].BoardName.ToString(), searchid, cancleplFrom, cancleplamount, ratecommentid, troomspricepernightwithmarkup, checkind, dc, norooms));
                                             string ratetable = HttpUtility.HtmlEncode(GetRateTable(dr.Code, hpr, lstRate, hcode, searchid, curcode, adroommarkup, clroommarkup, adroomdiscount, clroomdiscount, roomtaxprice, b2c_idn, norooms));
 
                                             //string ratetable = "";
@@ -462,7 +466,7 @@ namespace TripxolHotelsWebapi.Controllers
                                                 //stravroomdet += "<a target='_blank' href='#' onclick='selroom(" + dr.Code + "," + rrate + "," + rrate.ToString().Trim('$') + ")'>Book now</a>";
                                                 stravroomdet += "<a href='#'  data-toggle='modal'  onclick='selroom(\"" + rph + "\",\"" + boardCode + "\",\"" + eachroomspernihgtpricewmrk + "\",\"" + eachroomspernihgtpricewmrk.ToString().Trim('$') + "\",\"" + hcode.ToString() + "\",\"" + curcode.ToString() + "\",\"" + eachroomtaxprice + "\",\"" + allroomsprice + "\")'>Book Now</a>";
 
-                                                
+
 
                                                 // stravroomdet += "<div class='rr-pc-rht'><a href='#'  class='rmrates-booknw' data-toggle='modal' data-target='#myContactModal' onclick='selroom(" + dr.Code + "," + rrate + "," + rrate.ToString().Trim('$') + ")'>Book Now</a>";//dr["HPTotalAmount"]
 
@@ -477,7 +481,7 @@ namespace TripxolHotelsWebapi.Controllers
                                             #endregion for room deviding
 
 
-                                          
+
                                         }
                                     }
                                 }
@@ -488,8 +492,8 @@ namespace TripxolHotelsWebapi.Controllers
 
 
                             }
-                          
-                           
+
+
 
 
                         }
@@ -511,7 +515,7 @@ namespace TripxolHotelsWebapi.Controllers
             return rvalue;
         }
         //yogi_commented
-        private string Getrdroominfopopup(int hotelCode, string roomCode, string boardcode, string BoardName, string searchid, string cancleplFrom, string cancleplamount, string ratecommentid)
+        private string Getrdroominfopopup(int hotelCode, string roomCode, string boardcode, string BoardName, string searchid, string cancleplFrom, string cancleplamount, string ratecommentid, double totalprice, string checkindt, double dc, int norooms)
         {
             string rvalue = "";
             //string canpolicy = "Please note you are within cancellation penalty of 1 night/s fee No-show is subjected to 1 night/s fee";//GetVendorMessage("Cancellation", hpr);
@@ -524,7 +528,8 @@ namespace TripxolHotelsWebapi.Controllers
             }
             else
             {
-                canpolicy = "No cancellation";
+                //canpolicy = "No cancellation";
+                canpolicy = GetCanclecationMessageNotin(totalprice, checkindt, dc, norooms);
             }
 
             string facilities = GetAllAmenitiestop(hotelCode.ToString(), "", roomCode); //GetVendorMessage("Facilities", hpr).TrimEnd(',');//"break fast";
@@ -574,21 +579,65 @@ namespace TripxolHotelsWebapi.Controllers
             string rvalue = "";
             CultureInfo cultureInfo = Thread.CurrentThread.CurrentCulture;
             TextInfo = cultureInfo.TextInfo;
-            string cancleplFrom1 = cancleplFrom.Replace("T", " To ");
+            string cancleplFrom1 = cancleplFrom.Replace("T", " ");
 
             //DataRow[] drf = hpr.dtVendorMsgs.Select("MsgType='" + MsgType + "'");
             //foreach (DataRow dr in drf)
             //{
             string cancledet = "";
 
-            cancledet += "Free cancellation  before " + cancleplFrom1 + "</br>";
-            cancledet += "cancellations & changes made up to 3 Day(s) prior to Check-in time , will be charged for $" + cancleplamount + " in case of no show will be charged for $" + cancleplamount + " ";
+
+            cancledet += "Until " + cancleplFrom1 + "           <b>Free</b></br>";
+            cancledet += "After " + cancleplFrom1 + "          " + cancleplamount + " US$</br>";
+            cancledet += "Date and time is calculated based on local time in the destination. In case of no-show, different fees will apply. Please refer to our T&C. ";
+
+
+            //cancledet += "Free cancellation  before " + cancleplFrom1 + "</br>";
+            //cancledet += "cancellations & changes made up to 3 Day(s) prior to Check-in time , will be charged for $" + cancleplamount + " in case of no show will be charged for $" + cancleplamount + " ";
             rvalue += cancledet;//TextInfo.ToTitleCase(cancledet.ToString().ToLowerInvariant()) + "";
             //}
 
             return rvalue.TrimStart().TrimStart('-'); ;
 
         }
+
+
+        private string GetCanclecationMessageNotin(double totalprice, string checkindt, double dc, int norooms)//string MsgType, AvailabilityRS hpr in side
+        {
+            var dtNow = DateTime.Now;
+            string rvalue = "";
+            CultureInfo cultureInfo = Thread.CurrentThread.CurrentCulture;
+            TextInfo = cultureInfo.TextInfo;
+            //string cancleplFrom1 = cancleplFrom.Replace("T", " To ");
+            string cancleplFrom = Convert.ToDateTime(checkindt).Subtract(TimeSpan.FromDays(3)).ToString("yyyy-MM-dd hh:mm:ss tt");
+
+
+            double price = ((totalprice * dc) * norooms);
+            DateTime dt = Convert.ToDateTime(cancleplFrom);
+            DateTime dtmintwo = dt.AddMinutes(-2);
+            DateTime dtminone = dt.AddMinutes(-1);
+            string cuntildate = ToFormat24h(dtmintwo);
+            string cAfterdate = ToFormat24h(dtminone);
+
+
+            //DataRow[] drf = hpr.dtVendorMsgs.Select("MsgType='" + MsgType + "'");
+            //foreach (DataRow dr in drf)
+            //{
+            string cancledet = "";
+
+            cancledet += "Until " + cuntildate + " <b>Free</b></br>";
+            cancledet += "After  " + cAfterdate + " " + Convert.ToDouble(Convert.ToDouble(price) / 2) + "  US$</br>";
+            cancledet += "Date and time is calculated based on local time in the destination. In case of no-show, different fees will apply. Please refer to our T&C. ";
+            rvalue += TextInfo.ToTitleCase(cancledet.ToString().ToLowerInvariant()) + "";//cancledet;//
+            //}
+
+            return rvalue.TrimStart().TrimStart('-'); ;
+
+        }
+
+
+
+
 
         private string Getratecomments(string searchid, string ratecommentid)//string MsgType, AvailabilityRS hpr in side
         {
@@ -652,7 +701,7 @@ namespace TripxolHotelsWebapi.Controllers
             double finalroomdiscount = 0.00;
             double adroomdiscount = 0.00;
             double clroomdiscount = 0.00;
-            
+
 
             DataTable dts = HotelDBLayer.GetSearch(searchid);
             DateTime checkindt = Convert.ToDateTime(hpr.Hotels.CheckIn);
@@ -679,7 +728,7 @@ namespace TripxolHotelsWebapi.Controllers
             lstRooms = hpr.Hotels.Hotel.Where(k => k.Currency == curcode && k.Code == hcode).Select(k => k.Rooms).ToList();//ddlCurrency.Value
                                                                                                                            //List<Room> lstRoom = lstRooms[0].Room;
             objRoom = lstRooms.Select(k => k.Room.Where(j => j.Code == RPH).FirstOrDefault()).FirstOrDefault();
-           
+
             DataRow[] hpraterangerow = null;
             try
             {
@@ -699,17 +748,17 @@ namespace TripxolHotelsWebapi.Controllers
             dtr.Columns.Add("expdate", typeof(DateTime));
             dtr.Columns.Add("effedate", typeof(DateTime));
             dtr.Columns.Add("hid");
-            
+
             int z = 1;
             foreach (var rate in lstRate)
             {
-                
+
                 double troomspricepernightwithmarkup = 0.00;
 
                 //r = r++;
 
                 // eachroomsprice = Convert.ToDouble(troomsprice / norooms);
-                rrate = Convert.ToDouble(Convert.ToDouble(Convert.ToDouble(lstRate[z-1].Net) / dc).ToString("0.00"));
+                rrate = Convert.ToDouble(Convert.ToDouble(Convert.ToDouble(lstRate[z - 1].Net) / dc).ToString("0.00"));
 
                 string avgpnignt = Convert.ToDouble(rrate).ToString();
 
@@ -790,7 +839,7 @@ namespace TripxolHotelsWebapi.Controllers
                     roomamountwithouttax = (Convert.ToDouble(roombaseamount));
                     // roombaseamount = (Convert.ToDouble(roomamountwithouttax) + Convert.ToDouble(tax));
                     troomspricepernightwithmarkup = troomspricepernightwithmarkup + (Convert.ToDouble(roomamountwithouttax));
-                    
+
                 }
                 DataRow drp = dtr.NewRow();
                 drp[0] = 0;
@@ -873,18 +922,26 @@ namespace TripxolHotelsWebapi.Controllers
                 dt = manage_data.GetDataTable(cmdflbkfb, conhb);
                 if (string.IsNullOrEmpty(type))//&& string.IsNullOrEmpty(roomCode))
                 {
-                    rvalue = "<tr>";
                     if (dt.Rows.Count > 0)
                     {
-                        foreach (DataRow dr in dt.Rows)
+                        if (dt.Rows[0]["facilityDesc"] != null && dt.Rows[0]["facilityDesc"].ToString() != "")
                         {
-                            if (i % 4 == 0)
-                                rvalue += "</tr><tr>";
-                            rvalue += "<td width='25%'>" + dr["facilityDesc"].ToString() + "</td>";
-                            i++;
+                            rvalue = "<tr>";
+                            foreach (DataRow dr in dt.Rows)
+                            {
+                                if (i % 4 == 0)
+                                    rvalue += "</tr><tr>";
+                                rvalue += "<td width='25%'>" + dr["facilityDesc"].ToString() + "</td>";
+                                i++;
+                            }
+
+                            rvalue += "</tr>";
+                        }
+                        else
+                        {
+                            rvalue = string.Empty;
                         }
                     }
-                    rvalue += "</tr>";
                 }
                 else if (!string.IsNullOrEmpty(type))
                 {
@@ -894,22 +951,30 @@ namespace TripxolHotelsWebapi.Controllers
                 {
                     if (dt.Rows.Count > 0)
                     {
-                        foreach (DataRow item in dt.Rows)
+                        if (dt.Rows[0]["facilityDesc"] != null && dt.Rows[0]["facilityDesc"].ToString() != "")
                         {
-                            if (i == 5)
+                            foreach (DataRow item in dt.Rows)
                             {
-                                rvalue = rvalue + "," + item["FacilityDesc"].ToString() + "</br>";
-                                i = 0;
-                            }
-                            else
-                            {
-                                if (string.IsNullOrEmpty(rvalue))
-                                    rvalue = item["FacilityDesc"].ToString();
+                                if (i == 5)
+                                {
+                                    rvalue = rvalue + "," + item["FacilityDesc"].ToString() + "</br>";
+                                    i = 0;
+                                }
                                 else
-                                    rvalue = rvalue + "," + item["FacilityDesc"].ToString();
+                                {
+                                    if (string.IsNullOrEmpty(rvalue))
+                                        rvalue = item["FacilityDesc"].ToString();
+                                    else
+                                        rvalue = rvalue + "," + item["FacilityDesc"].ToString();
+                                }
+                                i++;
                             }
-                            i++;
                         }
+                    }
+                    else
+                    {
+                        rvalue = string.Empty;
+
                     }
                 }
 
@@ -947,6 +1012,7 @@ namespace TripxolHotelsWebapi.Controllers
             }
             return rvalue;
         }
+
 
         #endregion
     }
