@@ -246,11 +246,19 @@ namespace TripxolHotelsWebapi.Controllers
                                         if (NRFCount == norooms)
                                         {
                                             //lstRate = dr.Rates.Rate.Where(n => n.RateClass == "NRF" && n.BoardCode == boardCode).ToList();
-                                            lstRate = dr.Rates.Rate.Where(n => n.RateClass == rateclass && n.BoardCode == boardCode).ToList();
+                                            lstRate = dr.Rates.Rate.Where(n => n.RateClass == rateclass && n.BoardCode == boardCode && Convert.ToBoolean(n.Packaging)).ToList();
+                                            if (lstRate.Count == 0)
+                                            {
+                                                lstRate = dr.Rates.Rate.Where(n => n.RateClass == rateclass && n.BoardCode == boardCode && (n.Packaging == "false")).ToList();
+                                            }
                                         }
                                         else if (NORCount == norooms)
                                         {
-                                            lstRate = dr.Rates.Rate.Where(n => n.RateClass == rateclass && n.BoardCode == boardCode).ToList();
+                                            lstRate = dr.Rates.Rate.Where(n => n.RateClass == rateclass && n.BoardCode == boardCode && Convert.ToBoolean(n.Packaging)).ToList();
+                                            if (lstRate.Count == 0)
+                                            {
+                                                lstRate = dr.Rates.Rate.Where(n => n.RateClass == rateclass && n.BoardCode == boardCode && (n.Packaging == "false")).ToList();
+                                            }
                                         }
                                         else if (SPECount == norooms)
                                         {

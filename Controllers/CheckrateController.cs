@@ -118,7 +118,8 @@ namespace HotelDevMTWebapi.Controllers
                         try
                         { dc = (Convert.ToDateTime(objCheckRateRS.Hotel.CheckOut.ToString()) - Convert.ToDateTime(objCheckRateRS.Hotel.CheckIn.ToString())).TotalDays; }
                         catch { }
-
+                        string cancleplFrom = "";
+                        string cancleplamount = "";
                         foreach (Room objrooms in objCheckRateRS.Hotel.Rooms.Room)
                         {
                             Rates objrates = new Rates();
@@ -258,8 +259,7 @@ namespace HotelDevMTWebapi.Controllers
                                 {
                                 }
 
-                                string cancleplFrom = "";
-                                string cancleplamount = "";
+
                                 try
                                 {
                                     cancleplFrom = lstRate[0].CancellationPolicies.CancellationPolicy.From.ToString();
@@ -270,7 +270,7 @@ namespace HotelDevMTWebapi.Controllers
                                 }
                                 try
                                 {
-                                    cancleplamount = roomcancellationprice.ToString();//roomcancellationprice.ToString();
+                                    cancleplamount = roomcancellationprice.ToString("0.00");//roomcancellationprice.ToString();
                                 }
                                 catch
                                 {
@@ -287,9 +287,9 @@ namespace HotelDevMTWebapi.Controllers
 
                         objchkres.amount = eachroomspernihgtpricewmrk.ToString("0.00");
                         objchkres.allroomstamount = allroomsprice.ToString("0.00");
+                        objchkres.cancellationamt = cancleplamount;
+                        objchkres.cancellationfrom = cancleplFrom;
                         objchkres.roomdetailstable = ratetable;
-
-
 
 
                         try
@@ -445,64 +445,64 @@ namespace HotelDevMTWebapi.Controllers
                 rq += "<rooms>";
                 //for (int i = 0; i < Roomsdb; i++)
                 //{
-                    //int adts = Convert.ToInt32(adtbyroom_split[i+1].Split('-')[1]);
-                    //int chds = Convert.ToInt32(childbyroom_split[i + 1].Split('-')[1]);
-                    //if (i == 0)
-                    //{
-                    //    rq += "<room rateKey='" + ratekey + "'/>";
-                    //    chagc = chds;
-                    //}
-                    //else
-                    //{
-                    //    string ratekey_new = "";
-                    //    //string[] roominfo = null;
+                //int adts = Convert.ToInt32(adtbyroom_split[i+1].Split('-')[1]);
+                //int chds = Convert.ToInt32(childbyroom_split[i + 1].Split('-')[1]);
+                //if (i == 0)
+                //{
+                //    rq += "<room rateKey='" + ratekey + "'/>";
+                //    chagc = chds;
+                //}
+                //else
+                //{
+                //    string ratekey_new = "";
+                //    //string[] roominfo = null;
 
-                    //    //if (chds > 0)
-                    //    //{
+                //    //if (chds > 0)
+                //    //{
 
-                    //    //    roominfo = chags_split[i].Split('_');
-                    //    //}
+                //    //    roominfo = chags_split[i].Split('_');
+                //    //}
 
-                    //    string roomcont = "1~" + adts + "~" + chds;
-                    //    string agscont = "";
-                    //    for (int a = 0; a < chds; a++)
-                    //    {
+                //    string roomcont = "1~" + adts + "~" + chds;
+                //    string agscont = "";
+                //    for (int a = 0; a < chds; a++)
+                //    {
 
-                    //        agscont += chags_split[chagc].Split('_')[1] + "~";
-                    //        chagc++;
-                    //    }
-                    //    if (chds > 0)
-                    //    {
-                    //        ratekey_split[10] = agscont.Remove(agscont.Length - 1);
-                    //        ratekey_split[9] = roomcont;
-                    //        for (int r = 0; r <= 11; r++)
-                    //        {
-                    //            ratekey_new += ratekey_split[r] + "|";
-                    //        }
+                //        agscont += chags_split[chagc].Split('_')[1] + "~";
+                //        chagc++;
+                //    }
+                //    if (chds > 0)
+                //    {
+                //        ratekey_split[10] = agscont.Remove(agscont.Length - 1);
+                //        ratekey_split[9] = roomcont;
+                //        for (int r = 0; r <= 11; r++)
+                //        {
+                //            ratekey_new += ratekey_split[r] + "|";
+                //        }
 
-                    //        rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'/>";
-                    //    }
-                    //    else
-                    //    {
-                    //        ratekey_split[10] = "";
-                    //        ratekey_split[9] = roomcont;
-                    //        for (int r = 0; r <= 11; r++)
-                    //        {
-                    //            ratekey_new += ratekey_split[r] + "|";
-                    //        }
+                //        rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'/>";
+                //    }
+                //    else
+                //    {
+                //        ratekey_split[10] = "";
+                //        ratekey_split[9] = roomcont;
+                //        for (int r = 0; r <= 11; r++)
+                //        {
+                //            ratekey_new += ratekey_split[r] + "|";
+                //        }
 
-                    //        rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'/>";
-                    //    }
-                    //}
-                    foreach (string ratek in ratekey.Split(','))
+                //        rq += "<room rateKey='" + ratekey_new.Remove(ratekey_new.Length - 1) + "'/>";
+                //    }
+                //}
+                foreach (string ratek in ratekey.Split(','))
+                {
+                    if (ratek != null && ratek != "")
                     {
-                        if(ratek!=null && ratek!="")
-                        { 
-                            rq += "<room rateKey='" + ratek + "'/>";
-                        }
+                        rq += "<room rateKey='" + ratek + "'/>";
                     }
+                }
 
-               // }
+                // }
                 rq += "</rooms>";
                 rq += "</checkRateRQ>";
 
