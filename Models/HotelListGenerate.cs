@@ -1713,7 +1713,11 @@ public class HotelListGenerate
         else if (sortBy == "star_rating")
 
             obj.Hotels.Hotel = obj.Hotels.Hotel.OrderByDescending(k => k.Reviews.Review.Rate).ToList();
-
+        else if (sortBy == "most_popular")
+        {
+            string reviewrate = "0.00";
+            obj.Hotels.Hotel = obj.Hotels.Hotel.OrderByDescending(k => Convert.ToDouble((k.Reviews != null) ? (Convert.ToDouble(k.Reviews.Review.Rate).ToString("0.00")) : reviewrate)).ThenBy(s => Convert.ToDouble(Convert.ToDouble(s.MinRate) / (Double)dc)).ToList();
+        }
         return obj;
     }
 
