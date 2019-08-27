@@ -383,10 +383,7 @@ public class HotelListGenerate
                 objhtl = GetHotelContent(vpageno, objAvailabilityRS.Hotels.Hotel[i].Code);
                 if (objhtl.Name != null)
                 {
-                    if (objAvailabilityRS.Hotels.Hotel[i].Code == "364262")
-                    {
-                        string hcd = objAvailabilityRS.Hotels.Hotel[i].Code;
-                    }
+                    
 
                     lstfacility = Gethotelfacilities(objAvailabilityRS.Hotels.Hotel[i].Code);
                     //string lengt = objfacility.FacilityCode;
