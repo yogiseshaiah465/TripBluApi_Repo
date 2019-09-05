@@ -342,8 +342,8 @@ namespace TripxolHotelsWebapi.Controllers
                                                     Cl_Mode = dtwt.Rows[0]["Cl_Mode"].ToString();
                                                     if (Cl_Mode == "Fixed")
                                                     {
-                                                        clmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
-                                                        cldiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
+                                                        clroommarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                                                        clroomdiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
 
                                                     }
                                                     else if (Cl_Mode == "Percentage")
@@ -356,7 +356,7 @@ namespace TripxolHotelsWebapi.Controllers
                                                     }
                                                     else
                                                     {
-                                                        clmarkup = 0.00;
+                                                        clroommarkup = 0.00;
 
                                                     }
 
