@@ -580,7 +580,7 @@ public class HotelListGenerate
                         SqlDataAdapter sa = new SqlDataAdapter(cmd);
                         sa.Fill(dt);
                     }
-                    catch
+                    catch(Exception ex)
                     {
                     }
 
