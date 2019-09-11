@@ -342,8 +342,8 @@ namespace TripxolHotelsWebapi.Controllers
                                                     Cl_Mode = dtwt.Rows[0]["Cl_Mode"].ToString();
                                                     if (Cl_Mode == "Fixed")
                                                     {
-                                                        clmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
-                                                        cldiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
+                                                        clroommarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                                                        clroomdiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
 
                                                     }
                                                     else if (Cl_Mode == "Percentage")
@@ -356,7 +356,7 @@ namespace TripxolHotelsWebapi.Controllers
                                                     }
                                                     else
                                                     {
-                                                        clmarkup = 0.00;
+                                                        clroommarkup = 0.00;
 
                                                     }
 
@@ -472,7 +472,7 @@ namespace TripxolHotelsWebapi.Controllers
                                                 //stravroomdet += "<a target='_blank' href='HotelPayment.aspx?Searchid=" + searchid + "&HotelCode=" + hcode + "&RPH=" + dr.Code + "&Boardcode=" + drrt.BoardCode + "&Currency=" + curcode + "&award=" + award + "&checkin=" + checkind + "&checkout=" + checkoutd + "&gc=" + adults +"&children="+children+"'>Book now</a>";
 
                                                 //stravroomdet += "<a target='_blank' href='#' onclick='selroom(" + dr.Code + "," + rrate + "," + rrate.ToString().Trim('$') + ")'>Book now</a>";
-                                                stravroomdet += "<a href='#'  data-toggle='modal'  onclick='selroom(\"" + rph + "\",\"" + boardCode + "\",\"" + eachroomspernihgtpricewmrk + "\",\"" + eachroomspernihgtpricewmrk.ToString().Trim('$') + "\",\"" + hcode.ToString() + "\",\"" + curcode.ToString() + "\",\"" + eachroomtaxprice + "\",\"" + allroomsprice + "\",\"" + cancleplamount + "\",\"" + cancleplFrom + "\")'>Book Now</a>";
+                                                stravroomdet += "<a href='#'  data-toggle='modal'  onclick='selroom(\"" + rph + "\",\"" + boardCode + "\",\"" + eachroomspernihgtpricewmrk + "\",\"" + eachroomspernihgtpricewmrk.ToString().Trim('$') + "\",\"" + hcode.ToString() + "\",\"" + curcode.ToString() + "\",\"" + eachroomtaxprice + "\",\"" + allroomsprice + "\",\"" + cancleplamount + "\",\"" + cancleplFrom + "\",\"" + adroommarkup + "\",\"" + adroomdiscount + "\",\"" + clroommarkup + "\",\"" + clroomdiscount + "\")'>Book Now</a>";
 
 
 
