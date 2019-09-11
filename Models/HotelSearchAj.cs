@@ -239,7 +239,7 @@ public class HotelSearchAj
                 xml += "<hotels checkIn='" + objAvailabilityRS2.Hotels.CheckIn + "' total='" + hotellist + "' checkOut='" + objAvailabilityRS2.Hotels.CheckOut + "'>";
                 foreach (var item in objAvailabilityRS2.Hotels.Hotel)
                 {
-                    xml += "<hotel code='" + item.Code + "' name='" + item.Name.Replace("&", "").Replace("'", "") + "' categoryCode='" + item.CategoryCode.Replace("'", "") + "' categoryName='" + item.CategoryName.Replace("'", "") + "' destinationCode='" + item.DestinationCode.Replace("'", "") + "' destinationName='" + item.DestinationName.Replace("'", "") + "' zoneCode='" + item.ZoneCode + "' zoneName='" + item.ZoneName.Replace("'", "") + "' latitude='" + item.Latitude + "' longitude='" + item.Longitude + "' minRate='" + item.MinRate + "' maxRate='" + item.MaxRate + "' currency='" + item.Currency + "'>";
+                    xml += "<hotel code='" + item.Code + "' name='" + item.Name.Replace("&", "").Replace("'", "") + "' categoryCode='" + item.CategoryCode.Replace("'", "") + "' categoryName='" + item.CategoryName.Replace("'", "") + "' destinationCode='" + item.DestinationCode.Replace("'", "") + "' destinationName='" + item.DestinationName.Replace("'", "") + "' zoneCode='" + item.ZoneCode + "' zoneName='" + item.ZoneName.Replace("'", "").Replace("&", "") + "' latitude='" + item.Latitude + "' longitude='" + item.Longitude + "' minRate='" + item.MinRate + "' maxRate='" + item.MaxRate + "' currency='" + item.Currency + "'>";
                     foreach (var itemrev in objAvailabilityRS1.Hotels.Hotel)
                     {
                         if (itemrev.Code == item.Code)
