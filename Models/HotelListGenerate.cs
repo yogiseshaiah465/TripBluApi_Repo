@@ -1475,7 +1475,7 @@ public class HotelListGenerate
             if (result.Rows.Count > 0)
             {
                 string[] arr = result.Rows[0]["Address"].ToString().Split(',');
-                add = arr[0].ToString() + "," + result.Rows[0]["DestinationCode"].ToString().Trim(',') + "," + result.Rows[0]["City"].ToString() + "," + result.Rows[0]["StateCode"].ToString() + "," + result.Rows[0]["PostalCode"].ToString() + "," + result.Rows[0]["CountryCode"].ToString() + ",";
+                add =  result.Rows[0]["DestinationCode"].ToString().Trim(',') + "," + result.Rows[0]["City"].ToString() + "," + result.Rows[0]["StateCode"].ToString() + "," + result.Rows[0]["PostalCode"].ToString() + "," + result.Rows[0]["CountryCode"].ToString() + ",";
 
 
             }
