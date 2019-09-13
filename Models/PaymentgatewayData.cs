@@ -60,7 +60,7 @@ public class PaymentgatewayData
             result = XMLRead.SendQuerypaymetgat(rq, htlpaymentgturi);
 
 
-            XMLRead.SaveXMLTextFile(HoteResBodyRQ, result, searchid + "_" + BookinID + "_PgatewayHotelResDet");
+            XMLRead.SaveXMLTextFile(rq, result, searchid + "_" + BookinID + "_PgatewayHotelResDet");
 
 
 
