@@ -28,6 +28,12 @@ namespace HotelDevMTWebapi.Controllers
         public string cancellationamt { get; set; }
         public string cancellationfrom { get; set; }
         public string roomdetailstable { get; set; }
+
+        public string adroommarkup { get; set; }
+        public string adroomdiscount { get; set; }
+        public string clmarkup { get; set; }
+        public string clroomdiscount { get; set; }
+
         public string Message { get; set; }
 
     }
@@ -188,7 +194,7 @@ namespace HotelDevMTWebapi.Controllers
                                         Cl_Mode = dtwt.Rows[0]["Cl_Mode"].ToString();
                                         if (Cl_Mode == "Fixed")
                                         {
-                                            clmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                                            clroommarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
                                             cldiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
 
                                         }
@@ -202,7 +208,7 @@ namespace HotelDevMTWebapi.Controllers
                                         }
                                         else
                                         {
-                                            clmarkup = 0.00;
+                                            clroommarkup = 0.00;
 
                                         }
 
@@ -290,7 +296,10 @@ namespace HotelDevMTWebapi.Controllers
                         objchkres.cancellationamt = cancleplamount;
                         objchkres.cancellationfrom = cancleplFrom;
                         objchkres.roomdetailstable = ratetable;
-
+                        objchkres.adroommarkup = adroommarkup.ToString();
+                        objchkres.adroomdiscount = adroomdiscount.ToString();
+                        objchkres.clmarkup = clroommarkup.ToString();
+                        objchkres.clroomdiscount = clroomdiscount.ToString();
 
                         try
                         {
