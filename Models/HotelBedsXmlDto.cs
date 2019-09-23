@@ -64,7 +64,7 @@ namespace HotelDevMTWebapi.Models
     public class Taxes
     {
         [XmlElement(ElementName = "tax", Namespace = "http://www.hotelbeds.com/schemas/messages")]
-        //public List<Tax> Tax { get; set; }
+       // public List<Tax> Tax { get; set; }
         public Tax Tax { get; set; }
         [XmlAttribute(AttributeName = "allIncluded")]
         public string AllIncluded { get; set; }

@@ -319,20 +319,6 @@ public class HotelSearchAj
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public DataTable dtOTA_HotelAvail = new DataTable();
     public DataTable dtCityList = new DataTable();
     public DataTable dtBasicPropInfo = new DataTable();

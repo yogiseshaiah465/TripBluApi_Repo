@@ -20,7 +20,7 @@ namespace TripxolHotelsWebapi.Controllers
 
         HotelRateMaxMin hrmm = new HotelRateMaxMin();
         public DataTable dtBPIadd = new DataTable();
-        public HotelRateMaxMin Get(string searchid, string curcode,string b2c_idn)
+        public HotelRateMaxMin Get(string searchid, string curcode,string b2c_idn,string entity_idn)
         {
             hrmm.Max = "0";
             hrmm.Min = "0";
@@ -47,11 +47,21 @@ namespace TripxolHotelsWebapi.Controllers
             double minbaseamount = 0.00;
             double maxbaseamount = 0.00;
 
+            double agnpercmarkup = 0.00;
+            double agnmarkup = 0.00;
+            double agnperdiscount = 0.00;
+            double agndiscount = 0.00;
 
             double maxadmarkup = 0.00;
             double maxadpercmarkup = 0.00;
             double maxclpercmarkup = 0.00;
             double maxclmarkup = 0.00;
+
+            double maxagnpercmarkup = 0.00;
+            double maxagnmarkup = 0.00;
+            double maxagndiscount = 0.00;
+            double maxagnperdiscount = 0.00;
+
             double maxfinalmarkup = 0.00;
             double maxfinaldiscount = 0.00;
             double maxaddiscount = 0.00;
@@ -101,6 +111,7 @@ namespace TripxolHotelsWebapi.Controllers
                     cmd.Parameters.AddWithValue("@B2C_IDN", b2c_idn);
                     cmd.Parameters.AddWithValue("@Hotelcode", 0);
                     cmd.Parameters.AddWithValue("@GDS", "HB");
+                    cmd.Parameters.AddWithValue("@User_Entity_Idn", entity_idn);
                     cmd.Parameters.AddWithValue("@IsLoginCust", "Y");
                     SqlDataAdapter sa = new SqlDataAdapter(cmd);
                     sa.Fill(dt);
@@ -163,8 +174,8 @@ namespace TripxolHotelsWebapi.Controllers
                     {
                         clpercmarkup = Convert.ToDouble(dt.Rows[0]["Cl_Markup"].ToString());
                         clperdiscount = Convert.ToDouble(dt.Rows[0]["Cl_Discount"].ToString());
-                        clmarkup = ((minbaseamount / 100.00) * clpercmarkup);
-                        cldiscount = ((minbaseamount / 100.00) * clperdiscount);
+                        clmarkup = (((minbaseamount+ admarkup) / 100.00) * clpercmarkup);
+                        cldiscount = (((minbaseamount+ addiscount) / 100.00) * clperdiscount);
 
 
 
@@ -172,8 +183,8 @@ namespace TripxolHotelsWebapi.Controllers
 
                         maxclpercmarkup = Convert.ToDouble(dt.Rows[0]["Cl_Markup"].ToString());
                         maxclperdiscount = Convert.ToDouble(dt.Rows[0]["Cl_Discount"].ToString());
-                        maxclmarkup = ((maxbaseamount / 100.00) * maxclpercmarkup);
-                        maxcldiscount = ((maxbaseamount / 100.00) * maxclperdiscount);
+                        maxclmarkup = (((maxbaseamount+ maxadmarkup) / 100.00) * maxclpercmarkup);
+                        maxcldiscount = (((maxbaseamount+ maxaddiscount) / 100.00) * maxclperdiscount);
 
                     }
                     else
@@ -182,14 +193,48 @@ namespace TripxolHotelsWebapi.Controllers
                         maxcldiscount = 0.00;
                     }
 
-                    finalmarkup = admarkup + clmarkup;
-                    finaldiscount = addiscount + cldiscount;
+                    string agl_Mode = string.Empty;
+                    agl_Mode = dt.Rows[0]["Ag_Mode"].ToString();
+                    if (agl_Mode == "Fixed")
+                    {
+                        agnmarkup = Convert.ToDouble(dt.Rows[0]["Ag_Markup"].ToString());
+                        agndiscount = Convert.ToDouble(dt.Rows[0]["Ag_Discount"].ToString());
+                        maxagnmarkup = Convert.ToDouble(dt.Rows[0]["Ag_Markup"].ToString());
+                        maxagndiscount = Convert.ToDouble(dt.Rows[0]["Ag_Discount"].ToString());
+                    }
+                    else if (agl_Mode == "Percentage")
+                    {
+                        agnpercmarkup = Convert.ToDouble(dt.Rows[0]["Ag_Markup"].ToString());
+                        agnperdiscount = Convert.ToDouble(dt.Rows[0]["Ag_Discount"].ToString());
+                        agnmarkup = (((minbaseamount + admarkup + clmarkup )/ 100.00) * agnpercmarkup);
+                        agndiscount = ((minbaseamount+ addiscount+cldiscount / 100.00) * agnperdiscount);
+
+
+
+
+
+                        maxagnpercmarkup = Convert.ToDouble(dt.Rows[0]["Ag_Markup"].ToString());
+                        maxagnperdiscount = Convert.ToDouble(dt.Rows[0]["Ag_Discount"].ToString());
+                        maxagnmarkup = ((maxbaseamount+ maxadmarkup+maxclmarkup / 100.00) * maxclpercmarkup);
+                        maxagndiscount = ((maxbaseamount+maxaddiscount+maxcldiscount / 100.00) * maxclperdiscount);
+
+                    }
+                    else
+                    {
+                        maxagnmarkup = 0.00;
+                        maxagndiscount = 0.00;
+                    }
+
+
+
+                    finalmarkup = admarkup + clmarkup+agnmarkup;
+                    finaldiscount = addiscount + cldiscount+agndiscount;
                     minbaseamount = minbaseamount + (finalmarkup - finaldiscount);
                     //baseamount = baseamount - finaldiscount;
 
 
-                    maxfinalmarkup = maxadmarkup + maxclmarkup;
-                    maxfinaldiscount = maxaddiscount + maxcldiscount;
+                    maxfinalmarkup = maxadmarkup + maxclmarkup+maxagnmarkup;
+                    maxfinaldiscount = maxaddiscount + maxcldiscount+maxagndiscount;
                     maxbaseamount = maxbaseamount + (maxfinalmarkup - maxfinaldiscount);
 
 
