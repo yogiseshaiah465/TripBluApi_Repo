@@ -34,6 +34,9 @@ namespace HotelDevMTWebapi.Controllers
         public string clmarkup { get; set; }
         public string clroomdiscount { get; set; }
 
+        public string agnmarkup { get; set; }
+        public string agndiscount { get; set; }
+
         public string Message { get; set; }
 
     }
@@ -329,6 +332,9 @@ namespace HotelDevMTWebapi.Controllers
                         objchkres.adroomdiscount = adroomdiscount.ToString();
                         objchkres.clmarkup = clroommarkup.ToString();
                         objchkres.clroomdiscount = clroomdiscount.ToString();
+
+                        objchkres.agnmarkup = agnmarkup.ToString();
+                        objchkres.agndiscount = agndiscount.ToString();
 
                         try
                         {
