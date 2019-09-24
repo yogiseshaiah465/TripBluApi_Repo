@@ -485,7 +485,7 @@ namespace TripxolHotelsWebapi.Controllers
 
                                             //stravroomdet += "<div class='avl-room-dtls'><p>" + roomdesc1 + "</p><a href='#' data-toggle='modal' data-target='#room-details-pop' onclick='showroomdet(\"" + roomdetpopup + "\",\"" + RDroominfopopup + "\")'>room details</a></div></div>";
                                             stravroomdet += "<div class='avl-price-dtls'>";
-                                            stravroomdet += "<div class='avl-price-inn'><h2>" + Utilities.GetRatewithSymbol(curcode) + eachroomspernihgtpricewmrk.ToString("0.00") + "</h2> <p>per night</p></div>";
+                                            stravroomdet += "<div class='avl-price-inn'><h2 id='rateid'>" + Utilities.GetRatewithSymbol(curcode) + eachroomspernihgtpricewmrk.ToString("0.00") + "</h2> <p>per night</p></div>";
                                             if (ratetype == "RECHECK")
                                             {
                                                 stravroomdet += "<div class='avl-bknw-btn' id='divbooking_" + chkcount + "_" + hcode + "'>";
