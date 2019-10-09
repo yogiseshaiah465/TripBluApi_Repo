@@ -47,7 +47,7 @@ namespace TripxolHotelsWebapi.Controllers
 
         public static string conhb = ConfigurationManager.ConnectionStrings["SqlConnhb"].ToString();
         public static string con = ConfigurationManager.ConnectionStrings["SqlConn"].ToString();
-        public string Get(string searchid, string hcode, string curcode, string award, string b2c_idn)
+        public string Get(string searchid, string hcode, string curcode, string award, string b2c_idn,string entity_idn)
         {
             string rvalue = "";
 
@@ -73,7 +73,7 @@ namespace TripxolHotelsWebapi.Controllers
             stravroomdet = "<div class='availble-rm-blk' id='" + lessid + "'>";
             stravroomdet += "<div class='row avail-rm-inn'>";
             stravroomdet += "<div class='avail-rm-header'> <h3 class='avail-rm-hd'>available rooms</h3><a  style='cursor:pointer' onclick=\"CloseAvlRoom('" + lessid + "','" + lbav + "')\"><i class='fas fa-times-circle'></i>close</a></div>";
-            stravroomdet += GetRoomdet(hpr, hcode, 3, searchid, curcode, award, b2c_idn);
+            stravroomdet += GetRoomdet(hpr, hcode, 3, searchid, curcode, award, b2c_idn,entity_idn);
             stravroomdet += "</div>";
 
 
@@ -85,7 +85,7 @@ namespace TripxolHotelsWebapi.Controllers
             stravroomdetmore = "<div class='availble-rm-blk' style='display:none' id='" + moreid + "'>";
             stravroomdetmore += "<div class='row avail-rm-inn'>";
             stravroomdetmore += "<div class='avail-rm-header'> <h3 class='avail-rm-hd'>available rooms</h3><a  style='cursor:pointer' onclick=\"CloseAvlRoom('" + moreid + "','" + lbav + "')\"><i class='fas fa-times-circle'></i>close</a></div>";
-            stravroomdetmore += GetRoomdet(hpr, hcode, 3, searchid, curcode, award, b2c_idn);
+            stravroomdetmore += GetRoomdet(hpr, hcode, 3, searchid, curcode, award, b2c_idn,entity_idn);
             stravroomdetmore += "</div>";
             stravroomdetmore += " <div class='view-mre'><a style='cursor:pointer' onclick='showavroomsLess(\"" + lessid + "\",\"" + moreid + "\")'>view less rooms</a></div>";
             stravroomdetmore += "</div>";
@@ -107,7 +107,7 @@ namespace TripxolHotelsWebapi.Controllers
         }
         #region supporing functions
         // private string GetRoomdet(DataTable dtrows, HotelProperty hpr, string hcode, string hdVARsessionHPR,int count,string searchid)
-        private string GetRoomdet(AvailabilityRS hpr, string hcode, int count, string searchid, string curcode, string award, string b2c_idn)
+        private string GetRoomdet(AvailabilityRS hpr, string hcode, int count, string searchid, string curcode, string award, string b2c_idn,string entity_idn)
         {
 
             double admarkup = 0.00;
@@ -123,6 +123,12 @@ namespace TripxolHotelsWebapi.Controllers
             double addiscount = 0.00;
             double cldiscount = 0.00;
             double baseamount = 0.00;
+
+            double agnpercmarkup = 0.00;
+            double agnmarkup = 0.00;
+            double agnperdiscount = 0.00;
+            double agndiscount = 0.00;
+
 
             double roombaseamount = 0.00;
             double roomamountwithouttax = 0.00;
@@ -304,6 +310,7 @@ namespace TripxolHotelsWebapi.Controllers
                                                     cmd.Parameters.AddWithValue("@B2C_IDN", b2c_idn);
                                                     cmd.Parameters.AddWithValue("@Hotelcode", hcode);
                                                     cmd.Parameters.AddWithValue("@GDS", "HB");
+                                                    cmd.Parameters.AddWithValue("@User_Entity_Idn", entity_idn);
                                                     cmd.Parameters.AddWithValue("@IsLoginCust", "Y");
                                                     SqlDataAdapter sa = new SqlDataAdapter(cmd);
                                                     sa.Fill(dtwt);
@@ -349,10 +356,10 @@ namespace TripxolHotelsWebapi.Controllers
                                                     else if (Cl_Mode == "Percentage")
                                                     {
                                                         clroompercmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
-                                                        clroommarkup = (((roombaseamount) / (100)) * clroompercmarkup);
+                                                        clroommarkup = (((roombaseamount+ adroommarkup) / (100)) * clroompercmarkup);
 
                                                         clroomperdiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
-                                                        clroomdiscount = ((roombaseamount / 100.00) * clroomperdiscount);
+                                                        clroomdiscount = (((roombaseamount+ adroomdiscount) / 100.00) * clroomperdiscount);
                                                     }
                                                     else
                                                     {
@@ -360,8 +367,29 @@ namespace TripxolHotelsWebapi.Controllers
 
                                                     }
 
-                                                    finalroommarkup = adroommarkup + clroommarkup;
-                                                    finalroomdiscount = adroomdiscount + clroomdiscount;
+                                                    string agl_Mode = string.Empty;
+                                                    agl_Mode = dtwt.Rows[0]["Ag_Mode"].ToString();
+                                                    if (agl_Mode == "Fixed")
+                                                    {
+                                                        agnmarkup = Convert.ToDouble(dtwt.Rows[0]["Ag_Markup"].ToString());
+                                                        agndiscount = Convert.ToDouble(dtwt.Rows[0]["Ag_Discount"].ToString());
+                                                    }
+                                                    else if (agl_Mode == "Percentage")
+                                                    {
+                                                        agnpercmarkup = Convert.ToDouble(dtwt.Rows[0]["Ag_Markup"].ToString());
+                                                        agnperdiscount = Convert.ToDouble(dtwt.Rows[0]["Ag_Discount"].ToString());
+                                                        agnmarkup = (((baseamount + adroommarkup + clmarkup) / 100.00) * agnpercmarkup);
+                                                        agndiscount = (((baseamount+ adroomdiscount+ clroomdiscount) / 100.00) * agnperdiscount);
+
+                                                    }
+                                                    else
+                                                    {
+                                                        agnmarkup = 0.00;
+                                                        agndiscount = 0.00;
+                                                    }
+
+                                                    finalroommarkup = adroommarkup + clroommarkup+ agnmarkup;
+                                                    finalroomdiscount = adroomdiscount + clroomdiscount+ agndiscount;
                                                     roombaseamount = roombaseamount + (finalroommarkup - finalroomdiscount);
                                                     roomamountwithouttax = (Convert.ToDouble(roombaseamount));
                                                     // roombaseamount = (Convert.ToDouble(roomamountwithouttax) + Convert.ToDouble(tax));
@@ -447,7 +475,7 @@ namespace TripxolHotelsWebapi.Controllers
                                             string test = "<h4 class='modal-title'><span>Room Type:</span>" + roomname + " " + lstRate[0].BoardName.ToString() + "</h4>";
                                             string roomdetpopup = HttpUtility.HtmlEncode(test);
                                             string RDroominfopopup = HttpUtility.HtmlEncode(Getrdroominfopopup(Convert.ToInt32(hcode), dr.Code, lstRate[0].BoardCode, lstRate[0].BoardName.ToString(), searchid, cancleplFrom, cancleplamount, ratecommentid, troomspricepernightwithmarkup, checkind, dc, norooms));
-                                            string ratetable = HttpUtility.HtmlEncode(GetRateTable(dr.Code, hpr, lstRate, hcode, searchid, curcode, adroommarkup, clroommarkup, adroomdiscount, clroomdiscount, roomtaxprice, b2c_idn, norooms));
+                                            string ratetable = HttpUtility.HtmlEncode(GetRateTable(dr.Code, hpr, lstRate, hcode, searchid, curcode, adroommarkup, clroommarkup, adroomdiscount, clroomdiscount, roomtaxprice, b2c_idn, norooms,entity_idn));
 
                                             //string ratetable = "";
 
@@ -457,11 +485,11 @@ namespace TripxolHotelsWebapi.Controllers
 
                                             //stravroomdet += "<div class='avl-room-dtls'><p>" + roomdesc1 + "</p><a href='#' data-toggle='modal' data-target='#room-details-pop' onclick='showroomdet(\"" + roomdetpopup + "\",\"" + RDroominfopopup + "\")'>room details</a></div></div>";
                                             stravroomdet += "<div class='avl-price-dtls'>";
-                                            stravroomdet += "<div class='avl-price-inn'><h2>" + Utilities.GetRatewithSymbol(curcode) + eachroomspernihgtpricewmrk.ToString("0.00") + "</h2> <p>per night</p></div>";
+                                            stravroomdet += "<div class='avl-price-inn'><h2 id='rateid'>" + Utilities.GetRatewithSymbol(curcode) + eachroomspernihgtpricewmrk.ToString("0.00") + "</h2> <p>per night</p></div>";
                                             if (ratetype == "RECHECK")
                                             {
                                                 stravroomdet += "<div class='avl-bknw-btn' id='divbooking_" + chkcount + "_" + hcode + "'>";
-                                                stravroomdet += "<a style='cursor:pointer;' id='idRecheck_" + chkcount + "_" + hcode + "'  class='rmrates-booknw'   onclick='checkrate(\"" + searchid + "\",\"" + hcode + "\",\"" + ratekey + "\",\"" + b2c_idn + "\",\"" + rph + "\",\"" + boardCode + "\",\"" + chkcount + "\")'>Check Rate</a>";//dr["HPTotalAmount"]
+                                                stravroomdet += "<a style='cursor:pointer;background-color: #FFA500;' id='idRecheck_" + chkcount + "_" + hcode + "'  class='rmrates-booknw'   onclick='checkrate(\"" + searchid + "\",\"" + hcode + "\",\"" + ratekey + "\",\"" + b2c_idn + "\",\"" + rph + "\",\"" + boardCode + "\",\"" + chkcount + "\",\"" + entity_idn + "\")'>Check Rate</a>";//dr["HPTotalAmount"]
 
                                                 stravroomdet += "</div>";
                                                 chkcount++;
@@ -472,7 +500,7 @@ namespace TripxolHotelsWebapi.Controllers
                                                 //stravroomdet += "<a target='_blank' href='HotelPayment.aspx?Searchid=" + searchid + "&HotelCode=" + hcode + "&RPH=" + dr.Code + "&Boardcode=" + drrt.BoardCode + "&Currency=" + curcode + "&award=" + award + "&checkin=" + checkind + "&checkout=" + checkoutd + "&gc=" + adults +"&children="+children+"'>Book now</a>";
 
                                                 //stravroomdet += "<a target='_blank' href='#' onclick='selroom(" + dr.Code + "," + rrate + "," + rrate.ToString().Trim('$') + ")'>Book now</a>";
-                                                stravroomdet += "<a href='#'  data-toggle='modal'  onclick='selroom(\"" + rph + "\",\"" + boardCode + "\",\"" + eachroomspernihgtpricewmrk + "\",\"" + eachroomspernihgtpricewmrk.ToString().Trim('$') + "\",\"" + hcode.ToString() + "\",\"" + curcode.ToString() + "\",\"" + eachroomtaxprice + "\",\"" + allroomsprice + "\",\"" + cancleplamount + "\",\"" + cancleplFrom + "\",\"" + adroommarkup + "\",\"" + adroomdiscount + "\",\"" + clroommarkup + "\",\"" + clroomdiscount + "\")'>Book Now</a>";
+                                                stravroomdet += "<a href='#'  data-toggle='modal'  onclick='selroom(\"" + rph + "\",\"" + boardCode + "\",\"" + eachroomspernihgtpricewmrk + "\",\"" + eachroomspernihgtpricewmrk.ToString().Trim('$') + "\",\"" + hcode.ToString() + "\",\"" + curcode.ToString() + "\",\"" + eachroomtaxprice + "\",\"" + allroomsprice + "\",\"" + cancleplamount + "\",\"" + cancleplFrom + "\",\"" + adroommarkup + "\",\"" + adroomdiscount + "\",\"" + clroommarkup + "\",\"" + clroomdiscount + "\",\"" + agnmarkup + "\",\"" + agndiscount + "\")'>Book Now</a>";
 
 
 
@@ -690,7 +718,7 @@ namespace TripxolHotelsWebapi.Controllers
         }
 
 
-        private string GetRateTable(string RPH, AvailabilityRS hpr, List<Rate> lstRate, string hcode, string searchid, string curcode, double admarkup, double clmarkup, double addiscount, double cldiscount, double roomtaxprice, string b2c_idn, int norooms)// DataRow dr,
+        private string GetRateTable(string RPH, AvailabilityRS hpr, List<Rate> lstRate, string hcode, string searchid, string curcode, double admarkup, double clmarkup, double addiscount, double cldiscount, double roomtaxprice, string b2c_idn, int norooms,string entity_idn)// DataRow dr,
         {
 
             string rvalue = "";
@@ -709,6 +737,11 @@ namespace TripxolHotelsWebapi.Controllers
             double finalroomdiscount = 0.00;
             double adroomdiscount = 0.00;
             double clroomdiscount = 0.00;
+
+            double agnpercmarkup = 0.00;
+            double agnmarkup = 0.00;
+            double agnperdiscount = 0.00;
+            double agndiscount = 0.00;
 
 
             DataTable dts = HotelDBLayer.GetSearch(searchid);
@@ -785,6 +818,7 @@ namespace TripxolHotelsWebapi.Controllers
                     cmd.Parameters.AddWithValue("@B2C_IDN", b2c_idn);
                     cmd.Parameters.AddWithValue("@Hotelcode", hcode);
                     cmd.Parameters.AddWithValue("@GDS", "HB");
+                    cmd.Parameters.AddWithValue("@User_Entity_Idn", entity_idn);
                     cmd.Parameters.AddWithValue("@IsLoginCust", "Y");
                     SqlDataAdapter sa = new SqlDataAdapter(cmd);
                     sa.Fill(dtwt);
@@ -823,26 +857,49 @@ namespace TripxolHotelsWebapi.Controllers
                     Cl_Mode = dtwt.Rows[0]["Cl_Mode"].ToString();
                     if (Cl_Mode == "Fixed")
                     {
-                        clmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                        clroommarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
                         cldiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
 
                     }
                     else if (Cl_Mode == "Percentage")
                     {
                         clroompercmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
-                        clroommarkup = (((roombaseamount) / (100)) * clroompercmarkup);
+                        clroommarkup = (((roombaseamount+ adroommarkup) / (100)) * clroompercmarkup);
 
                         clroomperdiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
-                        clroomdiscount = ((roombaseamount / 100.00) * clroomperdiscount);
+                        clroomdiscount = (((roombaseamount+ adroomdiscount) / 100.00) * clroomperdiscount);
                     }
                     else
                     {
-                        clmarkup = 0.00;
-
+                        clroommarkup = 0.00;
+                        cldiscount = 0.00;
                     }
 
-                    finalroommarkup = adroommarkup + clroommarkup;
-                    finalroomdiscount = adroomdiscount + clroomdiscount;
+
+                    string agl_Mode = string.Empty;
+                    agl_Mode = dtwt.Rows[0]["Cl_Mode"].ToString();
+                    if (agl_Mode == "Fixed")
+                    {
+                        agnmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                        agndiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
+                    }
+                    else if (agl_Mode == "Percentage")
+                    {
+                        agnpercmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                        agnperdiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
+                        agnmarkup = (((roombaseamount + adroommarkup + clroommarkup) / 100.00) * agnpercmarkup);
+                        agndiscount = (((roombaseamount + addiscount + cldiscount) / 100.00) * agnperdiscount);
+
+                    }
+                    else
+                    {
+                        agnmarkup = 0.00;
+                        agndiscount = 0.00;
+                    }
+
+
+                    finalroommarkup = adroommarkup + clroommarkup+ agnmarkup;
+                    finalroomdiscount = adroomdiscount + clroomdiscount+ agndiscount;
                     roombaseamount = roombaseamount + (finalroommarkup - finalroomdiscount);
                     roomamountwithouttax = (Convert.ToDouble(roombaseamount));
                     // roombaseamount = (Convert.ToDouble(roomamountwithouttax) + Convert.ToDouble(tax));

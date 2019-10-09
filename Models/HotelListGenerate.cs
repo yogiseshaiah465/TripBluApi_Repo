@@ -277,7 +277,7 @@ public class HotelListGenerate
         return mid;
     }
 
-    public static string GetHotellist(AvailabilityRS objAvailabilityRS, string searchid, string checkind, string checkoutd, string guestcount, string CurrencyCode, int vpageno, string b2c_idn, string seladults, string selchilds)
+    public static string GetHotellist(AvailabilityRS objAvailabilityRS, string searchid, string checkind, string checkoutd, string guestcount, string CurrencyCode, int vpageno, string b2c_idn, string seladults, string selchilds,string entity_idn)
     {
         string rvalue = "";
         string facilitydescr = "";
@@ -294,6 +294,12 @@ public class HotelListGenerate
         double cldiscount = 0.00;
         double clperdiscount = 0.00;
         double baseamount = 0.00;
+
+        double agnpercmarkup = 0.00;
+        double agnmarkup = 0.00;
+        double agnperdiscount = 0.00;
+        double agndiscount = 0.00;
+
         string reviewrate = string.Empty;
 
         DataTable dssearch = HotelDBLayer.GetSearch(searchid);
@@ -576,6 +582,7 @@ public class HotelListGenerate
                         cmd.Parameters.AddWithValue("@B2C_IDN", b2c_idn);
                         cmd.Parameters.AddWithValue("@Hotelcode", objAvailabilityRS.Hotels.Hotel[i].Code);
                         cmd.Parameters.AddWithValue("@GDS", "HB");
+                        cmd.Parameters.AddWithValue("@User_Entity_Idn", entity_idn);
                         cmd.Parameters.AddWithValue("@IsLoginCust", "Y");
                         SqlDataAdapter sa = new SqlDataAdapter(cmd);
                         sa.Fill(dt);
@@ -619,17 +626,41 @@ public class HotelListGenerate
                         {
                             clpercmarkup = Convert.ToDouble(dt.Rows[0]["Cl_Markup"].ToString());
                             clperdiscount = Convert.ToDouble(dt.Rows[0]["Cl_Discount"].ToString());
-                            clmarkup = ((baseamount / 100.00) * clpercmarkup);
-                            cldiscount = ((baseamount / 100.00) * clperdiscount);
+                            clmarkup = (((baseamount+ admarkup) / 100.00) * clpercmarkup);
+                            cldiscount = (((baseamount+ addiscount) / 100.00) * clperdiscount);
 
                         }
                         else
                         {
                             clmarkup = 0.00;
+                            cldiscount = 0.00;
                         }
 
-                        finalmarkup = admarkup + clmarkup;
-                        finaldiscount = addiscount + cldiscount;
+                        string agl_Mode = string.Empty;
+                        agl_Mode = dt.Rows[0]["Ag_Mode"].ToString();
+                        if (agl_Mode == "Fixed")
+                        {
+                            agnmarkup = Convert.ToDouble(dt.Rows[0]["Ag_Markup"].ToString());
+                            agndiscount = Convert.ToDouble(dt.Rows[0]["Ag_Discount"].ToString());
+                        }
+                        else if (agl_Mode == "Percentage")
+                        {
+                            agnpercmarkup = Convert.ToDouble(dt.Rows[0]["Ag_Markup"].ToString());
+                            agnperdiscount = Convert.ToDouble(dt.Rows[0]["Ag_Discount"].ToString());
+                            agnmarkup = (((baseamount + admarkup + clmarkup) / 100.00) * agnpercmarkup);
+                            agndiscount = (((baseamount + addiscount + cldiscount) / 100.00) * agnperdiscount);
+
+                        }
+                        else
+                        {
+                            agnmarkup = 0.00;
+                            agndiscount = 0.00;
+                        }
+
+
+
+                        finalmarkup = admarkup + clmarkup+ agnmarkup;
+                        finaldiscount = addiscount + cldiscount+ agndiscount;
                         baseamount = baseamount + (finalmarkup - finaldiscount);
                         //baseamount = baseamount - finaldiscount;
 

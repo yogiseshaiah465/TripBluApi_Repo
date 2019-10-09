@@ -33,7 +33,7 @@ namespace TripxolHotelsWebapi.Controllers
         int vtotpages = 0;
         string vcurcode = "";
         public static string con = ConfigurationManager.ConnectionStrings["SqlConn"].ToString();
-        public string Get(string searchid, string city, string checkind, string checkoutd, string guestscount, string selroom, string selaudults, string selchilds, string sortby, string pageno, string starfilter, string amenities, string Hotelname, string Hotelchain, string lprice, string hprice, string curcode, string b2c_idn)
+        public string Get(string searchid, string city, string checkind, string checkoutd, string guestscount, string selroom, string selaudults, string selchilds, string sortby, string pageno, string starfilter, string amenities, string Hotelname, string Hotelchain, string lprice, string hprice, string curcode, string b2c_idn,string entity_idn)
         {
             AvailabilityRS objAvailabilityRS = new AvailabilityRS();
             vcity = city;
@@ -76,7 +76,7 @@ namespace TripxolHotelsWebapi.Controllers
                
                 AvailabilityRS dtFilterHotels = HotelListGenerate.GetFilteredDataList(objAvailabilityRS, Hotelname, Hotelchain, sortby, starfilter, amenities, lprice, hprice);
                 //DataTable dtSortedHotels = HotelListGenerate.GetSortedData(dtFilterHotels, sortby);
-                rvalue += GetHotellistPG(dtFilterHotels, searchid, checkind, checkoutd, guestscount, selaudults, selchilds, sortby, totalhotels, curcode, b2c_idn);
+                rvalue += GetHotellistPG(dtFilterHotels, searchid, checkind, checkoutd, guestscount, selaudults, selchilds, sortby, totalhotels, curcode, b2c_idn,entity_idn);
             }
             else
             {
@@ -84,7 +84,7 @@ namespace TripxolHotelsWebapi.Controllers
             }
             return rvalue;
         }
-        private string GetHotellistPG(AvailabilityRS dtHList, string searchid, string checkind, string checkoutd, string guestcount, string selaudults, string selchilds, string sortby, int totalhotels, string currencycode, string b2c_idn)
+        private string GetHotellistPG(AvailabilityRS dtHList, string searchid, string checkind, string checkoutd, string guestcount, string selaudults, string selchilds, string sortby, int totalhotels, string currencycode, string b2c_idn,string entity_idn)
         {
             string genstring = "";
             string cityname = "";
@@ -197,7 +197,7 @@ namespace TripxolHotelsWebapi.Controllers
             genstring += " <div class='sortpagn'>";
             genstring += HotelListGenerate.GetSortBydd(sortby, hcount);
             genstring += HotelListGenerate.GetPagingHtmlTop(Convert.ToInt32(hcount), vpageno);
-            genstring += GetHotellist(dtHList, searchid, checkind, checkoutd, guestcount, selaudults, selchilds, currencycode, b2c_idn);
+            genstring += GetHotellist(dtHList, searchid, checkind, checkoutd, guestcount, selaudults, selchilds, currencycode, b2c_idn,entity_idn);
             genstring += HotelListGenerate.GetPagingHtmlBottom(Convert.ToInt32(hcount), vpageno);
             genstring += "</div>";
             genstring += "<div><div>";
@@ -226,14 +226,20 @@ namespace TripxolHotelsWebapi.Controllers
             }
             return mid;
         }
-        private string GetHotellist(AvailabilityRS dtHList, string searchid, string checkind, string checkoutd, string guestcount, string selaudults, string selchilds, string currencycode, string b2c_idn)
+        private string GetHotellist(AvailabilityRS dtHList, string searchid, string checkind, string checkoutd, string guestcount, string selaudults, string selchilds, string currencycode, string b2c_idn,string entity_idn)
         {
 
                 double admarkup = 0.00;
                 double adpercmarkup = 0.00;
                 double clpercmarkup = 0.00;
                 double clmarkup = 0.00;
-                double finalmarkup = 0.00;
+
+                double agnpercmarkup = 0.00;
+                double agnmarkup = 0.00;
+                double agnperdiscount = 0.00;
+                double agndiscount = 0.00;
+
+            double finalmarkup = 0.00;
                 double finaldiscount = 0.00;
                 double adperdiscount = 0.00;
                 double clperdiscount = 0.00;
@@ -438,6 +444,7 @@ namespace TripxolHotelsWebapi.Controllers
                             cmd.Parameters.AddWithValue("@B2C_IDN", b2c_idn);
                             cmd.Parameters.AddWithValue("@Hotelcode", drh.Code.ToString());
                             cmd.Parameters.AddWithValue("@GDS", "HB");
+                            cmd.Parameters.AddWithValue("@User_Entity_Idn", entity_idn);
                             cmd.Parameters.AddWithValue("@IsLoginCust", "Y");
                             SqlDataAdapter sa = new SqlDataAdapter(cmd);
                             sa.Fill(dt);
@@ -482,8 +489,8 @@ namespace TripxolHotelsWebapi.Controllers
                             {
                                 clpercmarkup = Convert.ToDouble(dt.Rows[0]["Cl_Markup"].ToString());
                                 clperdiscount = Convert.ToDouble(dt.Rows[0]["Cl_Discount"].ToString());
-                                clmarkup = ((baseamount / 100.00) * clpercmarkup);
-                                cldiscount = ((baseamount / 100.00) * clperdiscount);
+                                clmarkup = (((baseamount+ admarkup) / 100.00) * clpercmarkup);
+                                cldiscount = (((baseamount+ addiscount) / 100.00) * clperdiscount);
 
                             }
                             else
@@ -492,8 +499,34 @@ namespace TripxolHotelsWebapi.Controllers
                                 cldiscount = 0.00;
                             }
 
-                            finalmarkup = admarkup + clmarkup;
-                            finaldiscount = addiscount + cldiscount;
+
+
+                            string agl_Mode = string.Empty;
+                            agl_Mode = dt.Rows[0]["Ag_Mode"].ToString();
+                            if (agl_Mode == "Fixed")
+                            {
+                                agnmarkup = Convert.ToDouble(dt.Rows[0]["Ag_Markup"].ToString());
+                                agndiscount = Convert.ToDouble(dt.Rows[0]["Ag_Discount"].ToString());
+                            }
+                            else if (agl_Mode == "Percentage")
+                            {
+                                agnpercmarkup = Convert.ToDouble(dt.Rows[0]["Ag_Markup"].ToString());
+                                agnperdiscount = Convert.ToDouble(dt.Rows[0]["Ag_Discount"].ToString());
+                                agnmarkup = (((baseamount + admarkup+clmarkup) / 100.00) * agnpercmarkup);
+                                agndiscount = (((baseamount+ addiscount+ cldiscount) / 100.00) * agnperdiscount);
+
+                            }
+                            else
+                            {
+                                agnmarkup = 0.00;
+                                agndiscount = 0.00;
+                            }
+
+
+
+
+                            finalmarkup = admarkup + clmarkup+ agnmarkup;
+                            finaldiscount = addiscount + cldiscount+ agndiscount;
                             baseamount = baseamount + (finalmarkup-finaldiscount);
                          
 

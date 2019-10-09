@@ -28,6 +28,15 @@ namespace HotelDevMTWebapi.Controllers
         public string cancellationamt { get; set; }
         public string cancellationfrom { get; set; }
         public string roomdetailstable { get; set; }
+
+        public string adroommarkup { get; set; }
+        public string adroomdiscount { get; set; }
+        public string clmarkup { get; set; }
+        public string clroomdiscount { get; set; }
+
+        public string agnmarkup { get; set; }
+        public string agndiscount { get; set; }
+
         public string Message { get; set; }
 
     }
@@ -39,7 +48,7 @@ namespace HotelDevMTWebapi.Controllers
 
         [HttpGet]
         [AllowAnonymous]
-        public checkresult Get(string searchid, string hcode, string ratekey, string b2c_idn)
+        public checkresult Get(string searchid, string hcode, string ratekey, string b2c_idn,string entity_idn)
         {
             double admarkup = 0.00;
             double adroommarkup = 0.00;
@@ -68,6 +77,12 @@ namespace HotelDevMTWebapi.Controllers
             double finalroomdiscount = 0.00;
             double adroomdiscount = 0.00;
             double clroomdiscount = 0.00;
+
+            double agnpercmarkup = 0.00;
+            double agnmarkup = 0.00;
+            double agnperdiscount = 0.00;
+            double agndiscount = 0.00;
+
             double rrate;
             double roomtaxprice = 0.00;
             double eachroomavgtaxprice = 0.00;
@@ -150,6 +165,7 @@ namespace HotelDevMTWebapi.Controllers
                                         cmd.Parameters.AddWithValue("@B2C_IDN", b2c_idn);
                                         cmd.Parameters.AddWithValue("@Hotelcode", hcode);
                                         cmd.Parameters.AddWithValue("@GDS", "HB");
+                                        cmd.Parameters.AddWithValue("@User_Entity_Idn", entity_idn);
                                         cmd.Parameters.AddWithValue("@IsLoginCust", "Y");
                                         SqlDataAdapter sa = new SqlDataAdapter(cmd);
                                         sa.Fill(dtwt);
@@ -188,26 +204,48 @@ namespace HotelDevMTWebapi.Controllers
                                         Cl_Mode = dtwt.Rows[0]["Cl_Mode"].ToString();
                                         if (Cl_Mode == "Fixed")
                                         {
-                                            clmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
+                                            clroommarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
                                             cldiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
 
                                         }
                                         else if (Cl_Mode == "Percentage")
                                         {
                                             clroompercmarkup = Convert.ToDouble(dtwt.Rows[0]["Cl_Markup"].ToString());
-                                            clroommarkup = (((roombaseamount) / (100)) * clroompercmarkup);
+                                            clroommarkup = (((roombaseamount+ adroommarkup) / (100)) * clroompercmarkup);
 
                                             clroomperdiscount = Convert.ToDouble(dtwt.Rows[0]["Cl_Discount"].ToString());
-                                            clroomdiscount = ((roombaseamount / 100.00) * clroomperdiscount);
+                                            clroomdiscount = (((roombaseamount+ adroomdiscount) / 100.00) * clroomperdiscount);
                                         }
                                         else
                                         {
-                                            clmarkup = 0.00;
-
+                                            clroommarkup = 0.00;
+                                            clroomdiscount = 0.00;
                                         }
 
-                                        finalroommarkup = adroommarkup + clroommarkup;
-                                        finalroomdiscount = adroomdiscount + clroomdiscount;
+                                        string agl_Mode = string.Empty;
+                                        agl_Mode = dtwt.Rows[0]["Ag_Mode"].ToString();
+                                        if (agl_Mode == "Fixed")
+                                        {
+                                            agnmarkup = Convert.ToDouble(dtwt.Rows[0]["Ag_Markup"].ToString());
+                                            agndiscount = Convert.ToDouble(dtwt.Rows[0]["Ag_Discount"].ToString());
+                                        }
+                                        else if (agl_Mode == "Percentage")
+                                        {
+                                            agnpercmarkup = Convert.ToDouble(dtwt.Rows[0]["Ag_Markup"].ToString());
+                                            agnperdiscount = Convert.ToDouble(dtwt.Rows[0]["Ag_Discount"].ToString());
+                                            agnmarkup = (((baseamount + adroommarkup + clroommarkup) / 100.00) * agnpercmarkup);
+                                            agndiscount = (((baseamount + adroomdiscount + clroomdiscount) / 100.00) * agnperdiscount);
+
+                                        }
+                                        else
+                                        {
+                                            agnmarkup = 0.00;
+                                            agndiscount = 0.00;
+                                        }
+
+
+                                        finalroommarkup = adroommarkup + clroommarkup+ agnmarkup;
+                                        finalroomdiscount = adroomdiscount + clroomdiscount+ agndiscount;
                                         roombaseamount = roombaseamount + (finalroommarkup - finalroomdiscount);
                                         roomamountwithouttax = (Convert.ToDouble(roombaseamount));
                                         // roombaseamount = (Convert.ToDouble(roomamountwithouttax) + Convert.ToDouble(tax));
@@ -276,7 +314,7 @@ namespace HotelDevMTWebapi.Controllers
                                 {
                                     //cancleplamount = "NO Cancellation amount";
                                 }
-                                ratetable = GetRateTable(hcode, objCheckRateRS, lstRate, hcode, searchid, "USD", adroommarkup, clroommarkup, adroomdiscount, clroomdiscount, roomtaxprice, b2c_idn, rooms);//HttpUtility.HtmlEncode(
+                                ratetable = GetRateTable(hcode, objCheckRateRS, lstRate, hcode, searchid, "USD", adroommarkup, clroommarkup, adroomdiscount, clroomdiscount, roomtaxprice, b2c_idn, rooms,  agnmarkup,agndiscount,entity_idn);//HttpUtility.HtmlEncode(
 
 
                             }
@@ -290,7 +328,13 @@ namespace HotelDevMTWebapi.Controllers
                         objchkres.cancellationamt = cancleplamount;
                         objchkres.cancellationfrom = cancleplFrom;
                         objchkres.roomdetailstable = ratetable;
+                        objchkres.adroommarkup = adroommarkup.ToString();
+                        objchkres.adroomdiscount = adroomdiscount.ToString();
+                        objchkres.clmarkup = clroommarkup.ToString();
+                        objchkres.clroomdiscount = clroomdiscount.ToString();
 
+                        objchkres.agnmarkup = agnmarkup.ToString();
+                        objchkres.agndiscount = agndiscount.ToString();
 
                         try
                         {
@@ -546,7 +590,7 @@ namespace HotelDevMTWebapi.Controllers
         }
 
 
-        private string GetRateTable(string RPH, CheckRateRS hpr, List<Rate> lstRate, string hcode, string searchid, string curcode, double admarkup, double clmarkup, double addiscount, double cldiscount, double roomtaxprice, string b2c_idn, int norooms)// DataRow dr,
+        private string GetRateTable(string RPH, CheckRateRS hpr, List<Rate> lstRate, string hcode, string searchid, string curcode, double admarkup, double clmarkup, double addiscount, double cldiscount, double roomtaxprice, string b2c_idn, int norooms,double agnmarkup, double agndiscount, string entity_idn)// DataRow dr,
         {
 
             string rvalue = "";
@@ -565,6 +609,8 @@ namespace HotelDevMTWebapi.Controllers
             double finalroomdiscount = 0.00;
             double adroomdiscount = 0.00;
             double clroomdiscount = 0.00;
+            double agnpercmarkup = 0.00;
+            double agnperdiscount = 0.00;
 
 
             DataTable dts = HotelDBLayer.GetSearch(searchid);
@@ -637,6 +683,7 @@ namespace HotelDevMTWebapi.Controllers
                     cmd.Parameters.AddWithValue("@B2C_IDN", b2c_idn);
                     cmd.Parameters.AddWithValue("@Hotelcode", hcode);
                     cmd.Parameters.AddWithValue("@GDS", "HB");
+                    cmd.Parameters.AddWithValue("@User_Entity_Idn", entity_idn);
                     cmd.Parameters.AddWithValue("@IsLoginCust", "Y");
                     SqlDataAdapter sa = new SqlDataAdapter(cmd);
                     sa.Fill(dtwt);
@@ -692,7 +739,26 @@ namespace HotelDevMTWebapi.Controllers
                         clmarkup = 0.00;
 
                     }
+                    string agl_Mode = string.Empty;
+                    agl_Mode = dtwt.Rows[0]["Ag_Mode"].ToString();
+                    if (agl_Mode == "Fixed")
+                    {
+                        agnmarkup = Convert.ToDouble(dtwt.Rows[0]["Ag_Markup"].ToString());
+                        agndiscount = Convert.ToDouble(dtwt.Rows[0]["Ag_Discount"].ToString());
+                    }
+                    else if (agl_Mode == "Percentage")
+                    {
+                        agnpercmarkup = Convert.ToDouble(dtwt.Rows[0]["Ag_Markup"].ToString());
+                        agnperdiscount = Convert.ToDouble(dtwt.Rows[0]["Ag_Discount"].ToString());
+                        agnmarkup = (((roombaseamount + adroommarkup + clroommarkup) / 100.00) * agnpercmarkup);
+                        agndiscount = (((roombaseamount + adroomdiscount + clroomdiscount) / 100.00) * agnperdiscount);
 
+                    }
+                    else
+                    {
+                        agnmarkup = 0.00;
+                        agndiscount = 0.00;
+                    }
                     finalroommarkup = adroommarkup + clroommarkup;
                     finalroomdiscount = adroomdiscount + clroomdiscount;
                     roombaseamount = roombaseamount + (finalroommarkup - finalroomdiscount);

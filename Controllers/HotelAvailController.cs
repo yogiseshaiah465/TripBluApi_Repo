@@ -33,7 +33,7 @@ namespace TripxolHotelsWebapi.Controllers
         public DataTable dtBPIadd = new DataTable();
         public static Hashtable hsAmentitiesCount = null;
 
-        public string Get(string searchid, string city, string checkind, string checkoutd, string guestscount, string selroom, string selaudults, string selchilds, string sortby, string pageno, string amenities, string stars, string hotelname, string curcode, string b2c_idn)
+        public string Get(string searchid, string city, string checkind, string checkoutd, string guestscount, string selroom, string selaudults, string selchilds, string sortby, string pageno, string amenities, string stars, string hotelname, string curcode, string b2c_idn,string entity_idn)
         {
             AvailabilityRS objAvailabilityRS = new AvailabilityRS();
             vcity = city;
@@ -93,7 +93,7 @@ namespace TripxolHotelsWebapi.Controllers
 
                 AvailabilityRS dtFilterHotels = HotelListGenerate.GetFilteredData(objAvailabilityRS, hotelname, "", sortby, stars, amenities);
                 //AvailabilityRS dtSortedHotels = HotelListGenerate.GetSortedData(dtFilterHotels, sortby);
-                rvalue = Generatehtml(dtFilterHotels, dtPricingzero, searchid, checkind, checkoutd, guestscount, hotelname, sortby, curcode, b2c_idn, selaudults, selchilds);
+                rvalue = Generatehtml(dtFilterHotels, dtPricingzero, searchid, checkind, checkoutd, guestscount, hotelname, sortby, curcode, b2c_idn, selaudults, selchilds,entity_idn);
             }
             return rvalue;
         }
@@ -102,7 +102,7 @@ namespace TripxolHotelsWebapi.Controllers
 
 
 
-        private string Generatehtml(AvailabilityRS objAvailabilityRS, AvailabilityRS MainTable, string searchid, string checkind, string checkoutd, string guestscount, string Hotelname, string sortby, string currencycode, string b2c_idn, string seladults, string selchilds)
+        private string Generatehtml(AvailabilityRS objAvailabilityRS, AvailabilityRS MainTable, string searchid, string checkind, string checkoutd, string guestscount, string Hotelname, string sortby, string currencycode, string b2c_idn, string seladults, string selchilds, string entity_idn)
         {
 
             hsAmentitiesCount = HotelListGenerate.GetPropinfocount(objAvailabilityRS);
@@ -290,7 +290,7 @@ namespace TripxolHotelsWebapi.Controllers
             genstring += " <div class='sortpagn'>";
             genstring += HotelListGenerate.GetSortBydd(sortby, hcount);
             genstring += HotelListGenerate.GetPagingHtmlTop(Convert.ToInt32(hcount), vpageno);
-            genstring += HotelListGenerate.GetHotellist(objAvailabilityRS, searchid, checkind, checkoutd, guestscount, currencycode, vpageno, b2c_idn, seladults, selchilds);
+            genstring += HotelListGenerate.GetHotellist(objAvailabilityRS, searchid, checkind, checkoutd, guestscount, currencycode, vpageno, b2c_idn, seladults, selchilds, entity_idn);
 
             genstring += HotelListGenerate.GetPagingHtmlBottom(Convert.ToInt32(hcount), vpageno);
 
